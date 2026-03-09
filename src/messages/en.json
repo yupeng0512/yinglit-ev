@@ -1,0 +1,121 @@
+{
+  "common": {
+    "viewAll": "View All",
+    "contactUs": "Contact Us",
+    "getQuote": "Get a Quote",
+    "learnMore": "Learn More",
+    "sendInquiry": "Send Inquiry",
+    "downloadCatalog": "Download Catalog",
+    "backToProducts": "Back to Products",
+    "allCategories": "All Categories",
+    "specifications": "Specifications",
+    "features": "Features",
+    "certifications": "Certifications"
+  },
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "solutions": "Solutions",
+    "oemOdm": "OEM/ODM",
+    "certifications": "Certifications",
+    "cloudPlatform": "Cloud Platform",
+    "cases": "Cases",
+    "about": "About Us",
+    "contact": "Contact"
+  },
+  "home": {
+    "heroTitle": "Powering the Future of E-Mobility",
+    "heroSubtitle": "Full-range EV charging solutions from 3.5KW portable chargers to 720KW split DC fast chargers. Trusted by operators in 25+ countries.",
+    "heroCta": "Explore Products",
+    "heroCtaSecondary": "Get a Quote",
+    "statsTitle": "Trusted by the Industry",
+    "categoriesTitle": "Product Categories",
+    "categoriesSubtitle": "Full-range EV charging solutions for every scenario",
+    "solutionsTitle": "Charging Solutions",
+    "solutionsSubtitle": "Comprehensive solutions for home, commercial, and public charging",
+    "whyUsTitle": "Why Choose Yinglit",
+    "ctaTitle": "Ready to Power Your EV Charging Business?",
+    "ctaSubtitle": "Contact us today for ODM & OEM inquiries. Fast response within 24 hours."
+  },
+  "products": {
+    "title": "Our Products",
+    "subtitle": "Full-range EV charging stations from portable to ultra-fast DC",
+    "filterBy": "Filter by Category",
+    "noResults": "No products found",
+    "viewDetails": "View Details",
+    "relatedProducts": "Related Products",
+    "inquireNow": "Inquire Now"
+  },
+  "solutions": {
+    "title": "Charging Solutions",
+    "subtitle": "Comprehensive EV charging solutions for every scenario",
+    "homeTitle": "Home Charging",
+    "homeDesc": "Smart wallbox solutions with APP control, Dynamic Load Balance, and government subsidy eligibility (KfW, UK EVHS).",
+    "commercialTitle": "Commercial Charging",
+    "commercialDesc": "OCPP-enabled stations with MID certified meters, RFID authentication, and cashless payment for parking lots and workplaces.",
+    "publicTitle": "Public Fast Charging",
+    "publicDesc": "High-power DC fast chargers up to 720KW with split design, liquid cooling, and intelligent power distribution for highway and fleet charging."
+  },
+  "oem": {
+    "title": "OEM & ODM Services",
+    "subtitle": "Custom EV charging solutions tailored to your brand",
+    "capability": "Our Capabilities",
+    "process": "Cooperation Process",
+    "step1": "Requirements Discussion",
+    "step2": "Technical Design",
+    "step3": "Sample Production",
+    "step4": "Mass Production",
+    "step5": "Quality Inspection",
+    "step6": "Delivery & Support"
+  },
+  "certs": {
+    "title": "Certifications & Qualifications",
+    "subtitle": "Globally certified products you can trust",
+    "patents": "100+ Patents",
+    "patentsDesc": "Including invention patents and software copyrights",
+    "standards": "International Standards",
+    "subsidies": "Government Subsidies",
+    "subsidiesDesc": "KfW eligible (Germany) and UK EVHS approved products"
+  },
+  "cloud": {
+    "title": "Cloud Platform & APP",
+    "subtitle": "Smart charging management at your fingertips",
+    "cmsTitle": "Management System",
+    "cmsDesc": "A central system for charger operators to manage charge points and monitor charging services. Status monitor, charger record, price management, firmware upgrade, remote diagnose, and load balance.",
+    "appTitle": "Mobile APP",
+    "appDesc": "Connects EV drivers with charging stations. Location search, charging monitor, and payment settlement — all in one app."
+  },
+  "about": {
+    "title": "About Yinglit",
+    "subtitle": "Powering e-Mobility since 2017",
+    "story": "Founded in 2017, Yinglit (Shenzhen Yingli Technology) is a total-solution supplier of EV charging stations and cloud management systems. With a top R&D team and rich experience in international protocols (OCPP 1.6J+), we serve operators across 25+ countries.",
+    "innovation": "Product Innovation",
+    "innovationDesc": "Modular designed products facilitate customization. Every year we upgrade our products and develop new technology (Bluetooth Mesh, ISO15118, OCPP 1.6J+).",
+    "capacity": "Flexible Production",
+    "capacityDesc": "Besides our own factory, we cooperate with professional subcontract factories for flexible capacity and competitive pricing.",
+    "global": "Global Reach",
+    "globalDesc": "Products exported to 25+ countries including Norway, Italy, UK, Germany, Korea, Sweden, Poland, Australia, Romania, and Thailand."
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "We typically respond within 24 hours",
+    "name": "Full Name",
+    "email": "Email Address",
+    "company": "Company Name",
+    "country": "Country / Region",
+    "phone": "Phone Number",
+    "product": "Interested Product",
+    "quantity": "Estimated Quantity",
+    "message": "Your Message",
+    "submit": "Send Inquiry",
+    "success": "Thank you! We will respond within 24 hours.",
+    "info": "Contact Information"
+  },
+  "footer": {
+    "tagline": "Professional EV charging station manufacturer. ODM & OEM services for global markets.",
+    "quickLinks": "Quick Links",
+    "productCategories": "Products",
+    "contactUs": "Contact Us",
+    "copyright": "© 2025 Yinglit. All rights reserved."
+  }
+}

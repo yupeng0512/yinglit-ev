@@ -1,0 +1,44 @@
+{
+  "siteName": "Yinglit",
+  "companyName": "Shenzhen Yingli Technology Co., Ltd.",
+  "siteUrl": "https://yinglit-ev.vercel.app",
+  "logo": "/logo.svg",
+  "mode": "b2b",
+  "defaultLocale": "en",
+  "locales": ["en", "zh"],
+  "founded": "2017",
+  "exportCountries": "25+",
+  "patents": "100+",
+  "contact": {
+    "email": "John@yinglitech.com",
+    "phone": "+86 134 100 15126",
+    "wechat": "+86 134 100 15126",
+    "whatsapp": "+86 134 100 15126",
+    "salesPerson": "John Zhong",
+    "address": {
+      "en": "Building 3, 3rd Floor, Granda Equipment Industrial Park, No. 33 Longtian Street, Pingshan District, Shenzhen City, Guangdong Province, China",
+      "zh": "中国广东省深圳市坪山区龙田街道33号格兰达装备产业园3栋3楼"
+    }
+  },
+  "features": {
+    "inquiry": true,
+    "oemOdm": true,
+    "certifications": true,
+    "solutions": true,
+    "cloudPlatform": true,
+    "projectCases": true,
+    "pricing": false,
+    "blog": false
+  },
+  "stats": {
+    "founded": "2017",
+    "countries": "25+",
+    "patents": "100+",
+    "productLines": "18",
+    "maxPower": "720KW"
+  },
+  "seo": {
+    "titleTemplate": "%s | Yinglit - EV Charging Solutions",
+    "defaultDescription": "Professional EV charging station manufacturer. Full-range products from 3.5KW portable chargers to 720KW split DC fast chargers. ODM & OEM services for global markets."
+  }
+}

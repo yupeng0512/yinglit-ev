@@ -1,0 +1,1408 @@
+[
+  {
+    "slug": "portable-ev-box-3-5kw",
+    "sku": "YLEV035K-P035",
+    "name": { "en": "Portable EV Box 3.5KW", "zh": "便携式充电盒 3.5KW" },
+    "category": "portable-charger",
+    "description": {
+      "en": "Ultra-compact portable EV charger with adjustable current (8-16A). Schuko plug, OLED display, IP65 rated for all-weather use.",
+      "zh": "超紧凑便携式充电器，电流可调（8-16A）。Schuko插头，OLED显示屏，IP65防护等级，全天候使用。"
+    },
+    "features": [
+      "Type A + 30mA leakage protection",
+      "OLED display with select button",
+      "Adjustable current: 8A/10A/13A/16A",
+      "Temperature sensor and plug adapter",
+      "Compatible with all EVs on market"
+    ],
+    "images": ["/images/products/portable-charger.jpg"],
+    "specifications": {
+      "power": "3.5KW",
+      "input": "230VAC±20%, 50/60Hz, 1-phase",
+      "current": "8-16A adjustable",
+      "connector": "Type 2 Plug, 5M cable",
+      "inputPlug": "Schuko",
+      "protection": "IP65, IK10",
+      "rcd": "Type AC 30mA / RCMU Type A+DC6mA optional",
+      "standbyPower": "<2W",
+      "operatingTemp": "-30°C to +55°C",
+      "dimensions": "210×88×50mm",
+      "weight": "2.02Kg",
+      "cooling": "Natural cooling"
+    },
+    "variants": [
+      { "name": "Schuko Plug", "sku": "YLEV035K-P035-EU" },
+      { "name": "NEMA 6-20P Plug", "sku": "YLEV035K-P035-US" }
+    ],
+    "certifications": ["CE", "IEC 61851-1", "IEC 61851-22", "SAE J1772"],
+    "status": "active"
+  },
+  {
+    "slug": "portable-ev-box-7kw",
+    "sku": "YLEV7K-P7",
+    "name": { "en": "Portable EV Box 7KW", "zh": "便携式充电盒 7KW" },
+    "category": "portable-charger",
+    "description": {
+      "en": "Powerful 7KW portable charger with Blue CEE plug and wide current range (8-32A). Perfect for road trips and flexible charging.",
+      "zh": "强劲7KW便携式充电器，蓝色CEE工业插头，宽电流范围（8-32A）。适合出行和灵活充电。"
+    },
+    "features": [
+      "Type A + 30mA leakage protection",
+      "OLED display with select button",
+      "Adjustable current: 8A/16A/20A/32A",
+      "Temperature sensor and plug adapter",
+      "Blue CEE industrial plug"
+    ],
+    "images": ["/images/products/portable-charger.jpg"],
+    "specifications": {
+      "power": "7KW",
+      "input": "230VAC±20%, 50/60Hz, 1-phase",
+      "current": "8-32A adjustable",
+      "connector": "Type 2 Plug, 5M cable",
+      "inputPlug": "NEMA 14-50 / Blue CEE",
+      "protection": "IP65, IK10",
+      "rcd": "Type AC 30mA / RCMU Type A+DC6mA optional",
+      "standbyPower": "<2W",
+      "operatingTemp": "-30°C to +55°C",
+      "dimensions": "210×88×50mm",
+      "weight": "2.5Kg",
+      "cooling": "Natural cooling"
+    },
+    "variants": [
+      { "name": "Blue CEE Plug", "sku": "YLEV7K-P7-CEE" },
+      { "name": "NEMA 14-50 Plug", "sku": "YLEV7K-P7-NEMA" }
+    ],
+    "certifications": ["CE", "IEC 61851-1", "IEC 61851-22", "SAE J1772"],
+    "status": "active"
+  },
+  {
+    "slug": "portable-ev-box-11kw",
+    "sku": "YLEV11K-P11",
+    "name": { "en": "Portable EV Box 11KW", "zh": "便携式充电盒 11KW" },
+    "category": "portable-charger",
+    "description": {
+      "en": "High-power 11KW 3-phase portable charger. Blue CEE plug with adjustable current for maximum flexibility on the go.",
+      "zh": "大功率11KW三相便携式充电器。蓝色CEE插头，电流可调，出行充电极致灵活。"
+    },
+    "features": [
+      "Type A + 30mA leakage protection",
+      "OLED display with select button",
+      "Adjustable current: 8A/10A/13A/16A (3-phase)",
+      "Temperature sensor and plug adapter",
+      "3-phase fast portable charging"
+    ],
+    "images": ["/images/products/portable-charger.jpg"],
+    "specifications": {
+      "power": "11KW",
+      "input": "400VAC±10%, 50/60Hz, 3-phase",
+      "current": "8-16A adjustable",
+      "connector": "Type 2 Plug, 5M cable",
+      "inputPlug": "Blue CEE",
+      "protection": "IP65, IK10",
+      "rcd": "Type AC 30mA / RCMU Type A+DC6mA optional",
+      "standbyPower": "<2W",
+      "operatingTemp": "-30°C to +55°C",
+      "dimensions": "210×88×50mm",
+      "weight": "2.5Kg",
+      "cooling": "Natural cooling"
+    },
+    "variants": [],
+    "certifications": ["CE", "IEC 61851-1", "IEC 61851-22", "SAE J1772"],
+    "status": "active"
+  },
+  {
+    "slug": "home-wallbox-7kw",
+    "sku": "YLEV7K-Y1",
+    "name": { "en": "Home Wallbox 7KW", "zh": "家用壁挂充电桩 7KW" },
+    "category": "home-ac-charger",
+    "description": {
+      "en": "Smart 7KW home wallbox with Bluetooth APP control. KfW eligible (440/441) and UK EVHS approved. Dynamic Load Balance ready.",
+      "zh": "智能7KW家用壁挂充电桩，蓝牙APP控制。符合德国KfW补贴（440/441）和英国EVHS认证。支持动态负载均衡。"
+    },
+    "features": [
+      "Bluetooth APP intelligent control",
+      "KfW eligible (440 & 441)",
+      "UK EVHS approved",
+      "Type A + DC 6mA leakage protection",
+      "Dynamic Load Balance with CT+Meter",
+      "LED/LCD 3.5\" display + RFID"
+    ],
+    "images": ["/images/products/home-ac-charger.jpg"],
+    "specifications": {
+      "power": "7KW",
+      "input": "230VAC±20%, 50/60Hz, 32A, 1-phase",
+      "current": "32A",
+      "connector": "Type 2 Socket / 5M cable",
+      "protection": "IP54, IK10",
+      "rcd": "RCMU Type A + DC 6mA / Type B RCCB optional",
+      "standbyPower": "<3W",
+      "operatingTemp": "-30°C to +55°C",
+      "dimensions": "320×230×100mm",
+      "weight": "8Kg",
+      "enclosure": "Plastic PC940 / Galvanized steel",
+      "frontPanel": "Tempered glass",
+      "installation": "Wall-mount / Pole-mount",
+      "cooling": "Natural cooling",
+      "warranty": "2 years"
+    },
+    "variants": [
+      { "name": "With Cable", "sku": "YLEV7K-Y1-C" },
+      { "name": "With Socket", "sku": "YLEV7K-Y1-S" }
+    ],
+    "certifications": ["CE", "FCC", "RoHS", "REACH", "IEC 61851-1", "IEC 61851-21-2", "IEC 62955", "KfW 440/441", "UK EVHS"],
+    "status": "active"
+  },
+  {
+    "slug": "home-wallbox-11kw",
+    "sku": "YLEV11K-Y2",
+    "name": { "en": "Home Wallbox 11KW", "zh": "家用壁挂充电桩 11KW" },
+    "category": "home-ac-charger",
+    "description": {
+      "en": "11KW 3-phase home wallbox. KfW eligible and UK EVHS approved. Bluetooth APP control with comprehensive safety protection.",
+      "zh": "11KW三相家用壁挂充电桩。符合KfW补贴和英国EVHS认证。蓝牙APP控制，全面安全保护。"
+    },
+    "features": [
+      "Bluetooth APP intelligent control",
+      "KfW eligible (440 & 441)",
+      "UK EVHS approved",
+      "Type A + DC 6mA leakage protection",
+      "Dynamic Load Balance with CT+Meter",
+      "3-phase power for faster charging"
+    ],
+    "images": ["/images/products/home-ac-charger.jpg"],
+    "specifications": {
+      "power": "11KW",
+      "input": "400VAC±20%, 50/60Hz, 16A, 3-phase",
+      "current": "16A",
+      "connector": "Type 2 Socket / 5M cable",
+      "protection": "IP54, IK10",
+      "rcd": "RCMU Type A + DC 6mA / Type B RCCB optional",
+      "standbyPower": "<3W",
+      "operatingTemp": "-30°C to +55°C",
+      "dimensions": "320×230×100mm",
+      "weight": "8Kg",
+      "enclosure": "Plastic PC940 / Galvanized steel",
+      "frontPanel": "Tempered glass",
+      "installation": "Wall-mount / Pole-mount",
+      "cooling": "Natural cooling",
+      "warranty": "2 years"
+    },
+    "variants": [
+      { "name": "With Cable", "sku": "YLEV11K-Y2-C" },
+      { "name": "With Socket", "sku": "YLEV11K-Y2-S" }
+    ],
+    "certifications": ["CE", "FCC", "RoHS", "REACH", "IEC 61851-1", "IEC 61851-21-2", "IEC 62955", "KfW 440/441", "UK EVHS"],
+    "status": "active"
+  },
+  {
+    "slug": "home-wallbox-22kw",
+    "sku": "YLEV22K-Y3",
+    "name": { "en": "Home Wallbox 22KW", "zh": "家用壁挂充电桩 22KW" },
+    "category": "home-ac-charger",
+    "description": {
+      "en": "Top-of-line 22KW 3-phase home wallbox with Dynamic Load Balance. KfW eligible and UK EVHS approved. Full smart home integration.",
+      "zh": "顶配22KW三相家用壁挂充电桩，动态负载均衡。符合KfW补贴和英国EVHS认证。完整智能家居集成。"
+    },
+    "features": [
+      "Dynamic Load Balance with CT+Meter",
+      "Bluetooth APP intelligent control",
+      "KfW eligible (440 & 441)",
+      "UK EVHS approved",
+      "Type A + DC 6mA leakage protection",
+      "3-phase 32A for maximum speed"
+    ],
+    "images": ["/images/products/home-ac-charger.jpg"],
+    "specifications": {
+      "power": "22KW",
+      "input": "400VAC±20%, 50/60Hz, 32A, 3-phase",
+      "current": "32A",
+      "connector": "Type 2 Socket / 5M cable",
+      "protection": "IP54, IK10",
+      "rcd": "RCMU Type A + DC 6mA / Type B RCCB optional",
+      "standbyPower": "<3W",
+      "operatingTemp": "-30°C to +55°C",
+      "dimensions": "320×230×100mm",
+      "weight": "8Kg",
+      "enclosure": "Plastic PC940 / Galvanized steel",
+      "frontPanel": "Tempered glass",
+      "installation": "Wall-mount / Pole-mount",
+      "cooling": "Natural cooling",
+      "warranty": "2 years"
+    },
+    "variants": [
+      { "name": "With Cable", "sku": "YLEV22K-Y3-C" },
+      { "name": "With Socket", "sku": "YLEV22K-Y3-S" }
+    ],
+    "certifications": ["CE", "FCC", "RoHS", "REACH", "IEC 61851-1", "IEC 61851-21-2", "IEC 62955", "KfW 440/441", "UK EVHS"],
+    "status": "active"
+  },
+  {
+    "slug": "public-wallbox-7kw",
+    "sku": "YLEV7K-S1",
+    "name": { "en": "Public Wallbox 7KW", "zh": "公共壁挂充电桩 7KW" },
+    "category": "commercial-ac-charger",
+    "description": {
+      "en": "Commercial 7KW wallbox with OCPP 1.6J, MID certified meter, and WiFi/Ethernet/4G connectivity. Ready for any CMS platform.",
+      "zh": "商用7KW壁挂充电桩，支持OCPP 1.6J，MID认证电表，WiFi/以太网/4G连接。兼容所有CMS平台。"
+    },
+    "features": [
+      "OCPP 1.6J (OCPP 2.0 optional)",
+      "MID certified energy meter",
+      "WiFi / Ethernet / 4G connectivity",
+      "Type A + DC 6mA leakage protection",
+      "LED/LCD 3.5\" + RFID authentication",
+      "Cashless payment ready"
+    ],
+    "images": ["/images/products/commercial-ac-charger.jpg"],
+    "specifications": {
+      "power": "7KW",
+      "input": "230VAC±20%, 50/60Hz, 32A, 1-phase",
+      "current": "32A",
+      "connector": "Type 2 Socket / 5M cable",
+      "protection": "IP54, IK10",
+      "rcd": "RCMU Type A + DC 6mA / Type B RCCB optional",
+      "standbyPower": "<3W",
+      "ocpp": "OCPP 1.6J (2.0 optional)",
+      "energyMeter": "MID certified",
+      "communication": "WiFi / Ethernet / 4G",
+      "operatingTemp": "-30°C to +55°C",
+      "dimensions": "320×230×100mm",
+      "weight": "8Kg",
+      "enclosure": "Plastic PC940 / Galvanized steel",
+      "frontPanel": "Tempered glass",
+      "installation": "Wall-mount / Pole-mount",
+      "cooling": "Natural cooling",
+      "warranty": "2 years"
+    },
+    "variants": [
+      { "name": "With Cable", "sku": "YLEV7K-S1-C" },
+      { "name": "With Socket", "sku": "YLEV7K-S1-S" }
+    ],
+    "certifications": ["CE", "FCC", "RoHS", "REACH", "IEC 61851-1", "IEC 61851-21-2", "IEC 62955"],
+    "status": "active"
+  },
+  {
+    "slug": "public-wallbox-11kw",
+    "sku": "YLEV11K-S2",
+    "name": { "en": "Public Wallbox 11KW", "zh": "公共壁挂充电桩 11KW" },
+    "category": "commercial-ac-charger",
+    "description": {
+      "en": "Commercial 11KW 3-phase wallbox with OCPP, MID meter, and multi-connectivity. Ideal for parking lots and fleet charging.",
+      "zh": "商用11KW三相壁挂充电桩，OCPP协议，MID电表，多连接方式。适用于停车场和车队充电。"
+    },
+    "features": [
+      "OCPP 1.6J (OCPP 2.0 optional)",
+      "MID certified energy meter",
+      "WiFi / Ethernet / 4G connectivity",
+      "Type A + DC 6mA leakage protection",
+      "LED/LCD 3.5\" + RFID authentication",
+      "3-phase 16A power"
+    ],
+    "images": ["/images/products/commercial-ac-charger.jpg"],
+    "specifications": {
+      "power": "11KW",
+      "input": "400VAC±20%, 50/60Hz, 16A, 3-phase",
+      "current": "16A",
+      "connector": "Type 2 Socket / 5M cable",
+      "protection": "IP54, IK10",
+      "rcd": "RCMU Type A + DC 6mA / Type B RCCB optional",
+      "standbyPower": "<3W",
+      "ocpp": "OCPP 1.6J (2.0 optional)",
+      "energyMeter": "MID certified",
+      "communication": "WiFi / Ethernet / 4G",
+      "operatingTemp": "-30°C to +55°C",
+      "dimensions": "320×230×100mm",
+      "weight": "8Kg",
+      "enclosure": "Plastic PC940 / Galvanized steel",
+      "installation": "Wall-mount / Pole-mount",
+      "cooling": "Natural cooling",
+      "warranty": "2 years"
+    },
+    "variants": [
+      { "name": "With Cable", "sku": "YLEV11K-S2-C" },
+      { "name": "With Socket", "sku": "YLEV11K-S2-S" }
+    ],
+    "certifications": ["CE", "FCC", "RoHS", "REACH", "IEC 61851-1", "IEC 61851-21-2", "IEC 62955"],
+    "status": "active"
+  },
+  {
+    "slug": "public-wallbox-22kw",
+    "sku": "YLEV22K-S3",
+    "name": { "en": "Public Wallbox 22KW", "zh": "公共壁挂充电桩 22KW" },
+    "category": "commercial-ac-charger",
+    "description": {
+      "en": "High-power 22KW commercial wallbox with OCPP 1.6J, MID meter, and full connectivity suite. Maximum AC charging speed.",
+      "zh": "大功率22KW商用壁挂充电桩，OCPP 1.6J，MID电表，全连接方案。交流充电最大速度。"
+    },
+    "features": [
+      "OCPP 1.6J (OCPP 2.0 optional)",
+      "MID certified energy meter",
+      "WiFi / Ethernet / 4G connectivity",
+      "Type A + DC 6mA leakage protection",
+      "LED/LCD 3.5\" + RFID authentication",
+      "3-phase 32A maximum AC power"
+    ],
+    "images": ["/images/products/commercial-ac-charger.jpg"],
+    "specifications": {
+      "power": "22KW",
+      "input": "400VAC±20%, 50/60Hz, 32A, 3-phase",
+      "current": "32A",
+      "connector": "Type 2 Socket / 5M cable",
+      "protection": "IP54, IK10",
+      "rcd": "RCMU Type A + DC 6mA / Type B RCCB optional",
+      "standbyPower": "<3W",
+      "ocpp": "OCPP 1.6J (2.0 optional)",
+      "energyMeter": "MID certified",
+      "communication": "WiFi / Ethernet / 4G",
+      "operatingTemp": "-30°C to +55°C",
+      "dimensions": "320×230×100mm",
+      "weight": "8Kg",
+      "enclosure": "Plastic PC940 / Galvanized steel",
+      "installation": "Wall-mount / Pole-mount",
+      "cooling": "Natural cooling",
+      "warranty": "2 years"
+    },
+    "variants": [
+      { "name": "With Cable", "sku": "YLEV22K-S3-C" },
+      { "name": "With Socket", "sku": "YLEV22K-S3-S" }
+    ],
+    "certifications": ["CE", "FCC", "RoHS", "REACH", "IEC 61851-1", "IEC 61851-21-2", "IEC 62955"],
+    "status": "active"
+  },
+  {
+    "slug": "home-level2-32a-7-5kw",
+    "sku": "YLEV32A-L1",
+    "name": { "en": "Home Level 2 32A/7.5KW", "zh": "美标家用二级充电桩 32A/7.5KW" },
+    "category": "home-ac-charger",
+    "description": {
+      "en": "UL certified Level 2 home charger with SAE J1772 connector. NEMA 14-50 plug, Bluetooth APP control. Built for North American market.",
+      "zh": "UL认证美标二级家用充电桩，SAE J1772接口。NEMA 14-50插头，蓝牙APP控制。专为北美市场打造。"
+    },
+    "features": [
+      "SAE J1772 connector",
+      "UL certified (UL 817/991/2231/2594)",
+      "NEMA 14-50 plug (optional)",
+      "Bluetooth/WiFi APP control",
+      "Type A + DC 6mA leakage protection",
+      "LED/LCD 3.5\" + RFID"
+    ],
+    "images": ["/images/products/home-ac-charger.jpg"],
+    "specifications": {
+      "power": "7.5KW",
+      "input": "240VAC, 50/60Hz, 32A, 1-phase",
+      "current": "32A",
+      "connector": "SAE J1772, 5M cable",
+      "inputPlug": "NEMA 14-50 (optional)",
+      "protection": "IP54, IK10",
+      "rcd": "RCMU Type A + DC 6mA / Type B RCCB optional",
+      "standbyPower": "<3W",
+      "operatingTemp": "-30°C to +55°C",
+      "dimensions": "320×230×100mm",
+      "weight": "8Kg",
+      "enclosure": "Plastic PC940 / Galvanized steel",
+      "frontPanel": "Tempered glass",
+      "installation": "Wall-mount / Pole-mount",
+      "cooling": "Natural cooling",
+      "warranty": "2 years"
+    },
+    "variants": [],
+    "certifications": ["NEC 625", "SAE J1772", "UL 817", "UL 991", "UL 2231", "UL 2251", "UL 2594"],
+    "status": "active"
+  },
+  {
+    "slug": "home-wallbox-level2-40a",
+    "sku": "YLEV40A-L2",
+    "name": { "en": "Home EV Wallbox Level 2 - 40A", "zh": "家用壁挂 Level 2 - 40A" },
+    "category": "home-ac-charger",
+    "description": {
+      "en": "Mid-power Level 2 home wallbox with 40A/9.6KW output for North American market. UL certified with SAE J1772 connector.",
+      "zh": "中功率Level 2家用壁挂充电桩，40A/9.6KW输出，适合北美市场。UL认证，SAE J1772接口。"
+    },
+    "features": ["UL certified for North America", "SAE J1772 40A connector", "Bluetooth/WiFi APP control", "9.6KW home charging", "NEMA 14-50 input plug optional"],
+    "images": ["/images/products/home-ac-charger.jpg"],
+    "specifications": {
+      "power": "9.6KW",
+      "input": "240VAC, 50/60Hz, 40A, 1-phase",
+      "connector": "SAE J1772 40A 5M",
+      "communication": "Bluetooth / WiFi (Optional) APP",
+      "protection": "IP54, IK10",
+      "dimensions": "320×230×100mm",
+      "weight": "8Kg",
+      "operatingTemp": "-30°C to +55°C",
+      "certificate": "NEC 625, SAE J1772, UL 817, UL 991, UL 2231, UL 225, UL 2594"
+    },
+    "variants": [],
+    "certifications": ["UL", "NEC 625", "SAE J1772", "FCC"],
+    "status": "active"
+  },
+  {
+    "slug": "home-level2-48a-12kw",
+    "sku": "YLEV48A-L3",
+    "name": { "en": "Home Level 2 48A/12KW", "zh": "美标家用二级充电桩 48A/12KW" },
+    "category": "home-ac-charger",
+    "description": {
+      "en": "High-power 48A/12KW UL certified Level 2 charger. Maximum residential charging speed for North American homes.",
+      "zh": "大功率48A/12KW UL认证美标二级充电桩。北美家用充电最快速度。"
+    },
+    "features": [
+      "SAE J1772 48A connector",
+      "UL certified (UL 817/991/2231/2594)",
+      "NEMA 14-50 plug (optional)",
+      "Bluetooth/WiFi APP control",
+      "Type A + DC 6mA leakage protection",
+      "Maximum Level 2 charging speed"
+    ],
+    "images": ["/images/products/home-ac-charger.jpg"],
+    "specifications": {
+      "power": "12KW",
+      "input": "240VAC, 50/60Hz, 48A, 1-phase",
+      "current": "48A",
+      "connector": "SAE J1772 48A, 5M cable",
+      "inputPlug": "NEMA 14-50 (optional)",
+      "protection": "IP54, IK10",
+      "rcd": "RCMU Type A + DC 6mA / Type B RCCB optional",
+      "standbyPower": "<3W",
+      "operatingTemp": "-30°C to +55°C",
+      "dimensions": "320×230×100mm",
+      "weight": "8Kg",
+      "enclosure": "Plastic PC940 / Galvanized steel",
+      "frontPanel": "Tempered glass",
+      "installation": "Wall-mount / Pole-mount",
+      "cooling": "Natural cooling",
+      "warranty": "2 years"
+    },
+    "variants": [],
+    "certifications": ["NEC 625", "SAE J1772", "UL 817", "UL 991", "UL 2231", "UL 2251", "UL 2594"],
+    "status": "active"
+  },
+  {
+    "slug": "pro-wallbox-22kw",
+    "sku": "YLEV22K-P3",
+    "name": { "en": "Pro Wallbox 22KW", "zh": "专业壁挂充电桩 22KW" },
+    "category": "commercial-ac-charger",
+    "description": {
+      "en": "Professional 22KW wallbox with IP65 waterproof rating. Dual standard Type 2 + J1772 support. OCPP, MID meter, full connectivity.",
+      "zh": "专业22KW壁挂充电桩，IP65防水等级。双标准Type 2 + J1772支持。OCPP协议，MID电表，全连接方案。"
+    },
+    "features": [
+      "IP65 waterproof rating",
+      "Dual standard: Type 2 + SAE J1772",
+      "OCPP 1.6J (OCPP 2.0 optional)",
+      "MID certified energy meter",
+      "Bluetooth/WiFi/Ethernet/4G",
+      "Dynamic Load Balance with CT+Meter"
+    ],
+    "images": ["/images/products/commercial-ac-charger.jpg"],
+    "specifications": {
+      "power": "22KW",
+      "input": "400VAC±20%, 50/60Hz, 32A, 3-phase (or 240VAC 48A 1-phase optional)",
+      "current": "32A (3-phase) / 48A (1-phase optional)",
+      "connector": "Type 2 Socket / 5M cable / SAE J1772 optional",
+      "protection": "IP65, IK10",
+      "rcd": "RCMU Type A + DC 6mA / Type B RCCB optional",
+      "standbyPower": "<3W",
+      "ocpp": "OCPP 1.6J (2.0 optional)",
+      "energyMeter": "MID certified",
+      "communication": "Bluetooth / WiFi / Ethernet / 4G",
+      "operatingTemp": "-30°C to +55°C",
+      "dimensions": "405×227×161mm",
+      "weight": "5.5Kg",
+      "enclosure": "Plastic PC940 / Galvanized steel",
+      "frontPanel": "Tempered glass",
+      "installation": "Wall-mount / Pole-mount",
+      "cooling": "Natural cooling",
+      "warranty": "2 years"
+    },
+    "variants": [
+      { "name": "Type 2 Cable", "sku": "YLEV22K-P3-T2" },
+      { "name": "Type 2 Socket", "sku": "YLEV22K-P3-T2S" },
+      { "name": "J1772 Cable", "sku": "YLEV22K-P3-J17" }
+    ],
+    "certifications": ["CE", "FCC", "RoHS", "REACH", "IEC 61851-1", "IEC 61851-21-2", "IEC 62955", "UL 817", "UL 2594"],
+    "status": "active"
+  },
+  {
+    "slug": "twin-wallbox-44kw",
+    "sku": "YLEV44K-T3",
+    "name": { "en": "Twin Wallbox 44KW", "zh": "双枪壁挂充电桩 44KW" },
+    "category": "commercial-ac-charger",
+    "description": {
+      "en": "Dual-output 44KW (2×22KW) wallbox with 5\" touch screen, RFID, and credit card payment. One unit serves two EVs simultaneously.",
+      "zh": "双输出44KW（2×22KW）壁挂充电桩，5寸触摸屏，RFID认证，信用卡支付。一台设备同时服务两辆车。"
+    },
+    "features": [
+      "Dual output: 2×22KW simultaneous charging",
+      "5\" LCD touch screen",
+      "RFID + credit card payment",
+      "OCPP 1.6J (OCPP 2.0 optional)",
+      "MID certified energy meter",
+      "WiFi / Ethernet / 4G connectivity"
+    ],
+    "images": ["/images/products/commercial-ac-charger.jpg"],
+    "specifications": {
+      "power": "44KW (2×22KW)",
+      "input": "400VAC±20%, 50/60Hz, 32A×2, 3-phase",
+      "current": "32A per output",
+      "connector": "Type 2 Socket ×2 or Type 2 Gun ×2, 5M",
+      "protection": "IP65, IK10",
+      "rcd": "RCMU Type A + DC 6mA / Type B RCCB optional",
+      "standbyPower": "<5W",
+      "ocpp": "OCPP 1.6J (2.0 optional)",
+      "energyMeter": "MID certified",
+      "communication": "WiFi / Ethernet / 4G",
+      "operatingTemp": "-30°C to +55°C",
+      "dimensions": "503×334×155mm",
+      "weight": "13.5Kg",
+      "enclosure": "Galvanized steel",
+      "frontPanel": "Tempered glass",
+      "installation": "Wall-mount / Pole-mount",
+      "cooling": "Natural cooling",
+      "warranty": "2 years"
+    },
+    "variants": [
+      { "name": "Dual Socket", "sku": "YLEV44K-T3-S" },
+      { "name": "Dual Cable", "sku": "YLEV44K-T3-C" }
+    ],
+    "certifications": ["CE", "FCC", "RoHS", "REACH", "IEC 61851-1", "IEC 61851-21-2", "IEC 62955"],
+    "status": "active"
+  },
+  {
+    "slug": "twin-pedestal-44kw",
+    "sku": "YLEV44K-T3-P",
+    "name": { "en": "Twin Pedestal 44KW", "zh": "双枪立柱充电桩 44KW" },
+    "category": "commercial-ac-charger",
+    "description": {
+      "en": "Floor-standing dual-output 44KW pedestal charger. Vandal-resistant galvanized steel, OCPP enabled, credit card payment ready.",
+      "zh": "落地式双输出44KW立柱充电桩。防破坏镀锌钢，OCPP协议，支持信用卡支付。"
+    },
+    "features": [
+      "Floor-stand pedestal design",
+      "Dual output: 2×22KW simultaneous charging",
+      "OCPP 1.6J (OCPP 2.0 optional)",
+      "MID certified energy meter",
+      "Vandal resistant and anti-corrosion",
+      "Credit card payment optional"
+    ],
+    "images": ["/images/products/commercial-ac-charger.jpg"],
+    "specifications": {
+      "power": "44KW (2×22KW)",
+      "input": "400VAC±20%, 50/60Hz, 32A×2, 3-phase",
+      "current": "32A per output",
+      "connector": "Type 2 Socket ×2 or Type 2 Gun ×2, 5M",
+      "protection": "IP54, IK10",
+      "rcd": "Type A 30mA + DC 6mA / Type B optional",
+      "ocpp": "OCPP 1.6J (2.0 optional)",
+      "energyMeter": "MID certified",
+      "communication": "WiFi / Ethernet / 4G",
+      "operatingTemp": "-30°C to +55°C",
+      "dimensions": "1500×300×180mm",
+      "weight": "34Kg",
+      "enclosure": "Galvanized steel",
+      "frontPanel": "Tempered glass",
+      "installation": "Floor-stand",
+      "cooling": "Natural cooling",
+      "warranty": "2 years"
+    },
+    "variants": [
+      { "name": "Dual Socket", "sku": "YLEV44K-T3-P-S" },
+      { "name": "Dual Cable", "sku": "YLEV44K-T3-P-C" }
+    ],
+    "certifications": ["CE", "IEC 61851-1", "IEC 61851-21-2"],
+    "status": "active"
+  },
+  {
+    "slug": "ac-advertising-pedestal-44kw",
+    "sku": "YLEV44K-AD3",
+    "name": { "en": "AC Advertising Pedestal 44KW", "zh": "交流广告立柱充电桩 44KW" },
+    "category": "commercial-ac-charger",
+    "description": {
+      "en": "Revenue-generating 44KW dual charger with 55\" HDV display (2500cd/m²). Remote AD content update. Charging + advertising in one unit.",
+      "zh": "创收型44KW双枪充电桩，55寸高清广告屏（2500cd/m²）。远程广告内容更新。充电+广告二合一。"
+    },
+    "features": [
+      "55\" IPS HDV display, 1920×1080, 2500cd/m²",
+      "Remote AD content update via network",
+      "Dual output: 2×22KW",
+      "OCPP 1.6J + 5\" touch screen",
+      "RFID + credit card payment",
+      "Android platform for AD management"
+    ],
+    "images": ["/images/products/commercial-ac-charger.jpg"],
+    "specifications": {
+      "power": "44KW (2×22KW)",
+      "input": "400VAC±20%, 50/60Hz, 32A×2, 3-phase",
+      "current": "32A per output",
+      "connector": "Type 2 Socket ×2 or Type 2 Gun ×2, 5M",
+      "display": "55\" IPS LCD, 1920×1080, 16:9, 2500cd/m²",
+      "displayPlatform": "Android 4.3+",
+      "adUpdate": "USB / SD card / Network remote",
+      "protection": "IP55 (outdoor)",
+      "rcd": "RCMU Type A + DC 6mA / Type B RCCB optional",
+      "standbyPower": "<5W",
+      "ocpp": "OCPP 1.6J (2.0 optional)",
+      "energyMeter": "MID certified",
+      "communication": "WiFi / Ethernet / 4G",
+      "operatingTemp": "-20°C to +55°C",
+      "dimensions": "1950×920×290mm",
+      "weight": "145Kg",
+      "cooling": "Natural cooling",
+      "warranty": "2 years"
+    },
+    "variants": [],
+    "certifications": ["CE", "FCC", "RoHS", "REACH", "IEC 61851-1", "IEC 61851-21-2", "IEC 62955"],
+    "status": "active"
+  },
+  {
+    "slug": "mini-dc-30kw",
+    "sku": "YLEV30K-D1",
+    "name": { "en": "MINI DC 30KW", "zh": "迷你直流快充 30KW" },
+    "category": "dc-charger",
+    "description": {
+      "en": "Compact 30KW DC fast charger with 7\" touch screen. Supports CCS2/CCS1/NACS/GB/T. ISO15118 Plug&Charge ready. Wall or pedestal mount.",
+      "zh": "紧凑型30KW直流快充，7寸触摸屏。兼容CCS2/CCS1/NACS/GB/T全标准。ISO15118即插即充。壁挂或立柱安装。"
+    },
+    "features": [
+      "CCS2 / CCS1 / NACS / GB/T connectors",
+      "7\" LCD touch screen + RFID + APP",
+      "ISO15118 / DIN70121 Plug&Charge",
+      "OCPP 1.6J (TLS1.2) + Ethernet/4G",
+      "150-1000VDC output range",
+      "Wall mount or pedestal mount"
+    ],
+    "images": ["/images/products/dc-charger.jpg"],
+    "specifications": {
+      "power": "30KW",
+      "input": "400VAC±10%, 50/60Hz, 3-phase (CCS2/GB/T) / 480VAC (CCS1/NACS)",
+      "outputVoltage": "150-1000VDC",
+      "outputCurrent": "0-100A",
+      "powerFactor": "≥0.98",
+      "efficiency": ">95%",
+      "connector": "CCS2 / CCS1 / NACS / GB/T, 5M cable",
+      "communication": "ISO15118 / DIN70121 / Ethernet / 4G / OCPP 1.6J (TLS1.2)",
+      "display": "7\" LCD touch screen",
+      "protection": "IP54",
+      "rcd": "Type A",
+      "energyMeter": "CE certified",
+      "operatingTemp": "-20°C to +50°C",
+      "noise": "<55dB",
+      "dimensions": "620×410×205mm",
+      "weight": "41Kg",
+      "installation": "Wall mount / Pedestal mount",
+      "cooling": "Air cooled",
+      "warranty": "2 years"
+    },
+    "variants": [
+      { "name": "CCS2", "sku": "YLEV30K-D1-CCS2" },
+      { "name": "CCS1", "sku": "YLEV30K-D1-CCS1" },
+      { "name": "NACS", "sku": "YLEV30K-D1-NACS" },
+      { "name": "GB/T", "sku": "YLEV30K-D1-GBT" }
+    ],
+    "certifications": ["CE", "IEC 61851-1", "IEC 61851-23", "UL 2202", "UL 2594"],
+    "status": "active"
+  },
+  {
+    "slug": "mini-dc-40kw",
+    "sku": "YLEV40K-D2",
+    "name": { "en": "MINI DC Fast Charger 40KW", "zh": "迷你直流快充 40KW" },
+    "category": "dc-charger",
+    "description": {
+      "en": "Compact 40KW DC fast charger with 7-inch touch screen. CCS2/CCS1/NACS/GB/T compatible, OCPP 1.6J enabled.",
+      "zh": "紧凑型40KW直流快充，7英寸触摸屏。兼容CCS2/CCS1/NACS/GB/T，支持OCPP 1.6J。"
+    },
+    "features": ["7-inch touch screen LCD", "CCS2/CCS1/NACS/GB/T support", "OCPP 1.6J with TLS1.2", "ISO15118 / DIN70121", "IP54 indoor/outdoor"],
+    "images": ["/images/products/dc-charger.jpg"],
+    "specifications": {
+      "power": "40KW",
+      "input": "400VAC±10%, 50/60Hz, 3-phase (CCS2/GB/T) | 480VAC (CCS1/NACS)",
+      "outputVoltage": "150~1000VDC",
+      "outputCurrent": "0-133A",
+      "efficiency": ">95%",
+      "communication": "ISO15118/DIN70121 + Ethernet/4G/OCPP 1.6J",
+      "protection": "IP54",
+      "operatingTemp": "-20°C to +50°C",
+      "dimensions": "660×465×330mm",
+      "weight": "72Kg",
+      "certificate": "EN/IEC 61851-1:2019, EN/IEC 61851-23:2014, UL 2202, UL 2594"
+    },
+    "variants": [],
+    "certifications": ["CE", "UL 2202", "UL 2594", "IEC 61851"],
+    "status": "active"
+  },
+  {
+    "slug": "mini-dc-60kw",
+    "sku": "YLEV60K-D3",
+    "name": { "en": "MINI DC 60KW", "zh": "迷你直流快充 60KW" },
+    "category": "dc-charger",
+    "description": {
+      "en": "Powerful 60KW compact DC charger with 200A output. 7\" touch screen, ISO15118, OCPP 1.6J. Ideal for retail and fleet locations.",
+      "zh": "强劲60KW紧凑型直流快充，200A输出。7寸触摸屏，ISO15118，OCPP 1.6J。适合零售和车队充电场景。"
+    },
+    "features": [
+      "CCS2 / CCS1 / NACS / GB/T connectors",
+      "7\" LCD touch screen + RFID + APP",
+      "ISO15118 / DIN70121 Plug&Charge",
+      "OCPP 1.6J (TLS1.2) + Ethernet/4G",
+      "200A maximum output current",
+      "Credit card payment optional"
+    ],
+    "images": ["/images/products/dc-charger.jpg"],
+    "specifications": {
+      "power": "60KW",
+      "input": "400VAC±10%, 50/60Hz, 3-phase (CCS2/GB/T) / 480VAC (CCS1/NACS)",
+      "outputVoltage": "150-1000VDC",
+      "outputCurrent": "0-200A",
+      "powerFactor": "≥0.98",
+      "efficiency": ">95%",
+      "connector": "CCS2 / CCS1 / NACS / GB/T, 5M cable",
+      "communication": "ISO15118 / DIN70121 / Ethernet / 4G / OCPP 1.6J (TLS1.2)",
+      "display": "7\" LCD touch screen",
+      "protection": "IP54",
+      "rcd": "Type A",
+      "energyMeter": "CE certified",
+      "operatingTemp": "-20°C to +50°C",
+      "noise": "<55dB",
+      "dimensions": "900×650×260mm",
+      "weight": "124Kg",
+      "installation": "Wall mount / Pedestal mount",
+      "cooling": "Air cooled",
+      "warranty": "2 years"
+    },
+    "variants": [
+      { "name": "CCS2", "sku": "YLEV60K-D3-CCS2" },
+      { "name": "CCS1", "sku": "YLEV60K-D3-CCS1" },
+      { "name": "NACS", "sku": "YLEV60K-D3-NACS" },
+      { "name": "GB/T", "sku": "YLEV60K-D3-GBT" }
+    ],
+    "certifications": ["CE", "IEC 61851-1", "IEC 61851-23", "UL 2202", "UL 2594"],
+    "status": "active"
+  },
+  {
+    "slug": "mini-dc-80kw",
+    "sku": "YLEV60K-D4",
+    "name": { "en": "MINI DC Fast Charger 80KW", "zh": "迷你直流快充 80KW" },
+    "category": "dc-charger",
+    "description": {
+      "en": "High-power compact DC charger with 80KW output and 250A max current. Versatile for retail, workplace, and fleet applications.",
+      "zh": "大功率紧凑型直流充电桩，80KW输出，最大250A电流。适用于零售、办公和车队场景。"
+    },
+    "features": ["7-inch touch screen LCD", "CCS2/CCS1/NACS/GB/T support", "80KW with 250A output", "OCPP 1.6J with TLS1.2", "IP54 indoor/outdoor"],
+    "images": ["/images/products/dc-charger.jpg"],
+    "specifications": {
+      "power": "80KW",
+      "input": "400VAC±10%, 50/60Hz, 3-phase",
+      "outputVoltage": "150~1000VDC",
+      "outputCurrent": "0-250A",
+      "efficiency": ">95%",
+      "communication": "ISO15118/DIN70121 + Ethernet/4G/OCPP 1.6J",
+      "protection": "IP54",
+      "operatingTemp": "-20°C to +50°C",
+      "dimensions": "900×650×260mm",
+      "weight": "124Kg",
+      "certificate": "EN/IEC 61851-1:2019, EN/IEC 61851-23:2014, UL 2202, UL 2594"
+    },
+    "variants": [],
+    "certifications": ["CE", "UL 2202", "UL 2594", "IEC 61851"],
+    "status": "active"
+  },
+  {
+    "slug": "mobile-dc-30kw",
+    "sku": "YLEV30K-M2",
+    "name": { "en": "Mobile DC 30KW", "zh": "移动式直流快充 30KW" },
+    "category": "dc-charger",
+    "description": {
+      "en": "Lightweight mobile DC charger with trolley. Plug-and-charge simplicity — just plug in and charging starts automatically.",
+      "zh": "轻量化移动式直流快充，配备推车。即插即充——插入即自动启动充电。"
+    },
+    "features": [
+      "Lightweight design with trolley",
+      "Plug-and-charge: auto start on plug-in",
+      "CCS2 / CCS1 / NACS / GB/T",
+      "7\" LCD touch screen + RFID + APP",
+      "OCPP 1.6J + Ethernet/4G",
+      "Easy to move between locations"
+    ],
+    "images": ["/images/products/dc-charger.jpg"],
+    "specifications": {
+      "power": "30KW",
+      "input": "400VAC±10%, 50/60Hz, 3-phase (CCS2/GB/T) / 480VAC (CCS1/NACS)",
+      "outputVoltage": "150-1000VDC",
+      "outputCurrent": "0-100A",
+      "powerFactor": "≥0.98",
+      "efficiency": ">95%",
+      "connector": "CCS2 / CCS1 / NACS / GB/T, 5M cable",
+      "communication": "ISO15118 / DIN70121 / Ethernet / 4G / OCPP 1.6J (TLS1.2)",
+      "display": "7\" LCD touch screen",
+      "protection": "IP54",
+      "rcd": "Type A",
+      "energyMeter": "CE certified",
+      "operatingTemp": "-20°C to +50°C",
+      "noise": "<55dB",
+      "dimensions": "620×410×205mm (charger) + trolley",
+      "weight": "41Kg (charger) + 25Kg (trolley)",
+      "installation": "Mobile trolley",
+      "cooling": "Air cooled",
+      "warranty": "2 years"
+    },
+    "variants": [
+      { "name": "CCS2", "sku": "YLEV30K-M2-CCS2" },
+      { "name": "CCS1+NACS", "sku": "YLEV30K-M2-NACS" }
+    ],
+    "certifications": ["CE", "IEC 61851-1", "IEC 61851-23", "UL 2202", "UL 2594"],
+    "status": "active"
+  },
+  {
+    "slug": "mobile-dc-40kw",
+    "sku": "YLEV40K-M4",
+    "name": { "en": "Mobile DC Charger 40KW", "zh": "移动直流充电桩 40KW" },
+    "category": "dc-charger",
+    "description": {
+      "en": "Higher-power mobile DC charger with 40KW output and trolley. Plug-and-charge for flexible deployment.",
+      "zh": "大功率移动直流充电桩，40KW输出配移动推车。即插即充，灵活部署。"
+    },
+    "features": ["Lightweight and mobile with trolley", "Plug-and-charge automatic start", "CCS2/CCS1/NACS/GB/T", "7-inch touch screen", "OCPP 1.6J enabled"],
+    "images": ["/images/products/dc-charger.jpg"],
+    "specifications": {
+      "power": "40KW",
+      "outputVoltage": "150~1000VDC",
+      "outputCurrent": "0-133A",
+      "efficiency": ">95%",
+      "communication": "ISO15118/DIN70121 + Ethernet/4G/OCPP 1.6J",
+      "protection": "IP54",
+      "dimensions": "620×410×205mm (charger) + trolley",
+      "weight": "55Kg + 25Kg (trolley)",
+      "certificate": "EN/IEC 61851-1:2019, EN/IEC 61851-23:2014"
+    },
+    "variants": [],
+    "certifications": ["CE", "UL 2202", "IEC 61851"],
+    "status": "active"
+  },
+  {
+    "slug": "dc-advertising-pedestal-120kw",
+    "sku": "YLEV120K-D5-AD",
+    "name": { "en": "DC Advertising Pedestal 120KW", "zh": "直流广告立柱充电桩 120KW" },
+    "category": "dc-charger",
+    "description": {
+      "en": "120KW DC fast charger with 55\" advertising display (3480×2160). Dual CCS2 output, remote AD management. Revenue from charging + advertising.",
+      "zh": "120KW直流快充，55寸广告屏（3480×2160）。双CCS2输出，远程广告管理。充电+广告双重收益。"
+    },
+    "features": [
+      "55\" LCD display, 3480×2160, 2500cd/m²",
+      "Remote AD content update via network",
+      "Dual CCS2 output, 120KW total",
+      "OCPP 1.6J + Ethernet/4G",
+      "7\" touch screen + RFID + APP",
+      "Android-based AD platform"
+    ],
+    "images": ["/images/products/dc-charger.jpg"],
+    "specifications": {
+      "power": "120KW",
+      "input": "400VAC±10%, 50/60Hz, 3-phase",
+      "outputVoltage": "250-1000VDC",
+      "outputCurrent": "0-250A",
+      "powerFactor": "≥0.98",
+      "efficiency": ">95%",
+      "connector": "CCS2 ×2, 5M cable",
+      "display": "55\" IPS LCD, 3480×2160, 16:9, 2500cd/m²",
+      "displayPlatform": "Android Quad-core, 2GB RAM, 8GB storage",
+      "adUpdate": "Network remote / USB / SD card",
+      "communication": "Ethernet / 4G / WiFi / OCPP 1.6J",
+      "userInterface": "7\" LCD touch screen + RFID + APP",
+      "protection": "IP55 (outdoor)",
+      "rcd": "Type A / Type B optional",
+      "energyMeter": "CE certified / PTB optional",
+      "operatingTemp": "-30°C to +55°C",
+      "dimensions": "2310×1170×650mm",
+      "weight": "280Kg",
+      "cooling": "Natural cooling",
+      "warranty": "3 years"
+    },
+    "variants": [],
+    "certifications": ["CE", "IEC 61851-1", "IEC 61851-23"],
+    "status": "active"
+  },
+  {
+    "slug": "super-dc-120kw",
+    "sku": "YLEV120K-D5",
+    "name": { "en": "Super DC 120KW", "zh": "超级直流快充 120KW" },
+    "category": "dc-charger",
+    "description": {
+      "en": "Dual-output 120KW Super DC charger with PTB certified meter. Constant power 150-1000V, OCPP 1.6J, Plug&Charge DIN70121 ready.",
+      "zh": "双输出120KW超级直流快充，PTB认证电表。恒功率150-1000V，OCPP 1.6J，DIN70121即插即充。"
+    },
+    "features": [
+      "Dual output simultaneous charging",
+      "PTB certified energy meter",
+      "CCS2 / CCS1 / NACS / GB/T",
+      "DIN70121 Plug&Charge ready",
+      "OCPP 1.6J + Ethernet/4G",
+      "IP54 with IP65 optional"
+    ],
+    "images": ["/images/products/dc-charger.jpg"],
+    "specifications": {
+      "power": "120KW",
+      "input": "400VAC±10%, 50/60Hz, 3-phase (CCS2/GB/T) / 480VAC (CCS1/NACS)",
+      "outputVoltage": "150-1000VDC",
+      "outputCurrent": "0-250A (0-300A optional)",
+      "powerFactor": "≥0.98",
+      "efficiency": ">95%",
+      "connector": "CCS2 / CCS1 / NACS / GB/T, 5M cable",
+      "communication": "ISO15118 / DIN70121 / Ethernet / 4G / OCPP 1.6J",
+      "display": "7\" LCD touch screen",
+      "protection": "IP54 (IP65 optional)",
+      "rcd": "Type A",
+      "energyMeter": "CE certified / PTB optional",
+      "operatingTemp": "-20°C to +50°C",
+      "noise": "<70dB",
+      "dimensions": "750×570×1750mm",
+      "weight": "Approx. 200Kg",
+      "installation": "Floor-stand",
+      "cooling": "Air cooled",
+      "warranty": "2 years"
+    },
+    "variants": [
+      { "name": "CCS2 Dual", "sku": "YLEV120K-D5-CCS2" },
+      { "name": "CCS1 Dual", "sku": "YLEV120K-D5-CCS1" },
+      { "name": "CCS2+NACS", "sku": "YLEV120K-D5-MIX" }
+    ],
+    "certifications": ["CE", "IEC 61851-1", "IEC 61851-23", "UL 2202", "UL 2594"],
+    "status": "active"
+  },
+  {
+    "slug": "super-dc-150kw",
+    "sku": "YLEV150K-D6",
+    "name": { "en": "Super DC Charger 150KW", "zh": "超级直流充电桩 150KW" },
+    "category": "dc-charger",
+    "description": {
+      "en": "Dual-output 150KW DC charger with PTB meter option. Constant power 150-1000V, OCPP 1.6J, air cooled design.",
+      "zh": "双输出150KW直流充电桩，可选PTB认证计量。150-1000V恒功率，OCPP 1.6J，风冷设计。"
+    },
+    "features": ["Dual output simultaneous charging", "150KW high power", "PTB certified meter optional", "OCPP 1.6J + ISO15118", "Air cooled, IP54"],
+    "images": ["/images/products/dc-charger.jpg"],
+    "specifications": {
+      "power": "150KW",
+      "input": "400VAC±10%, 50/60Hz, 3-phase",
+      "outputVoltage": "150~1000VDC",
+      "outputCurrent": "0-250A (0-300A optional)",
+      "efficiency": ">95%",
+      "cooling": "Air cooled",
+      "protection": "IP54",
+      "dimensions": "750×570×1750mm",
+      "certificate": "EN/IEC 61851-1, EN/IEC 61851-23, UL 2202"
+    },
+    "variants": [],
+    "certifications": ["CE", "UL 2202", "PTB", "IEC 61851"],
+    "status": "active"
+  },
+  {
+    "slug": "super-dc-180kw",
+    "sku": "YLEV180K-D7",
+    "name": { "en": "Super DC Charger 180KW", "zh": "超级直流充电桩 180KW" },
+    "category": "dc-charger",
+    "description": {
+      "en": "Dual-output 180KW DC charger. Ideal balance of power and cost for commercial charging stations.",
+      "zh": "双输出180KW直流充电桩。商业充电站功率与成本的理想平衡。"
+    },
+    "features": ["Dual output simultaneous charging", "180KW optimal power", "PTB certified meter optional", "OCPP 1.6J + ISO15118", "Air cooled, IP54"],
+    "images": ["/images/products/dc-charger.jpg"],
+    "specifications": {
+      "power": "180KW",
+      "input": "400VAC±10%, 50/60Hz, 3-phase",
+      "outputVoltage": "150~1000VDC",
+      "outputCurrent": "0-250A (0-300A optional)",
+      "efficiency": ">95%",
+      "cooling": "Air cooled",
+      "protection": "IP54",
+      "dimensions": "750×570×1750mm",
+      "certificate": "EN/IEC 61851-1, EN/IEC 61851-23, UL 2202"
+    },
+    "variants": [],
+    "certifications": ["CE", "UL 2202", "PTB", "IEC 61851"],
+    "status": "active"
+  },
+  {
+    "slug": "super-dc-240kw",
+    "sku": "YLEV240K-D8",
+    "name": { "en": "Super DC 240KW", "zh": "超级直流快充 240KW" },
+    "category": "dc-charger",
+    "description": {
+      "en": "High-power 240KW dual-output DC charger with air cooling. Constant power 150-1000V, suitable for highway and high-traffic stations.",
+      "zh": "大功率240KW双输出直流快充，风冷散热。恒功率150-1000V，适用于高速公路和高流量站点。"
+    },
+    "features": [
+      "Dual output up to 240KW total",
+      "CCS2 / CCS1 / NACS / GB/T",
+      "ISO15118 / DIN70121 Plug&Charge",
+      "OCPP 1.6J + Ethernet/4G",
+      "PTB certified energy meter",
+      "Air cooled, IP54 (IP65 optional)"
+    ],
+    "images": ["/images/products/dc-charger.jpg"],
+    "specifications": {
+      "power": "240KW",
+      "input": "400VAC±10%, 50/60Hz, 3-phase (CCS2/GB/T) / 480VAC (CCS1/NACS)",
+      "outputVoltage": "150-1000VDC",
+      "outputCurrent": "0-250A (0-300A optional)",
+      "powerFactor": "≥0.98",
+      "efficiency": ">95%",
+      "connector": "CCS2 / CCS1 / NACS / GB/T, 5M cable",
+      "communication": "ISO15118 / DIN70121 / Ethernet / 4G / OCPP 1.6J",
+      "display": "7\" LCD touch screen",
+      "protection": "IP54 (IP65 optional)",
+      "rcd": "Type A",
+      "energyMeter": "CE certified",
+      "operatingTemp": "-20°C to +50°C",
+      "noise": "<70dB",
+      "dimensions": "750×570×1750mm",
+      "weight": "Approx. 220Kg",
+      "installation": "Floor-stand",
+      "cooling": "Air cooled",
+      "warranty": "2 years"
+    },
+    "variants": [
+      { "name": "CCS2 Dual", "sku": "YLEV240K-D8-CCS2" },
+      { "name": "CCS1 Dual", "sku": "YLEV240K-D8-CCS1" },
+      { "name": "CCS2+NACS", "sku": "YLEV240K-D8-MIX" }
+    ],
+    "certifications": ["CE", "IEC 61851-1", "IEC 61851-23", "UL 2202", "UL 2594"],
+    "status": "active"
+  },
+  {
+    "slug": "super-dc-300kw",
+    "sku": "YLEV300K-D9",
+    "name": { "en": "Super DC Charger 300KW", "zh": "超级直流充电桩 300KW" },
+    "category": "dc-charger",
+    "description": {
+      "en": "High-power 300KW DC charger with dual output. DIN70121 Plug&Charge ready for highway and fleet charging.",
+      "zh": "大功率300KW直流充电桩，双输出。支持DIN70121即插即充，适用于高速公路和车队充电。"
+    },
+    "features": ["300KW high power", "DIN70121 Plug&Charge", "Dual output simultaneous", "Constant power 150~1000V", "Air cooled, IP54"],
+    "images": ["/images/products/dc-charger.jpg"],
+    "specifications": {
+      "power": "300KW",
+      "outputVoltage": "150~1000VDC",
+      "outputCurrent": "0-250A (0-350A optional)",
+      "efficiency": ">95%",
+      "cooling": "Air cooled",
+      "protection": "IP54",
+      "dimensions": "750×770×1850mm",
+      "certificate": "EN/IEC 61851-1, EN/IEC 61851-23, UL 2202"
+    },
+    "variants": [],
+    "certifications": ["CE", "UL 2202", "PTB", "IEC 61851"],
+    "status": "active"
+  },
+  {
+    "slug": "super-dc-360kw",
+    "sku": "YLEV300K-D10",
+    "name": { "en": "Super DC 360KW", "zh": "超级直流快充 360KW" },
+    "category": "dc-charger",
+    "description": {
+      "en": "Ultra-high-power 360KW DC charger with DIN70121 Plug&Charge. Dual output for simultaneous fast charging at highway stations.",
+      "zh": "超大功率360KW直流快充，DIN70121即插即充。双输出同时快充，适用于高速公路充电站。"
+    },
+    "features": [
+      "Up to 360KW total power",
+      "DIN70121 Plug&Charge ready",
+      "CCS2 / CCS1 / NACS / GB/T",
+      "ISO15118 / OCPP 1.6J",
+      "PTB certified energy meter",
+      "Dual output simultaneous charging"
+    ],
+    "images": ["/images/products/dc-charger.jpg"],
+    "specifications": {
+      "power": "360KW",
+      "input": "400VAC±10%, 50/60Hz, 3-phase (CCS2/GB/T) / 480VAC (CCS1/NACS)",
+      "outputVoltage": "150-1000VDC",
+      "outputCurrent": "0-250A (0-350A optional)",
+      "powerFactor": "≥0.98",
+      "efficiency": ">95%",
+      "connector": "CCS2 / CCS1 / NACS / GB/T, 5M cable",
+      "communication": "ISO15118 / DIN70121 / Ethernet / 4G / OCPP 1.6J",
+      "display": "7\" LCD touch screen",
+      "protection": "IP54 (IP65 optional)",
+      "rcd": "Type A",
+      "energyMeter": "CE certified",
+      "operatingTemp": "-20°C to +50°C",
+      "noise": "<70dB",
+      "dimensions": "750×770×1850mm",
+      "weight": "Approx. 250Kg",
+      "installation": "Floor-stand",
+      "cooling": "Air cooled",
+      "warranty": "2 years"
+    },
+    "variants": [
+      { "name": "CCS2 Dual", "sku": "YLEV300K-D10-CCS2" },
+      { "name": "CCS1 Dual", "sku": "YLEV300K-D10-CCS1" }
+    ],
+    "certifications": ["CE", "IEC 61851-1", "IEC 61851-23", "UL 2202", "UL 2594"],
+    "status": "active"
+  },
+  {
+    "slug": "3-in-1-ac-dc-60kw",
+    "sku": "YLEV60K-D7",
+    "name": { "en": "3-IN-1 AC+DC 60KW", "zh": "三合一交直流充电桩 60KW" },
+    "category": "dc-charger",
+    "description": {
+      "en": "Versatile 3-in-1 charger: AC Type2 22KW + CCS2 60KW DC + CHAdeMO 60KW DC. Three outputs serve all EV standards simultaneously.",
+      "zh": "多功能三合一充电桩：AC Type2 22KW + CCS2 60KW直流 + CHAdeMO 60KW直流。三输出兼容所有标准。"
+    },
+    "features": [
+      "3-in-1: AC + CCS2 DC + CHAdeMO DC",
+      "AC Type 2 output up to 22KW",
+      "DC CCS2 output up to 60KW",
+      "DC CHAdeMO output up to 60KW",
+      "MID AC meter + PTB DC meter optional",
+      "ISO15118 Plug&Charge ready"
+    ],
+    "images": ["/images/products/dc-charger.jpg"],
+    "specifications": {
+      "power": "60KW (max input)",
+      "input": "400VAC±10%, 50/60Hz, 3-phase",
+      "acOutput": "Type 2, 400V±10%, 0-32A, 22KW max",
+      "dcOutputCCS2": "250-1000VDC, 0-120A, 60KW max",
+      "dcOutputCHAdeMO": "200-500VDC, 0-120A, 60KW max",
+      "powerFactor": "≥0.98",
+      "efficiency": ">95% (DC) / >99% (AC)",
+      "connector": "Type 2 5M + CCS2 5M + CHAdeMO 5M",
+      "communication": "Ethernet / 4G / WiFi / OCPP 1.6J",
+      "display": "7\" LCD touch screen",
+      "protection": "IP54 (IP65 optional)",
+      "rcd": "Type A / Type B optional",
+      "energyMeter": "MID certified (AC) / CE or PTB certified (DC)",
+      "operatingTemp": "-20°C to +50°C",
+      "noise": "<70dB",
+      "dimensions": "750×770×1900mm",
+      "weight": "Approx. 260Kg",
+      "installation": "Floor-stand",
+      "cooling": "Air cooled",
+      "warranty": "2 years"
+    },
+    "variants": [],
+    "certifications": ["CE", "IEC 61851-1", "IEC 61851-23", "CHAdeMO 1.0"],
+    "status": "active"
+  },
+  {
+    "slug": "split-dc-480kw",
+    "sku": "YLEV480K-D11",
+    "name": { "en": "Split Type 480KW", "zh": "分体式直流快充 480KW" },
+    "category": "dc-charger",
+    "description": {
+      "en": "Split-design 480KW DC system with up to 8 outputs. Flexible power distribution, liquid cooling 500A optional. For ultra-fast charging hubs.",
+      "zh": "分体式480KW直流快充系统，最多8路输出。灵活功率分配，液冷500A可选。适用于超级快充站。"
+    },
+    "features": [
+      "Split design: power cabinet + dispensers",
+      "Up to 8 outputs with smart power sharing",
+      "Liquid cooling 500A optional",
+      "ISO15118 / DIN70121 Plug&Charge",
+      "OCPP 1.6J (TLS1.2)",
+      "CCS2 / CCS1 / NACS / GB/T / CHAdeMO"
+    ],
+    "images": ["/images/products/dc-charger.jpg"],
+    "specifications": {
+      "power": "480KW",
+      "input": "400VAC±10%, 50/60Hz, 3-phase / 480VAC (CCS1/NACS)",
+      "maxInputCurrent": "2×384A",
+      "outputVoltage": "150-1000VDC",
+      "outputCurrent": "1600A@300V, 960A@500V, 480A@1000V",
+      "outputModes": "Up to 8 outputs",
+      "powerFactor": "≥0.99",
+      "efficiency": ">95%",
+      "connector": "CCS2 / CCS1 / NACS / GB/T, 5M cable",
+      "liquidCooling": "500A optional",
+      "communication": "ISO15118 / DIN70121 / Ethernet / 4G / OCPP 1.6J (TLS1.2)",
+      "display": "7\" color touch LCD + LED + emergency stop",
+      "protection": "IP54 (cabinet) / IP55 (dispenser)",
+      "energyMeter": "CE certified",
+      "operatingTemp": "-30°C to +70°C",
+      "noise": "<70dB",
+      "cabinetDimensions": "1000×2000×800mm",
+      "cabinetWeight": "450Kg (excl. modules)",
+      "terminalDimensions": "500×1750×260mm (conventional) / 500×1750×350mm (liquid cooled)",
+      "terminalWeight": "155Kg (conventional) / 190Kg (liquid cooled)",
+      "cooling": "Air cooled / Liquid cooling optional",
+      "warranty": "2 years"
+    },
+    "variants": [
+      { "name": "Air Cooled 250A", "sku": "YLEV480K-D11-AC" },
+      { "name": "Liquid Cooled 500A", "sku": "YLEV480K-D11-LC" }
+    ],
+    "certifications": ["CE", "IEC 61851-1", "IEC 61851-23", "UL 2202", "UL 2594"],
+    "status": "active"
+  },
+  {
+    "slug": "split-dc-600kw",
+    "sku": "YLEV600K-D12",
+    "name": { "en": "Split Type HP Fast DC 600KW", "zh": "分体式超充 600KW" },
+    "category": "dc-charger",
+    "description": {
+      "en": "Mid-tier split DC charging system with 600KW capacity. Supports both conventional (250A) and liquid-cooled (600A) charging terminals.",
+      "zh": "中档分体式直流充电系统，600KW容量。支持常规（250A）和液冷（600A）充电终端。"
+    },
+    "features": ["Split design: Power cabinet + Terminals", "Up to 8 outputs", "Liquid cooling 600A optional", "Intelligent power distribution", "Remote diagnosis & OTA"],
+    "images": ["/images/products/dc-charger.jpg"],
+    "specifications": {
+      "power": "600KW",
+      "input": "400VAC/480VAC±10%, 3-phase",
+      "outputVoltage": "150~1000VDC",
+      "maxInputCurrent": "2×480A",
+      "conventionalTerminal": "180KW, 250A max",
+      "liquidCoolingTerminal": "600KW, 600A max (optional)",
+      "outputs": "Up to 8",
+      "powerCabinetSize": "1000×2000×800mm, 450Kg",
+      "terminalSize": "500×1750×260mm, 155Kg (conventional) / 500×1750×350mm, 190Kg (liquid cooling)",
+      "protection": "IP54",
+      "operatingTemp": "-30°C to +70°C"
+    },
+    "variants": [],
+    "certifications": ["CE", "UL 2202", "IEC 61851"],
+    "status": "active"
+  },
+  {
+    "slug": "split-dc-720kw",
+    "sku": "YLEV720K-D13",
+    "name": { "en": "Split Type 720KW", "zh": "分体式直流快充 720KW" },
+    "category": "dc-charger",
+    "description": {
+      "en": "Flagship 720KW split DC system with liquid cooling 600A. Operates -30°C to +70°C. Maximum power for ultra-fast charging infrastructure.",
+      "zh": "旗舰720KW分体式直流快充系统，液冷600A。工作温度-30°C至+70°C。超级快充基础设施的最大功率解决方案。"
+    },
+    "features": [
+      "720KW maximum power output",
+      "Liquid cooling up to 600A",
+      "Operating temperature: -30°C to +70°C",
+      "Up to 8 outputs with smart power sharing",
+      "ISO15118 / DIN70121 Plug&Charge",
+      "Remote control, diagnosis, and OTA upgrades"
+    ],
+    "images": ["/images/products/dc-charger.jpg"],
+    "specifications": {
+      "power": "720KW",
+      "input": "400VAC±10%, 50/60Hz, 3-phase / 480VAC (CCS1/NACS)",
+      "maxInputCurrent": "2×576A",
+      "outputVoltage": "150-1000VDC",
+      "outputCurrent": "1600A@300V, 960A@500V, 480A@1000V (cabinet total)",
+      "outputModes": "Up to 8 outputs",
+      "liquidCoolingMax": "600A per terminal",
+      "powerFactor": "≥0.99",
+      "efficiency": ">95%",
+      "connector": "CCS2 / CCS1 / NACS / GB/T, 5M cable",
+      "communication": "ISO15118 / DIN70121 / Ethernet / 4G / OCPP 1.6J (TLS1.2)",
+      "display": "7\" color touch LCD + LED + emergency stop",
+      "protection": "IP54 (cabinet) / IP55 (dispenser)",
+      "energyMeter": "CE certified",
+      "operatingTemp": "-30°C to +70°C",
+      "noise": "<70dB",
+      "cabinetDimensions": "1000×2000×800mm",
+      "cabinetWeight": "450Kg (excl. modules)",
+      "terminalDimensions": "500×1750×350mm (liquid cooled)",
+      "terminalWeight": "190Kg (liquid cooled)",
+      "cooling": "Liquid cooling",
+      "warranty": "2 years"
+    },
+    "variants": [
+      { "name": "Liquid Cooled 600A", "sku": "YLEV720K-D13-LC" }
+    ],
+    "certifications": ["CE", "IEC 61851-1", "IEC 61851-23", "UL 2202", "UL 2594"],
+    "status": "active"
+  },
+  {
+    "slug": "energy-storage-480kw",
+    "sku": "YLIES480-K14",
+    "name": { "en": "Energy Storage 480KW", "zh": "储充一体化系统 480KW" },
+    "category": "energy-storage",
+    "description": {
+      "en": "Integrated 480KW energy storage + charging system with 215KWh battery. V2G capable, solar MPPT, and cloud-based EMS for smart energy management.",
+      "zh": "集成式480KW储充一体化系统，215KWh电池组。支持V2G、光伏MPPT、云端EMS智能能源管理。"
+    },
+    "features": [
+      "480KW total charging power",
+      "215KWh battery energy storage",
+      "V2G: EV-to-grid feedback up to 176KW",
+      "Solar MPPT integration",
+      "Cloud-based EMS remote management",
+      "Up to 4 battery packs expandable"
+    ],
+    "images": ["/images/products/energy-storage.jpg"],
+    "specifications": {
+      "maxChargingPower": "480KW",
+      "acInputVoltage": "260-530VAC, 45-65Hz, 3-phase + N + PE",
+      "acMaxInputCurrent": "645A",
+      "batteryChargingFromGrid": "120KW max",
+      "batteryToEV": "240KW max (4 channels)",
+      "batteryToGrid": "88KW max (optional)",
+      "evToGrid": "176KW max (V2G optional)",
+      "evChargingPoints": "4 points within 2 dispensers",
+      "batteryCapacity": "215KWh (YLIBS215-B14)",
+      "batteryVoltage": "627-806V",
+      "batteryDischargeRatio": "0.5C continuous, 1C 10min burst",
+      "maxBatteryGroups": "4 groups expandable",
+      "fireProtection": "Temperature-activated + fire probe + air pressure sensor",
+      "batteryProtection": "IP65",
+      "dispenserCable": "CCS1 200/300A, CCS2 200/250A, CHAdeMO 125A, GB/T 250A",
+      "liquidCooling": "500A CCS1/CCS2/GB/T optional",
+      "powerCubeDimensions": "1000×2000×800mm",
+      "powerCubeWeight": "450Kg",
+      "batteryDimensions": "1200×2200×1200mm",
+      "batteryWeight": "1600Kg",
+      "dispenserDimensions": "500×1750×350mm",
+      "dispenserWeight": "160Kg"
+    },
+    "variants": [
+      { "name": "Standard", "sku": "YLIES480-K14-STD" },
+      { "name": "With V2G", "sku": "YLIES480-K14-V2G" }
+    ],
+    "certifications": ["CE", "IEC 61851-1", "IEC 61851-23"],
+    "status": "active"
+  },
+  {
+    "slug": "home-storage-10kwh",
+    "sku": "YLEN10K-E1",
+    "name": { "en": "Home Storage 10KWh", "zh": "家用储能系统 10KWh" },
+    "category": "energy-storage",
+    "description": {
+      "en": "Wall-mounted 10KWh home energy storage with 8KW inverter. Solar MPPT, APP controlled, 10-year warranty. Scalable with Panel+ units.",
+      "zh": "壁挂式10KWh家用储能系统，8KW逆变器。光伏MPPT，APP控制，10年质保。可通过Panel+扩展。"
+    },
+    "features": [
+      "Wall-mount sleek design with LED lighting",
+      "8KW hybrid inverter with MPPT",
+      "Solar PV input: 100-500V, dual MPPT",
+      "APP controlled energy management",
+      "Scalable with supplemental Panel+ units",
+      "10-year / 10,000 cycle warranty"
+    ],
+    "images": ["/images/products/energy-storage.jpg"],
+    "specifications": {
+      "batteryCapacity": "10KWh",
+      "inverterPower": "8KW (on-grid) / 7KW (off-grid)",
+      "pvInput": "100-500V, 22A×2 dual MPPT",
+      "mpptRange": "125-425V",
+      "pvEfficiency": ">97%",
+      "acOutput": "50/60Hz, 120/240VAC (split phase) / 208VAC (2/3 phase) / 230VAC (single phase)",
+      "acOutputCurrent": "35A",
+      "maxACCurrent": "38.5A (charge/discharge)",
+      "batteryType": "Lithium-ion",
+      "batteryVoltage": "40-60V",
+      "maxBatteryCurrent": "190A",
+      "transferSwitch": "Automatic, integrated",
+      "communication": "Ethernet / WiFi / Bluetooth / RS485 / CAN",
+      "display": "LCD + LED + APP",
+      "protection": "IP54",
+      "operatingTemp": "-20°C to +50°C",
+      "noise": "<55dB",
+      "dimensions": "1600×550×400mm",
+      "weight": "125Kg",
+      "installation": "Wall-mount",
+      "warranty": "10 years / 10,000 cycles"
+    },
+    "variants": [
+      { "name": "5KWh / 5KW", "sku": "YLEN5K-E1" },
+      { "name": "10KWh / 8KW", "sku": "YLEN10K-E1" },
+      { "name": "15KWh / 8KW", "sku": "YLEN15K-E1" },
+      { "name": "20KWh / 8KW", "sku": "YLEN20K-E1" }
+    ],
+    "certifications": ["UL 1741", "IEEE 1547", "IEC 62109-1", "IEC 62109-2", "FCC Part 15 Class B"],
+    "status": "active"
+  }
+]

@@ -1,0 +1,121 @@
+{
+  "common": {
+    "viewAll": "查看全部",
+    "contactUs": "联系我们",
+    "getQuote": "获取报价",
+    "learnMore": "了解更多",
+    "sendInquiry": "发送询盘",
+    "downloadCatalog": "下载画册",
+    "backToProducts": "返回产品列表",
+    "allCategories": "全部分类",
+    "specifications": "技术参数",
+    "features": "产品特性",
+    "certifications": "认证资质"
+  },
+  "nav": {
+    "home": "首页",
+    "products": "产品中心",
+    "solutions": "解决方案",
+    "oemOdm": "OEM/ODM",
+    "certifications": "资质认证",
+    "cloudPlatform": "云平台",
+    "cases": "项目案例",
+    "about": "关于我们",
+    "contact": "联系我们"
+  },
+  "home": {
+    "heroTitle": "驱动电动出行的未来",
+    "heroSubtitle": "从3.5KW便携式到720KW分体式直流快充，全系列电动汽车充电解决方案。服务全球25+国家运营商。",
+    "heroCta": "探索产品",
+    "heroCtaSecondary": "获取报价",
+    "statsTitle": "行业信赖之选",
+    "categoriesTitle": "产品分类",
+    "categoriesSubtitle": "覆盖全场景的电动汽车充电解决方案",
+    "solutionsTitle": "充电解决方案",
+    "solutionsSubtitle": "面向家用、商用、公共场景的一站式充电方案",
+    "whyUsTitle": "为什么选择盈利科技",
+    "ctaTitle": "准备好开启您的充电业务了吗？",
+    "ctaSubtitle": "立即联系我们，获取ODM & OEM方案报价。24小时内快速响应。"
+  },
+  "products": {
+    "title": "产品中心",
+    "subtitle": "从便携式到超级快充的全系列充电站",
+    "filterBy": "按分类筛选",
+    "noResults": "未找到产品",
+    "viewDetails": "查看详情",
+    "relatedProducts": "相关产品",
+    "inquireNow": "立即询价"
+  },
+  "solutions": {
+    "title": "充电解决方案",
+    "subtitle": "覆盖全场景的电动汽车充电解决方案",
+    "homeTitle": "家庭充电",
+    "homeDesc": "智能壁挂式充电桩，支持APP控制、动态负载均衡，获得德国KfW和英国EVHS政府补贴认证。",
+    "commercialTitle": "商业充电",
+    "commercialDesc": "支持OCPP协议，MID认证计量，RFID认证和无现金支付，适用于停车场和工作场所。",
+    "publicTitle": "公共快充",
+    "publicDesc": "高达720KW的直流快充，分体式设计、液冷技术、智能功率分配，适用于高速公路和车队充电。"
+  },
+  "oem": {
+    "title": "OEM & ODM 服务",
+    "subtitle": "为您的品牌定制电动汽车充电解决方案",
+    "capability": "我们的能力",
+    "process": "合作流程",
+    "step1": "需求沟通",
+    "step2": "技术设计",
+    "step3": "样品生产",
+    "step4": "批量生产",
+    "step5": "质量检验",
+    "step6": "交付与支持"
+  },
+  "certs": {
+    "title": "认证与资质",
+    "subtitle": "值得信赖的全球认证产品",
+    "patents": "100+项专利",
+    "patentsDesc": "包括发明专利和计算机软件著作权",
+    "standards": "国际标准认证",
+    "subsidies": "政府补贴资质",
+    "subsidiesDesc": "获德国KfW补贴资格和英国EVHS认证"
+  },
+  "cloud": {
+    "title": "云平台与APP",
+    "subtitle": "智能充电管理触手可及",
+    "cmsTitle": "管理系统",
+    "cmsDesc": "充电运营商的中央管理系统。状态监控、充电记录、价格管理、固件升级、远程诊断和负载均衡。",
+    "appTitle": "移动APP",
+    "appDesc": "连接EV车主与充电站。位置搜索、充电监控和支付结算，一个APP全搞定。"
+  },
+  "about": {
+    "title": "关于盈利科技",
+    "subtitle": "自2017年起驱动电动出行",
+    "story": "成立于2017年，盈利科技（深圳市盈利科技有限公司）是电动汽车充电站和云管理系统的全套方案供应商。拥有顶尖研发团队和丰富的国际协议经验（OCPP 1.6J+），服务遍布全球25+国家。",
+    "innovation": "产品创新",
+    "innovationDesc": "模块化设计便于定制。每年升级产品并开发新技术（蓝牙Mesh、ISO15118、OCPP 1.6J+）。",
+    "capacity": "柔性生产",
+    "capacityDesc": "除自有工厂外，与专业代工厂合作，提供更灵活的产能和有竞争力的价格。",
+    "global": "全球覆盖",
+    "globalDesc": "产品出口至25+国家，包括挪威、意大利、英国、德国、韩国、瑞典、波兰、澳大利亚等。"
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "我们通常在24小时内回复",
+    "name": "姓名",
+    "email": "邮箱地址",
+    "company": "公司名称",
+    "country": "国家/地区",
+    "phone": "电话号码",
+    "product": "感兴趣的产品",
+    "quantity": "预估数量",
+    "message": "留言内容",
+    "submit": "发送询盘",
+    "success": "感谢您的询盘！我们将在24小时内回复。",
+    "info": "联系信息"
+  },
+  "footer": {
+    "tagline": "专业电动汽车充电站制造商。为全球市场提供ODM & OEM服务。",
+    "quickLinks": "快速链接",
+    "productCategories": "产品分类",
+    "contactUs": "联系我们",
+    "copyright": "© 2025 盈利科技 版权所有"
+  }
+}

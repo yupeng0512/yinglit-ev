@@ -1,0 +1,52 @@
+[
+  {
+    "slug": "portable-charger",
+    "name": { "en": "Portable EV Charger", "zh": "便携式充电器" },
+    "description": {
+      "en": "Compact and lightweight portable EV chargers for on-the-go charging. 3.5KW to 11KW power range.",
+      "zh": "紧凑轻便的便携式电动汽车充电器，随时随地充电。功率范围3.5KW至11KW。"
+    },
+    "icon": "plug-zap",
+    "order": 1
+  },
+  {
+    "slug": "home-ac-charger",
+    "name": { "en": "Home AC Charger", "zh": "家用交流充电桩" },
+    "description": {
+      "en": "Smart home wallbox chargers with APP control and Dynamic Load Balance. 7KW to 22KW for EU, 7.5KW to 12KW Level 2 for US market.",
+      "zh": "智能家用壁挂充电桩，APP控制和动态负载均衡。欧标7-22KW，美标Level 2 7.5-12KW。"
+    },
+    "icon": "home",
+    "order": 2
+  },
+  {
+    "slug": "commercial-ac-charger",
+    "name": { "en": "Commercial AC Charger", "zh": "商用交流充电桩" },
+    "description": {
+      "en": "OCPP-enabled commercial chargers with MID certified meters. Includes public wallbox, twin charger, pedestal, and advertising series.",
+      "zh": "支持OCPP的商用充电桩，MID认证计量。包括商用壁挂、双枪、立柱和广告系列。"
+    },
+    "icon": "building-2",
+    "order": 3
+  },
+  {
+    "slug": "dc-charger",
+    "name": { "en": "DC Fast Charger", "zh": "直流快充" },
+    "description": {
+      "en": "High-power DC fast chargers from 30KW Mini DC to 720KW Split Type. CCS2/CCS1/NACS/GB/T/CHAdeMO compatible.",
+      "zh": "大功率直流快充，从30KW迷你DC到720KW分体式。兼容CCS2/CCS1/NACS/GB/T/CHAdeMO。"
+    },
+    "icon": "zap",
+    "order": 4
+  },
+  {
+    "slug": "energy-storage",
+    "name": { "en": "Energy Storage", "zh": "储能系统" },
+    "description": {
+      "en": "Integrated energy storage and charging solutions with V2G capability, solar integration, and smart energy management.",
+      "zh": "集成储能和充电解决方案，支持V2G、光伏集成和智能能源管理。"
+    },
+    "icon": "battery-charging",
+    "order": 5
+  }
+]
