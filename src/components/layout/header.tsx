@@ -4,9 +4,9 @@ import { useState } from "react";
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
-import Image from "next/image";
-import { Menu, X, ChevronDown, Globe } from "lucide-react";
+import { Menu, X, Globe } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { BrandWordmark } from "@/components/layout/brand-wordmark";
 
 const NAV_ITEMS = [
   { key: "products", href: "/products" },
@@ -32,14 +32,7 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           <Link href={`/${locale}`} className="flex items-center gap-2 group">
-            <Image
-              src="/logo-yingli.jpg"
-              alt="Yingli Technology"
-              width={140}
-              height={40}
-              className="h-8 w-auto"
-              priority
-            />
+            <BrandWordmark className="transition-transform group-hover:translate-x-0.5" />
           </Link>
 
           <nav className="hidden lg:flex items-center gap-1">

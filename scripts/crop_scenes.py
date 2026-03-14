@@ -1,5 +1,6 @@
 """
-从 PDF 画册中裁剪场景/素材图片，用于网站各页面的视觉填充。
+从 PDF 画册中裁剪站点所需的场景图片。
+避免生成品牌拼接 logo 和弱质量 OEM 截图，这些模块已改为文字化表达。
 """
 
 import fitz
@@ -9,13 +10,6 @@ PDF_PATH = "/data/workspace/Yinglit EV Charger 2026.pdf"
 DPI = 300
 
 CROPS = [
-    # --- Logo (from page 2 About Us section, clearer) ---
-    {
-        "page": 2,
-        "area": (0.88, 0.0, 0.98, 0.07),
-        "output": "public/logo-yingli.png",
-        "desc": "Yingli Logo from About page header",
-    },
     # --- Hero ---
     {
         "page": 1,
@@ -86,19 +80,6 @@ CROPS = [
         "area": (0.50, 0.0, 1.0, 0.75),
         "output": "public/images/cases/cases-right.jpg",
         "desc": "Project cases - right column",
-    },
-    # --- OEM/ODM ---
-    {
-        "page": 2,
-        "area": (0.50, 0.40, 1.0, 0.65),
-        "output": "public/images/oem/partner-logos.jpg",
-        "desc": "Partner brand logos (Toyota, Tesla, etc.)",
-    },
-    {
-        "page": 2,
-        "area": (0.50, 0.75, 1.0, 0.98),
-        "output": "public/images/oem/factory-tour.jpg",
-        "desc": "Factory tour photos",
     },
     # --- Government subsidy (KfW) ---
     {

@@ -113,7 +113,7 @@ function ProductCard({ product, locale }: { product: Product; locale: string }) 
       href={`/${locale}/products/${product.slug}`}
       className="group bg-card border border-border rounded-xl overflow-hidden hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5 transition-all cursor-pointer"
     >
-      <div className="aspect-[4/3] bg-secondary relative overflow-hidden">
+      <div className="aspect-[4/3] bg-white relative overflow-hidden border-b border-border/60">
         <div className="absolute inset-0 flex items-center justify-center">
           <Zap className="w-16 h-16 text-primary/20" />
         </div>
@@ -122,7 +122,7 @@ function ProductCard({ product, locale }: { product: Product; locale: string }) 
             src={product.images[0].src}
             alt={product.images[0].alt}
             fill
-            className="object-cover group-hover:scale-105 transition-transform duration-500"
+            className="object-contain p-6 group-hover:scale-[1.03] transition-transform duration-500"
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           />
         )}

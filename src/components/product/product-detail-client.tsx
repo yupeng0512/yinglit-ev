@@ -38,7 +38,7 @@ export function ProductDetailClient({
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Image */}
-          <div className="aspect-square bg-secondary rounded-2xl relative overflow-hidden">
+          <div className="aspect-square bg-white border border-border/70 rounded-2xl relative overflow-hidden shadow-sm">
             <div className="absolute inset-0 flex items-center justify-center">
               <Zap className="w-24 h-24 text-primary/10" />
             </div>

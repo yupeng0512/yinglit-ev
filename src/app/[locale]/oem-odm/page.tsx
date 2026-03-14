@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 import {
@@ -13,7 +12,11 @@ import {
   ArrowRight,
   Wrench,
   Package,
+  Globe,
+  Gauge,
+  Boxes,
 } from "lucide-react";
+import siteSettings from "@/data/settings.json";
 
 const STEPS = [
   { icon: HeadphonesIcon, key: "step1" },
@@ -68,6 +71,64 @@ const CAPABILITIES = [
     icon: HeadphonesIcon,
   },
 ];
+
+const READINESS_SIGNALS = [
+  {
+    titleEn: "Certification Pathway",
+    titleZh: "认证落地支持",
+    descEn: "Prepare CE, UL, MID, KfW and other regional compliance packages for your target market.",
+    descZh: "面向目标市场准备 CE、UL、MID、KfW 等认证与合规支持。",
+    icon: Shield,
+  },
+  {
+    titleEn: "Hardware + Software ODM",
+    titleZh: "软硬件一体 ODM",
+    descEn: "Branding, enclosure, UI, cloud platform and OCPP backend can be coordinated in one workflow.",
+    descZh: "品牌、外观、UI、云平台与 OCPP 后端可在同一流程中协同定制。",
+    icon: Cpu,
+  },
+  {
+    titleEn: "Global Market Experience",
+    titleZh: "全球市场经验",
+    descEn: "Projects and product programs have supported customers across multiple international markets.",
+    descZh: "项目与产品方案已服务多个海外市场客户，具备国际交付经验。",
+    icon: Globe,
+  },
+  {
+    titleEn: "Flexible Production Ramp",
+    titleZh: "柔性扩产能力",
+    descEn: "Pilot runs, packaging customization and scale-up production can be arranged based on order stage.",
+    descZh: "可按订单阶段安排试产、包装定制与规模化交付。",
+    icon: Factory,
+  },
+] as const;
+
+const DELIVERY_STATS = [
+  {
+    value: siteSettings.stats.founded,
+    labelEn: "Founded",
+    labelZh: "成立年份",
+    icon: Factory,
+  },
+  {
+    value: siteSettings.stats.countries,
+    labelEn: "Countries Served",
+    labelZh: "服务国家",
+    icon: Globe,
+  },
+  {
+    value: siteSettings.stats.patents,
+    labelEn: "Patents",
+    labelZh: "专利数量",
+    icon: Boxes,
+  },
+  {
+    value: siteSettings.stats.maxPower,
+    labelEn: "Max System Power",
+    labelZh: "最大系统功率",
+    icon: Gauge,
+  },
+] as const;
 
 export default function OemOdmPage() {
   const locale = useLocale();
@@ -136,35 +197,80 @@ export default function OemOdmPage() {
           </div>
         </div>
 
-        {/* Partner Brands */}
+        {/* Market Readiness */}
         <div className="mb-20">
           <h2 className="font-heading text-2xl font-bold text-center mb-6">
-            {locale === "zh" ? "合作品牌" : "Trusted Partners"}
+            {locale === "zh" ? "项目落地支持" : "Go-to-Market Support"}
           </h2>
-          <div className="rounded-2xl overflow-hidden">
-            <Image
-              src="/images/oem/partner-logos.jpg"
-              alt="Partner brands including Toyota, Tesla, Audi, Nissan, KIA and more"
-              width={1200}
-              height={400}
-              className="w-full h-auto"
-            />
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            {READINESS_SIGNALS.map((signal) => {
+              const Icon = signal.icon;
+              return (
+                <div
+                  key={signal.titleEn}
+                  className="rounded-2xl border border-border bg-card p-6"
+                >
+                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10">
+                    <Icon className="h-6 w-6 text-primary" />
+                  </div>
+                  <h3 className="font-heading text-lg font-semibold mb-2">
+                    {locale === "zh" ? signal.titleZh : signal.titleEn}
+                  </h3>
+                  <p className="text-sm leading-relaxed text-muted-foreground">
+                    {locale === "zh" ? signal.descZh : signal.descEn}
+                  </p>
+                </div>
+              );
+            })}
           </div>
         </div>
 
-        {/* Factory Tour */}
+        {/* Delivery Confidence */}
         <div className="mb-20">
           <h2 className="font-heading text-2xl font-bold text-center mb-6">
-            {locale === "zh" ? "工厂实景" : "Factory Tour"}
+            {locale === "zh" ? "交付信心" : "Delivery Confidence"}
           </h2>
-          <div className="rounded-2xl overflow-hidden">
-            <Image
-              src="/images/oem/factory-tour.jpg"
-              alt="Yingli Technology factory tour"
-              width={1200}
-              height={400}
-              className="w-full h-auto"
-            />
+          <div className="rounded-2xl border border-border bg-secondary/40 p-8 lg:p-10">
+            <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
+              {DELIVERY_STATS.map((stat) => {
+                const Icon = stat.icon;
+                return (
+                  <div key={stat.labelEn} className="rounded-2xl bg-white p-5 shadow-sm">
+                    <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10">
+                      <Icon className="h-5 w-5 text-primary" />
+                    </div>
+                    <div className="font-heading text-2xl font-bold text-foreground">
+                      {stat.value}
+                    </div>
+                    <div className="mt-1 text-sm text-muted-foreground">
+                      {locale === "zh" ? stat.labelZh : stat.labelEn}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+            <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2">
+              <div className="rounded-2xl bg-white p-6 shadow-sm">
+                <h3 className="font-heading text-lg font-semibold mb-2">
+                  {locale === "zh" ? "从试样到量产" : "From Sample to Volume"}
+                </h3>
+                <p className="text-sm leading-relaxed text-muted-foreground">
+                  {locale === "zh"
+                    ? "适合品牌试销、小批量验证到持续出货，避免用弱截图替代真实产品能力。"
+                    : "Support pilot batches, validation samples and repeat production without relying on weak marketing screenshots."}
+                </p>
+              </div>
+              <div className="rounded-2xl bg-white p-6 shadow-sm">
+                <h3 className="font-heading text-lg font-semibold mb-2">
+                  {locale === "zh" ? "适配多市场需求" : "Built for Multi-Market Requests"}
+                </h3>
+                <p className="text-sm leading-relaxed text-muted-foreground">
+                  {locale === "zh"
+                    ? "可围绕认证、接口制式、包装和后台能力做组合配置，更适合 B2B 询盘沟通。"
+                    : "Configuration can be aligned around compliance, connector standards, packaging and backend requirements for B2B programs."}
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 

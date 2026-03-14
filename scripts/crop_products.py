@@ -17,106 +17,106 @@ DPI = 300
 # 左半页产品图的典型区域
 
 CROP_MAP = {
-    # Portable EV Box (page 10) — 产品图在左半页中间偏下
+    # Portable EV Box (page 10) — single product crop
     10: {
         "slug": "portable-charger",
-        "area": (0.22, 0.32, 0.48, 0.80),
+        "area": (0.22, 0.28, 0.51, 0.89),
         "products": ["portable-ev-box-3-5kw", "portable-ev-box-7kw", "portable-ev-box-11kw"],
     },
-    # Home Wallbox Cable/Socket (page 11)
+    # Home Wallbox Cable/Socket (page 11) — clean left product, no app UI
     11: {
         "slug": "home-wallbox-cable",
-        "area": (0.05, 0.25, 0.45, 0.88),
+        "area": (0.10, 0.46, 0.22, 0.91),
         "products": ["home-wallbox-7kw", "home-wallbox-11kw", "home-wallbox-22kw"],
     },
-    # Public Wallbox Cable/Socket (page 12)
+    # Public Wallbox Cable/Socket (page 12) — clean left product, no app UI
     12: {
         "slug": "public-wallbox-cable",
-        "area": (0.05, 0.25, 0.45, 0.88),
+        "area": (0.10, 0.46, 0.22, 0.91),
         "products": ["public-wallbox-7kw", "public-wallbox-11kw", "public-wallbox-22kw"],
     },
-    # Home Level 2 (page 13)
+    # Home Level 2 (page 13) — right-side charger only
     13: {
         "slug": "home-level2",
-        "area": (0.08, 0.28, 0.48, 0.88),
+        "area": (0.30, 0.40, 0.48, 0.82),
         "products": ["home-wallbox-level2-32a", "home-wallbox-level2-40a", "home-wallbox-level2-48a"],
     },
-    # Public Level 2 (page 14)
+    # Public Level 2 (page 14) — right-side charger only
     14: {
         "slug": "public-level2",
-        "area": (0.05, 0.25, 0.45, 0.88),
+        "area": (0.30, 0.40, 0.48, 0.82),
         "products": ["public-wallbox-level2-32a", "public-wallbox-level2-40a", "public-wallbox-level2-48a"],
     },
-    # Pro Wallbox (page 15)
+    # Pro Wallbox (page 15) — left-side chargers only, exclude phones
     15: {
         "slug": "pro-wallbox",
-        "area": (0.05, 0.15, 0.48, 0.88),
+        "area": (0.05, 0.46, 0.21, 0.90),
         "products": ["pro-wallbox-7kw", "pro-wallbox-11kw", "pro-wallbox-22kw"],
     },
-    # Twin Wallbox (page 16)
+    # Twin Wallbox (page 16) — center product focus
     16: {
         "slug": "twin-wallbox",
-        "area": (0.05, 0.25, 0.48, 0.88),
+        "area": (0.22, 0.48, 0.42, 0.92),
         "products": ["twin-wallbox-14kw", "twin-wallbox-22kw", "twin-wallbox-44kw"],
     },
-    # Twin Pedestal (page 17)
+    # Twin Pedestal (page 17) — center product focus
     17: {
         "slug": "twin-pedestal",
-        "area": (0.05, 0.25, 0.48, 0.88),
+        "area": (0.22, 0.48, 0.39, 0.92),
         "products": ["twin-pedestal-14kw", "twin-pedestal-22kw", "twin-pedestal-44kw"],
     },
-    # AC Advertising Pedestal (page 18)
+    # AC Advertising Pedestal (page 18) — single product crop
     18: {
         "slug": "ac-advertising",
-        "area": (0.05, 0.20, 0.48, 0.90),
+        "area": (0.05, 0.40, 0.25, 0.92),
         "products": ["ac-advertising-14kw", "ac-advertising-22kw", "ac-advertising-44kw"],
     },
-    # MINI DC (page 19) — 4 台充电桩
+    # MINI DC (page 19) — single product crop
     19: {
         "slug": "mini-dc",
-        "area": (0.03, 0.40, 0.50, 0.90),
+        "area": (0.32, 0.60, 0.49, 0.90),
         "products": ["mini-dc-30kw", "mini-dc-40kw", "mini-dc-60kw", "mini-dc-80kw"],
     },
-    # Mobile DC (page 20)
+    # Mobile DC (page 20) — left product crop
     20: {
         "slug": "mobile-dc",
-        "area": (0.05, 0.25, 0.48, 0.90),
+        "area": (0.03, 0.60, 0.25, 0.92),
         "products": ["mobile-dc-30kw", "mobile-dc-40kw"],
     },
-    # DC Advertising Pedestal (page 21) — 大屏充电桩
+    # DC Advertising Pedestal (page 21) — left product crop
     21: {
         "slug": "dc-advertising",
-        "area": (0.05, 0.35, 0.48, 0.90),
+        "area": (0.02, 0.47, 0.21, 0.92),
         "products": ["dc-advertising-60kw", "dc-advertising-120kw"],
     },
-    # Super DC 120-240KW (page 22) — 3 台大型充电桩
+    # Super DC 120-240KW (page 22) — left product crop
     22: {
         "slug": "super-dc-120-240",
-        "area": (0.03, 0.50, 0.50, 0.95),
+        "area": (0.02, 0.60, 0.22, 0.92),
         "products": ["super-dc-120kw", "super-dc-150kw", "super-dc-180kw", "super-dc-240kw"],
     },
-    # Super DC 300-360KW (page 23)
+    # Super DC 300-360KW (page 23) — left product crop
     23: {
         "slug": "super-dc-300-360",
-        "area": (0.03, 0.50, 0.50, 0.95),
+        "area": (0.02, 0.60, 0.22, 0.92),
         "products": ["super-dc-300kw", "super-dc-360kw"],
     },
-    # 3-IN-1 Charger (page 24)
+    # 3-IN-1 Charger (page 24) — left product crop
     24: {
         "slug": "ac-dc-3in1",
-        "area": (0.05, 0.35, 0.48, 0.90),
+        "area": (0.05, 0.40, 0.23, 0.92),
         "products": ["ac-dc-3in1-60kw"],
     },
-    # Split Type HP Fast DC (page 26) — 大型分体机柜 + 终端
+    # Split Type HP Fast DC (page 26) — feature the cabinet, avoid brochure headings/table
     26: {
         "slug": "split-dc",
-        "area": (0.15, 0.12, 0.50, 0.70),
+        "area": (0.10, 0.26, 0.40, 0.62),
         "products": ["split-dc-480kw", "split-dc-600kw", "split-dc-720kw"],
     },
-    # Energy Storage (page 27)
+    # Energy Storage (page 27) — left product crop
     27: {
         "slug": "energy-storage",
-        "area": (0.03, 0.05, 0.50, 0.70),
+        "area": (0.02, 0.74, 0.19, 0.88),
         "products": ["energy-storage-system", "energy-storage-residential"],
     },
 }
