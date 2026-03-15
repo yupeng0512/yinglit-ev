@@ -8,3 +8,4 @@ node_modules/
 # Extraction: keep text data, ignore rendered images (11MB+)
 extraction/images/
 extraction/products/
+.artifacts/

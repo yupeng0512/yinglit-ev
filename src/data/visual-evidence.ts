@@ -3,6 +3,7 @@ export type VisualEvidenceItem = {
   section: "about" | "certifications";
   order: number;
   src: string;
+  aspectRatio?: string;
   title: {
     en: string;
     zh: string;
@@ -19,6 +20,7 @@ export const CERTIFICATION_EVIDENCE: VisualEvidenceItem[] = [
     section: "certifications",
     order: 1,
     src: "/images/certs/evidence/eu-type-examination.jpg",
+    aspectRatio: "675 / 888",
     title: {
       en: "EU Type Examination",
       zh: "欧盟型式认证",
@@ -33,6 +35,7 @@ export const CERTIFICATION_EVIDENCE: VisualEvidenceItem[] = [
     section: "certifications",
     order: 2,
     src: "/images/certs/evidence/eu-type-matrix.jpg",
+    aspectRatio: "674 / 888",
     title: {
       en: "Model Compliance Matrix",
       zh: "型号合规矩阵",
@@ -47,6 +50,7 @@ export const CERTIFICATION_EVIDENCE: VisualEvidenceItem[] = [
     section: "certifications",
     order: 3,
     src: "/images/certs/evidence/low-voltage-certificate.jpg",
+    aspectRatio: "675 / 888",
     title: {
       en: "Low-Voltage Certificate",
       zh: "低压合规证书",
@@ -61,6 +65,7 @@ export const CERTIFICATION_EVIDENCE: VisualEvidenceItem[] = [
     section: "certifications",
     order: 4,
     src: "/images/certs/evidence/high-tech-enterprise.jpg",
+    aspectRatio: "1143 / 893",
     title: {
       en: "High-Tech Enterprise",
       zh: "高新技术企业",
@@ -75,6 +80,7 @@ export const CERTIFICATION_EVIDENCE: VisualEvidenceItem[] = [
     section: "certifications",
     order: 5,
     src: "/images/certs/evidence/ce-attestation-a.jpg",
+    aspectRatio: "675 / 889",
     title: {
       en: "CE Attestation A",
       zh: "CE 符合性证明 A",
@@ -89,6 +95,7 @@ export const CERTIFICATION_EVIDENCE: VisualEvidenceItem[] = [
     section: "certifications",
     order: 6,
     src: "/images/certs/evidence/ce-attestation-b.jpg",
+    aspectRatio: "674 / 889",
     title: {
       en: "CE Attestation B",
       zh: "CE 符合性证明 B",
@@ -103,6 +110,7 @@ export const CERTIFICATION_EVIDENCE: VisualEvidenceItem[] = [
     section: "certifications",
     order: 7,
     src: "/images/certs/evidence/low-voltage-certificate-b.jpg",
+    aspectRatio: "675 / 889",
     title: {
       en: "LVD Certificate B",
       zh: "低压证书 B",
@@ -117,6 +125,7 @@ export const CERTIFICATION_EVIDENCE: VisualEvidenceItem[] = [
     section: "certifications",
     order: 8,
     src: "/images/certs/evidence/utility-patent.jpg",
+    aspectRatio: "686 / 906",
     title: {
       en: "Utility Patent",
       zh: "实用新型专利",

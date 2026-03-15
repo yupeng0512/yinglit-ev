@@ -7,7 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "postbuild": "next-sitemap"
+    "postbuild": "next-sitemap",
+    "visual:assets": "python3 scripts/visual_harness.py --mode assets",
+    "visual:test": "python3 scripts/visual_harness.py --mode browser",
+    "visual:review": "bash scripts/run_visual_review.sh"
   },
   "dependencies": {
     "@base-ui/react": "^1.2.0",

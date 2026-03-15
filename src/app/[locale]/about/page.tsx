@@ -70,7 +70,10 @@ export default function AboutPage() {
             </div>
           </div>
           <div className="space-y-4">
-            <div className="rounded-2xl overflow-hidden aspect-[16/10] border border-border/60 bg-card shadow-sm">
+            <div
+              className="rounded-2xl overflow-hidden aspect-[16/10] border border-border/60 bg-card shadow-sm"
+              data-testid="about-factory-image"
+            >
               <Image
                 src="/images/about/factory.jpg"
                 alt="Yingli Technology Headquarters"
@@ -79,13 +82,20 @@ export default function AboutPage() {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+            <div
+              className="grid grid-cols-2 sm:grid-cols-3 gap-3"
+              data-testid="about-evidence-grid"
+            >
               {ABOUT_EVIDENCE.map((item) => (
                 <div
                   key={item.id}
+                  data-testid={`about-evidence-${item.id}`}
                   className="rounded-xl overflow-hidden border border-border/60 bg-card shadow-sm"
                 >
-                  <div className="relative aspect-[4/3]">
+                  <div
+                    className="relative aspect-[4/3]"
+                    data-testid={`about-evidence-figure-${item.id}`}
+                  >
                     <Image
                       src={item.src}
                       alt={isZh ? item.alt.zh : item.alt.en}

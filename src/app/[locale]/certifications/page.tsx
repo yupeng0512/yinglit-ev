@@ -116,19 +116,27 @@ export default function CertificationsPage() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-4">
+          <div
+            className="grid grid-cols-1 sm:grid-cols-2 gap-4"
+            data-testid="cert-evidence-grid"
+          >
             {CERTIFICATION_EVIDENCE.map((item) => (
               <div
                 key={item.id}
+                data-testid={`cert-card-${item.id}`}
                 className="rounded-2xl border border-border/70 bg-white p-3 shadow-sm"
               >
-                <div className="relative aspect-[3/4] overflow-hidden rounded-xl bg-secondary/20">
+                <div
+                  className="relative overflow-hidden rounded-xl border border-border/60 bg-secondary/20"
+                  style={{ aspectRatio: item.aspectRatio }}
+                  data-testid={`cert-card-figure-${item.id}`}
+                >
                   <Image
                     src={item.src}
                     alt={isZh ? item.alt.zh : item.alt.en}
                     fill
-                    className="object-contain p-2"
-                    sizes="(max-width: 1024px) 50vw, 22vw"
+                    className="object-contain"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 22vw"
                   />
                 </div>
                 <div className="mt-3">
