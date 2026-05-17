@@ -8,10 +8,46 @@ export default function ContactPage() {
   const locale = useLocale();
   const t = useTranslations("contact");
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSubmitted(true);
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    const payload = Object.fromEntries(
+      Array.from(formData.entries()).map(([key, value]) => [key, String(value)])
+    );
+
+    setIsSubmitting(true);
+    setErrorMessage("");
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...payload, locale }),
+      });
+
+      const result = (await response.json().catch(() => ({}))) as { error?: string };
+
+      if (!response.ok) {
+        throw new Error(result.error || "Failed to send inquiry. Please try again.");
+      }
+
+      form.reset();
+      setSubmitted(true);
+    } catch (error) {
+      setErrorMessage(
+        error instanceof Error
+          ? error.message
+          : locale === "zh"
+            ? "发送失败，请稍后重试。"
+            : "Failed to send inquiry. Please try again."
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -37,46 +73,60 @@ export default function ContactPage() {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-5">
+                <input
+                  type="text"
+                  name="website"
+                  tabIndex={-1}
+                  autoComplete="off"
+                  className="hidden"
+                  aria-hidden="true"
+                />
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div>
                     <label className="block text-sm font-medium mb-1.5">{t("name")} *</label>
-                    <input required type="text" className="w-full px-4 py-2.5 bg-card border border-border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary" />
+                    <input required name="name" type="text" className="w-full px-4 py-2.5 bg-card border border-border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary" />
                   </div>
                   <div>
                     <label className="block text-sm font-medium mb-1.5">{t("email")} *</label>
-                    <input required type="email" className="w-full px-4 py-2.5 bg-card border border-border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary" />
+                    <input required name="email" type="email" className="w-full px-4 py-2.5 bg-card border border-border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary" />
                   </div>
                   <div>
                     <label className="block text-sm font-medium mb-1.5">{t("company")} *</label>
-                    <input required type="text" className="w-full px-4 py-2.5 bg-card border border-border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary" />
+                    <input required name="company" type="text" className="w-full px-4 py-2.5 bg-card border border-border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary" />
                   </div>
                   <div>
                     <label className="block text-sm font-medium mb-1.5">{t("country")} *</label>
-                    <input required type="text" className="w-full px-4 py-2.5 bg-card border border-border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary" />
+                    <input required name="country" type="text" className="w-full px-4 py-2.5 bg-card border border-border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary" />
                   </div>
                   <div>
                     <label className="block text-sm font-medium mb-1.5">{t("phone")}</label>
-                    <input type="tel" className="w-full px-4 py-2.5 bg-card border border-border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary" />
+                    <input name="phone" type="tel" className="w-full px-4 py-2.5 bg-card border border-border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary" />
                   </div>
                   <div>
                     <label className="block text-sm font-medium mb-1.5">{t("quantity")}</label>
-                    <input type="text" placeholder={locale === "zh" ? "如：100台/月" : "e.g. 100 units/month"} className="w-full px-4 py-2.5 bg-card border border-border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary" />
+                    <input name="quantity" type="text" placeholder={locale === "zh" ? "如：100台/月" : "e.g. 100 units/month"} className="w-full px-4 py-2.5 bg-card border border-border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary" />
                   </div>
                 </div>
                 <div>
                   <label className="block text-sm font-medium mb-1.5">{t("product")}</label>
-                  <input type="text" placeholder={locale === "zh" ? "如：7KW 家用壁挂充电桩" : "e.g. 7KW Home Wallbox"} className="w-full px-4 py-2.5 bg-card border border-border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary" />
+                  <input name="product" type="text" placeholder={locale === "zh" ? "如：7KW 家用壁挂充电桩" : "e.g. 7KW Home Wallbox"} className="w-full px-4 py-2.5 bg-card border border-border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary" />
                 </div>
                 <div>
                   <label className="block text-sm font-medium mb-1.5">{t("message")} *</label>
-                  <textarea required rows={5} className="w-full px-4 py-2.5 bg-card border border-border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary resize-none" />
+                  <textarea required name="message" rows={5} className="w-full px-4 py-2.5 bg-card border border-border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary resize-none" />
                 </div>
+                {errorMessage ? (
+                  <p className="text-sm font-medium text-red-600" role="alert">
+                    {errorMessage}
+                  </p>
+                ) : null}
                 <button
                   type="submit"
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:bg-primary/90 transition-colors"
+                  disabled={isSubmitting}
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:bg-primary/90 transition-colors disabled:cursor-not-allowed disabled:opacity-70"
                 >
                   <MessageSquare className="w-4 h-4" />
-                  {t("submit")}
+                  {isSubmitting ? (locale === "zh" ? "发送中..." : "Sending...") : t("submit")}
                 </button>
               </form>
             )}

@@ -55,11 +55,11 @@
 
 ### P4 — 表单后端
 
-- [ ] Contact 页面询盘表单对接后端 API
-  - 方案 A：Vercel Serverless Function + Resend/SendGrid 邮件通知
+- [x] Contact 页面询盘表单对接后端 API
+  - 已采用方案 A：Next.js API Route + Resend 邮件通知
   - 方案 B：连接 Payload CMS 的 Form Submissions 集合
   - 方案 C：第三方表单服务（Formspree / Tally）
-- [ ] 表单提交后发送邮件通知到 `John@yinglitech.com`
+- [x] 表单提交后发送邮件通知到 `John@yinglitech.com`
 - [ ] 可选：存储询盘记录到数据库/CMS
 
 ### P5 — SEO 增强
