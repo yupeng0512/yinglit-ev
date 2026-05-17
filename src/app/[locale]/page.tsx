@@ -1,4 +1,3 @@
-import { useTranslations } from "next-intl";
 import { getProvider } from "@/lib/provider";
 import { HeroSection } from "@/components/home/hero-section";
 import { StatsSection } from "@/components/home/stats-section";
