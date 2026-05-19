@@ -4,15 +4,16 @@ import { Mail, Phone, MapPin } from "lucide-react";
 import { BrandWordmark } from "@/components/layout/brand-wordmark";
 
 const PRODUCT_LINKS = [
-  { label: "Portable Charger", href: "/products?category=portable-charger" },
-  { label: "Home AC Charger", href: "/products?category=home-ac-charger" },
-  { label: "Commercial AC Charger", href: "/products?category=commercial-ac-charger" },
-  { label: "DC Fast Charger", href: "/products?category=dc-charger" },
-  { label: "Energy Storage", href: "/products?category=energy-storage" },
+  { label: "Portable Charger", href: "/products/category/portable-charger" },
+  { label: "Home AC Charger", href: "/products/category/home-ac-charger" },
+  { label: "Commercial AC Charger", href: "/products/category/commercial-ac-charger" },
+  { label: "DC Fast Charger", href: "/products/category/dc-charger" },
+  { label: "Energy Storage", href: "/products/category/energy-storage" },
 ];
 
 const QUICK_LINKS = [
   { key: "solutions", href: "/solutions" },
+  { key: "resources", href: "/resources" },
   { key: "oemOdm", href: "/oem-odm" },
   { key: "certifications", href: "/certifications" },
   { key: "about", href: "/about" },

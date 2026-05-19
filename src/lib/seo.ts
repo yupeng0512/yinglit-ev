@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import settings from "@/data/settings.json";
 import { routing } from "@/i18n/routing";
-import type { Product } from "@/lib/types";
+import type { Category, Product, SeoPage } from "@/lib/types";
 
 export type Locale = (typeof routing.locales)[number];
 
@@ -91,15 +91,47 @@ export function buildPageMetadata({
   };
 }
 
+export function localizedText(value: Record<string, string>, locale: string) {
+  return value[locale] || value.en || Object.values(value)[0] || "";
+}
+
+export function buildCategoryMetadata(category: Category, locale: string): Metadata {
+  const title =
+    locale === "zh"
+      ? `${localizedText(category.name, locale)} - 盈利科技电动汽车充电产品`
+      : `${localizedText(category.name, locale)} - YINGLITECH EV Charger Products`;
+  const description =
+    locale === "zh"
+      ? `${localizedText(category.description, locale)} 查看盈利科技${localizedText(category.name, locale)}产品、技术参数和ODM/OEM询盘方案。`
+      : `${localizedText(category.description, locale)} Compare YINGLITECH ${localizedText(category.name, locale)} products, specifications, and ODM/OEM inquiry options.`;
+
+  return buildPageMetadata({
+    locale,
+    path: `/products/category/${category.slug}`,
+    title,
+    description,
+    image: category.image || "/images/hero-products.jpg",
+  });
+}
+
+export function buildResourceMetadata(page: SeoPage, locale: string): Metadata {
+  return buildPageMetadata({
+    locale,
+    path: `/resources/${page.slug}`,
+    title: localizedText(page.title, locale),
+    description: localizedText(page.description, locale),
+    image: "/images/hero-products.jpg",
+  });
+}
+
 export function productName(product: Product, locale: string) {
-  return product.name[locale] || product.name.en || Object.values(product.name)[0] || product.sku;
+  return localizedText(product.name, locale) || product.sku;
 }
 
 export function productDescription(product: Product, locale: string) {
   return (
     product.seo?.description ||
-    product.description[locale] ||
-    product.description.en ||
+    localizedText(product.description, locale) ||
     product.features.join(". ")
   );
 }
@@ -137,6 +169,73 @@ export function buildProductJsonLd(product: Product, locale: string) {
       name,
       value,
     })),
+  };
+}
+
+export function buildBreadcrumbJsonLd(
+  items: Array<{ name: string; item: string }>
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      item: absoluteUrl(item.item),
+    })),
+  };
+}
+
+export function buildItemListJsonLd(
+  items: Array<{ name: string; url: string; description?: string }>
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      url: absoluteUrl(item.url),
+      name: item.name,
+      ...(item.description ? { description: item.description } : {}),
+    })),
+  };
+}
+
+export function buildArticleJsonLd({
+  locale,
+  path,
+  title,
+  description,
+}: {
+  locale: string;
+  path: string;
+  title: string;
+  description: string;
+}) {
+  const safeLocale = toLocale(locale);
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: title,
+    description,
+    inLanguage: safeLocale,
+    mainEntityOfPage: localizedUrl(path, safeLocale),
+    author: {
+      "@type": "Organization",
+      name: "YINGLITECH",
+      url: SITE_URL,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "YINGLITECH",
+      logo: {
+        "@type": "ImageObject",
+        url: absoluteUrl("/logo-yingli.png"),
+      },
+    },
   };
 }
 

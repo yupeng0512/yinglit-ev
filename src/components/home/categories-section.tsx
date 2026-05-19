@@ -36,7 +36,7 @@ export function CategoriesSection({ categories }: { categories: Category[] }) {
             return (
               <Link
                 key={cat.slug}
-                href={`/${locale}/products?category=${cat.slug}`}
+                href={`/${locale}/products/category/${cat.slug}`}
                 className="group relative overflow-hidden bg-card border border-border rounded-xl hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5 transition-all cursor-pointer"
               >
                 <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary/0 via-primary/25 to-primary/0 opacity-0 group-hover:opacity-100 transition-opacity" />

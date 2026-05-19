@@ -11,6 +11,7 @@ import { BrandWordmark } from "@/components/layout/brand-wordmark";
 const NAV_ITEMS = [
   { key: "products", href: "/products" },
   { key: "solutions", href: "/solutions" },
+  { key: "resources", href: "/resources" },
   { key: "oemOdm", href: "/oem-odm" },
   { key: "certifications", href: "/certifications" },
   { key: "about", href: "/about" },

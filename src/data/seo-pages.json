@@ -1,0 +1,402 @@
+[
+  {
+    "slug": "ev-charger-manufacturer",
+    "intent": "buyer searches for a reliable EV charger manufacturer",
+    "title": {
+      "en": "EV Charger Manufacturer for Global Charging Projects",
+      "zh": "面向全球项目的电动汽车充电桩制造商"
+    },
+    "description": {
+      "en": "How to evaluate an EV charger manufacturer for portable chargers, AC wallboxes, DC fast chargers, certifications, and long-term supply support.",
+      "zh": "了解如何评估电动汽车充电桩制造商，覆盖便携式、交流壁挂、直流快充、认证和长期供货支持。"
+    },
+    "hero": {
+      "en": "Choosing an EV charger manufacturer is not only about power range. Buyers need certified hardware, stable firmware, OCPP experience, enclosure options, and a team that can support samples, pilot projects, and repeat orders.",
+      "zh": "选择充电桩制造商不只是看功率范围。采购方需要认证硬件、稳定固件、OCPP经验、外观结构选项，以及能支持样品、小批量试点和持续复购的团队。"
+    },
+    "sections": [
+      {
+        "heading": {
+          "en": "What a manufacturer should prove",
+          "zh": "制造商应证明哪些能力"
+        },
+        "body": {
+          "en": "A serious EV charger supplier should show real product lines, certification paths, exported market experience, and engineering support for installation scenarios. This reduces project risk before mass production.",
+          "zh": "可靠供应商应能展示真实产品线、认证路径、出口市场经验和场景化工程支持。这样可以在批量生产前降低项目风险。"
+        }
+      },
+      {
+        "heading": {
+          "en": "Match product range to the project",
+          "zh": "让产品范围匹配项目"
+        },
+        "body": {
+          "en": "Home charging, workplace charging, public AC charging, and high-power DC fast charging have different hardware, software, and service needs. A full-range portfolio makes future expansion easier.",
+          "zh": "家用充电、工作场所、公共交流桩和大功率直流快充对硬件、软件和服务的要求不同。完整产品线更利于后续扩展。"
+        }
+      },
+      {
+        "heading": {
+          "en": "Why YINGLITECH fits B2B buyers",
+          "zh": "为什么适合B2B采购"
+        },
+        "body": {
+          "en": "YINGLITECH supplies portable chargers, AC charging stations, DC fast chargers, and energy storage charging systems with ODM and OEM cooperation for overseas operators and distributors.",
+          "zh": "盈利科技提供便携式充电器、交流充电桩、直流快充和储能充电系统，可为海外运营商和渠道商提供ODM/OEM合作。"
+        }
+      }
+    ],
+    "relatedProductSlugs": ["super-dc-120kw", "twin-wallbox-44kw", "home-wallbox-22kw"],
+    "relatedCategorySlugs": ["dc-charger", "commercial-ac-charger", "home-ac-charger"]
+  },
+  {
+    "slug": "ev-charger-oem-odm",
+    "intent": "buyer searches for EV charger OEM or ODM partner",
+    "title": {
+      "en": "EV Charger OEM and ODM Manufacturing Guide",
+      "zh": "电动汽车充电桩OEM与ODM制造指南"
+    },
+    "description": {
+      "en": "Plan an EV charger OEM/ODM project from requirement definition to sample validation, certifications, branding, firmware, and mass production.",
+      "zh": "从需求定义、样机验证、认证、品牌定制、固件到批量生产，规划电动汽车充电桩OEM/ODM项目。"
+    },
+    "hero": {
+      "en": "OEM and ODM cooperation works best when the buyer defines markets, connector standards, enclosure needs, app or platform requirements, certification targets, and order forecast early.",
+      "zh": "OEM/ODM合作需要尽早明确目标市场、接口标准、外观结构、APP或平台需求、认证目标和订单预测。"
+    },
+    "sections": [
+      {
+        "heading": {
+          "en": "Start with market and compliance",
+          "zh": "从市场和合规开始"
+        },
+        "body": {
+          "en": "Connector type, input voltage, metering, waterproof rating, and certification needs differ across Europe, North America, and Asia-Pacific markets. These choices affect design and cost.",
+          "zh": "欧洲、北美和亚太市场在接口、电压、计量、防护等级和认证要求上不同，这些选择会影响设计和成本。"
+        }
+      },
+      {
+        "heading": {
+          "en": "Decide what should be customized",
+          "zh": "明确哪些部分需要定制"
+        },
+        "body": {
+          "en": "Branding can include color, logo, packaging, cable length, connector, firmware defaults, RFID behavior, OCPP settings, and cloud platform integration.",
+          "zh": "可定制内容包括颜色、Logo、包装、线长、接口、固件默认值、RFID逻辑、OCPP设置和云平台对接。"
+        }
+      },
+      {
+        "heading": {
+          "en": "Validate before scaling",
+          "zh": "批量前先验证"
+        },
+        "body": {
+          "en": "A sample and pilot phase helps confirm thermal behavior, installation process, backend compatibility, packaging, and field feedback before repeat orders.",
+          "zh": "样机和试点阶段可以在复购前验证散热、安装流程、平台兼容性、包装和现场反馈。"
+        }
+      }
+    ],
+    "relatedProductSlugs": ["home-wallbox-7kw", "pro-wallbox-22kw", "super-dc-240kw"],
+    "relatedCategorySlugs": ["home-ac-charger", "commercial-ac-charger", "dc-charger"]
+  },
+  {
+    "slug": "ocpp-ev-charger",
+    "intent": "operator searches for OCPP compatible EV charger",
+    "title": {
+      "en": "OCPP EV Charger for Commercial and Public Charging",
+      "zh": "面向商用和公共运营的OCPP充电桩"
+    },
+    "description": {
+      "en": "Understand how OCPP EV chargers connect charging hardware with operator platforms for monitoring, user access, billing, and remote maintenance.",
+      "zh": "了解OCPP充电桩如何连接硬件与运营平台，用于监控、用户准入、计费和远程维护。"
+    },
+    "hero": {
+      "en": "OCPP matters when a charger must work with a third-party CMS, payment flow, RFID access, load management, or remote diagnostics. It is a key requirement for commercial and public charging networks.",
+      "zh": "当充电桩需要接入第三方CMS、支付流程、RFID、负载管理或远程诊断时，OCPP就是关键要求，尤其适用于商用和公共充电网络。"
+    },
+    "sections": [
+      {
+        "heading": {
+          "en": "What OCPP enables",
+          "zh": "OCPP能实现什么"
+        },
+        "body": {
+          "en": "OCPP lets operators monitor charger status, authorize users, manage sessions, update configuration, and connect chargers from different vendors to a central platform.",
+          "zh": "OCPP可帮助运营商监控设备状态、授权用户、管理充电会话、更新配置，并把不同供应商设备接入统一平台。"
+        }
+      },
+      {
+        "heading": {
+          "en": "Hardware still matters",
+          "zh": "硬件依然重要"
+        },
+        "body": {
+          "en": "Protocol compatibility should be checked together with meter accuracy, network module stability, enclosure design, cable management, and field installation requirements.",
+          "zh": "协议兼容性需要与计量精度、网络模块稳定性、结构设计、线缆管理和现场安装要求一起评估。"
+        }
+      },
+      {
+        "heading": {
+          "en": "Best-fit product lines",
+          "zh": "适配产品线"
+        },
+        "body": {
+          "en": "Commercial AC chargers and DC fast chargers are the most common OCPP product lines because they serve shared parking, fleet, workplace, and public charging use cases.",
+          "zh": "商用交流桩和直流快充是最常见的OCPP产品线，适用于共享停车、车队、办公园区和公共充电场景。"
+        }
+      }
+    ],
+    "relatedProductSlugs": ["public-wallbox-22kw", "twin-pedestal-44kw", "super-dc-180kw"],
+    "relatedCategorySlugs": ["commercial-ac-charger", "dc-charger"]
+  },
+  {
+    "slug": "dc-fast-charger",
+    "intent": "buyer researches DC fast charger products",
+    "title": {
+      "en": "DC Fast Charger Selection for Public and Fleet Charging",
+      "zh": "公共和车队场景的直流快充选型"
+    },
+    "description": {
+      "en": "Compare DC fast charger power levels, connector options, site scenarios, and deployment considerations from 30KW compact units to 720KW split systems.",
+      "zh": "比较30KW紧凑型到720KW分体式系统的直流快充功率、接口、站点场景和部署要点。"
+    },
+    "hero": {
+      "en": "DC fast chargers shorten charging time for public stations, fleets, highways, and destination charging. The right model depends on grid capacity, vehicle mix, parking dwell time, and future expansion.",
+      "zh": "直流快充可缩短公共站、车队、高速和目的地充电时间。合适型号取决于电网容量、车型结构、停留时间和未来扩容计划。"
+    },
+    "sections": [
+      {
+        "heading": {
+          "en": "Choose power by site demand",
+          "zh": "按站点需求选择功率"
+        },
+        "body": {
+          "en": "Compact 30KW to 80KW chargers fit limited-power sites and destination charging. 120KW to 360KW chargers support higher turnover. Split systems fit large stations that need scalable power.",
+          "zh": "30KW到80KW适合电力受限站点和目的地充电，120KW到360KW适合更高周转，分体式系统适合需要扩展功率的大型站点。"
+        }
+      },
+      {
+        "heading": {
+          "en": "Connector and regional fit",
+          "zh": "接口和区域适配"
+        },
+        "body": {
+          "en": "CCS2, CCS1, NACS, GB/T, and CHAdeMO support should be matched to the target market and vehicle base. Mixed connector planning can improve utilization.",
+          "zh": "CCS2、CCS1、NACS、GB/T和CHAdeMO应匹配目标市场和车辆基础，混合接口规划可提升利用率。"
+        }
+      },
+      {
+        "heading": {
+          "en": "Plan operations early",
+          "zh": "提前规划运营"
+        },
+        "body": {
+          "en": "Remote monitoring, payment integration, load control, maintenance access, and spare-part planning should be discussed before site rollout.",
+          "zh": "远程监控、支付集成、负载控制、维护通道和备件计划应在站点铺设前确认。"
+        }
+      }
+    ],
+    "relatedProductSlugs": ["mini-dc-60kw", "super-dc-240kw", "split-dc-720kw"],
+    "relatedCategorySlugs": ["dc-charger"]
+  },
+  {
+    "slug": "commercial-ev-charging-station",
+    "intent": "business researches commercial EV charging station solutions",
+    "title": {
+      "en": "Commercial EV Charging Station Solutions",
+      "zh": "商用电动汽车充电站解决方案"
+    },
+    "description": {
+      "en": "Plan commercial EV charging stations for parking lots, offices, hotels, retail sites, fleets, and operators using AC and DC charger combinations.",
+      "zh": "为停车场、办公园区、酒店、零售场所、车队和运营商规划交流与直流组合的商用充电站。"
+    },
+    "hero": {
+      "en": "A commercial charging site should balance user dwell time, available power, payment needs, access control, charger quantity, and long-term operating cost.",
+      "zh": "商用充电站需要平衡用户停留时间、可用电力、支付需求、权限控制、设备数量和长期运营成本。"
+    },
+    "sections": [
+      {
+        "heading": {
+          "en": "Use AC and DC together",
+          "zh": "交流与直流组合使用"
+        },
+        "body": {
+          "en": "AC chargers are cost-effective for long parking sessions, while DC fast chargers support short stops and high turnover. Many commercial projects need both.",
+          "zh": "交流桩适合长时间停车且成本更低，直流快充适合短停和高周转，许多商用项目需要两者组合。"
+        }
+      },
+      {
+        "heading": {
+          "en": "Operational requirements",
+          "zh": "运营要求"
+        },
+        "body": {
+          "en": "RFID, MID meters, OCPP, backend integration, cable management, advertising screens, and weather resistance can all affect the final charger selection.",
+          "zh": "RFID、MID电表、OCPP、后台对接、线缆管理、广告屏和户外防护都会影响最终选型。"
+        }
+      },
+      {
+        "heading": {
+          "en": "Deployment support",
+          "zh": "部署支持"
+        },
+        "body": {
+          "en": "YINGLITECH can support project matching across wallbox, pedestal, advertising, compact DC, and high-power DC charging products.",
+          "zh": "盈利科技可围绕壁挂、立柱、广告桩、紧凑型直流和大功率直流产品提供项目匹配支持。"
+        }
+      }
+    ],
+    "relatedProductSlugs": ["twin-wallbox-44kw", "ac-advertising-pedestal-44kw", "dc-advertising-pedestal-120kw"],
+    "relatedCategorySlugs": ["commercial-ac-charger", "dc-charger"]
+  },
+  {
+    "slug": "home-wallbox-ev-charger",
+    "intent": "buyer researches home wallbox EV charger options",
+    "title": {
+      "en": "Home Wallbox EV Charger Options from 7KW to 22KW",
+      "zh": "7KW至22KW家用壁挂式充电桩选型"
+    },
+    "description": {
+      "en": "Compare home wallbox EV chargers by power, cable type, app control, dynamic load balance, installation needs, and market requirements.",
+      "zh": "按功率、线缆类型、APP控制、动态负载均衡、安装需求和市场要求比较家用壁挂式充电桩。"
+    },
+    "hero": {
+      "en": "Home wallbox chargers are selected by installation environment, grid connection, vehicle onboard charger limit, cable preference, and local compliance requirements.",
+      "zh": "家用壁挂桩的选型取决于安装环境、电网连接、车载充电机限制、线缆偏好和当地合规要求。"
+    },
+    "sections": [
+      {
+        "heading": {
+          "en": "Power level basics",
+          "zh": "功率选择基础"
+        },
+        "body": {
+          "en": "7KW models fit many single-phase homes, while 11KW and 22KW models suit three-phase markets and faster overnight charging when the vehicle and grid allow it.",
+          "zh": "7KW适合许多单相家庭，11KW和22KW适合三相市场，在车辆和电网允许时提供更快的夜间充电。"
+        }
+      },
+      {
+        "heading": {
+          "en": "Smart charging features",
+          "zh": "智能充电功能"
+        },
+        "body": {
+          "en": "App control, scheduling, RFID, dynamic load balance, and solar or energy integration can improve safety and user convenience.",
+          "zh": "APP控制、预约充电、RFID、动态负载均衡，以及光伏或能源系统联动可提升安全性和使用便利。"
+        }
+      },
+      {
+        "heading": {
+          "en": "For distributors and brands",
+          "zh": "面向渠道和品牌商"
+        },
+        "body": {
+          "en": "Home wallboxes are common OEM/ODM products because branding, packaging, cable options, and regional certification paths can be customized for local channels.",
+          "zh": "家用壁挂桩是常见OEM/ODM产品，品牌、包装、线缆选项和区域认证路径可按本地渠道定制。"
+        }
+      }
+    ],
+    "relatedProductSlugs": ["home-wallbox-7kw", "home-wallbox-11kw", "home-wallbox-22kw"],
+    "relatedCategorySlugs": ["home-ac-charger"]
+  },
+  {
+    "slug": "energy-storage-ev-charging",
+    "intent": "buyer researches energy storage EV charging solution",
+    "title": {
+      "en": "Energy Storage EV Charging for Grid-Limited Sites",
+      "zh": "面向电网受限站点的储能充电方案"
+    },
+    "description": {
+      "en": "Use energy storage EV charging to support peak shaving, solar integration, high-power charging, and sites where grid capacity is limited.",
+      "zh": "通过储能充电支持削峰填谷、光伏接入、高功率充电，以及电网容量受限的站点。"
+    },
+    "hero": {
+      "en": "Energy storage charging systems can buffer grid demand, store solar energy, and support higher-power charging where direct grid expansion is expensive or slow.",
+      "zh": "储能充电系统可以缓冲电网负荷、存储光伏电能，并在直接扩容成本高或周期长的场景下支持更高功率充电。"
+    },
+    "sections": [
+      {
+        "heading": {
+          "en": "When storage helps",
+          "zh": "储能适合哪些场景"
+        },
+        "body": {
+          "en": "Storage is useful for peak-demand management, remote or weak-grid sites, temporary high-power charging demand, and projects that combine solar and EV charging.",
+          "zh": "储能适用于峰值负荷管理、偏远或弱电网站点、临时高功率需求，以及光伏与充电结合的项目。"
+        }
+      },
+      {
+        "heading": {
+          "en": "System-level planning",
+          "zh": "系统级规划"
+        },
+        "body": {
+          "en": "Battery capacity, charger power, EMS logic, thermal management, safety design, and maintenance access should be planned as one system.",
+          "zh": "电池容量、充电功率、EMS逻辑、热管理、安全设计和维护通道需要作为一个系统整体规划。"
+        }
+      },
+      {
+        "heading": {
+          "en": "Business value",
+          "zh": "商业价值"
+        },
+        "body": {
+          "en": "For operators, storage can reduce grid upgrade pressure and improve charging availability. For commercial sites, it can make fast charging possible in more locations.",
+          "zh": "对运营商而言，储能可降低电网扩容压力并提升充电可用性；对商用站点而言，它能让更多地点具备快充能力。"
+        }
+      }
+    ],
+    "relatedProductSlugs": ["energy-storage-480kw", "home-storage-10kwh"],
+    "relatedCategorySlugs": ["energy-storage"]
+  },
+  {
+    "slug": "mode-2-mode-3-mode-4-ev-charging",
+    "intent": "buyer researches EV charging mode differences",
+    "title": {
+      "en": "Mode 2, Mode 3, and Mode 4 EV Charging Explained",
+      "zh": "Mode 2、Mode 3与Mode 4电动汽车充电说明"
+    },
+    "description": {
+      "en": "Learn the practical differences between Mode 2 portable charging, Mode 3 AC charging stations, and Mode 4 DC fast charging for product selection.",
+      "zh": "了解Mode 2便携式充电、Mode 3交流充电桩和Mode 4直流快充的实际区别，辅助产品选型。"
+    },
+    "hero": {
+      "en": "Charging mode terminology helps buyers connect use cases with the right hardware: emergency or portable charging, fixed AC charging, or high-power DC fast charging.",
+      "zh": "充电模式术语可帮助采购方把使用场景和硬件对应起来：应急或便携式充电、固定式交流充电，或大功率直流快充。"
+    },
+    "sections": [
+      {
+        "heading": {
+          "en": "Mode 2 for portable charging",
+          "zh": "Mode 2用于便携式充电"
+        },
+        "body": {
+          "en": "Mode 2 usually refers to portable AC charging with an in-cable control box. It fits mobile, backup, and light-duty charging needs.",
+          "zh": "Mode 2通常指带线控盒的便携式交流充电，适合移动、备用和轻量充电需求。"
+        }
+      },
+      {
+        "heading": {
+          "en": "Mode 3 for fixed AC stations",
+          "zh": "Mode 3用于固定交流桩"
+        },
+        "body": {
+          "en": "Mode 3 covers dedicated AC charging stations such as home wallboxes and commercial AC chargers, often with smart control and access features.",
+          "zh": "Mode 3覆盖专用交流充电桩，例如家用壁挂桩和商用交流桩，通常具备智能控制和准入功能。"
+        }
+      },
+      {
+        "heading": {
+          "en": "Mode 4 for DC fast charging",
+          "zh": "Mode 4用于直流快充"
+        },
+        "body": {
+          "en": "Mode 4 uses external DC charging equipment to deliver higher power directly to the vehicle battery, making it suitable for public, fleet, and highway scenarios.",
+          "zh": "Mode 4通过外部直流设备向车辆电池提供更高功率，适用于公共、车队和高速场景。"
+        }
+      }
+    ],
+    "relatedProductSlugs": ["portable-ev-box-7kw", "home-wallbox-22kw", "super-dc-120kw"],
+    "relatedCategorySlugs": ["portable-charger", "home-ac-charger", "dc-charger"]
+  }
+]

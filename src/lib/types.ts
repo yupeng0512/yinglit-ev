@@ -29,6 +29,12 @@ export type Product = {
   moq?: number;
 };
 
+export type LocalizedText = {
+  en: string;
+  zh: string;
+  [locale: string]: string;
+};
+
 export type Category = {
   slug: string;
   name: Record<string, string>;
@@ -37,6 +43,22 @@ export type Category = {
   order: number;
   image?: string;
   productCount?: number;
+};
+
+export type SeoPageSection = {
+  heading: LocalizedText;
+  body: LocalizedText;
+};
+
+export type SeoPage = {
+  slug: string;
+  intent: string;
+  title: LocalizedText;
+  description: LocalizedText;
+  hero: LocalizedText;
+  sections: SeoPageSection[];
+  relatedProductSlugs: string[];
+  relatedCategorySlugs: string[];
 };
 
 export type SiteSettings = {

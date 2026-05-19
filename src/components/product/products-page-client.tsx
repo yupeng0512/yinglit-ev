@@ -71,7 +71,7 @@ export function ProductsPageClient({
             {categories.map((cat) => (
               <Link
                 key={cat.slug}
-                href={`/${locale}/products?category=${cat.slug}`}
+                href={`/${locale}/products/category/${cat.slug}`}
                 className={cn(
                   "px-4 py-2 text-sm font-medium rounded-lg border transition-colors",
                   activeCategory === cat.slug
