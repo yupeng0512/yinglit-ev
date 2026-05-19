@@ -1,8 +1,8 @@
 {
   "siteName": "YINGLITECH",
   "companyName": "Shenzhen Yingli Technology Co., Ltd.",
-  "siteUrl": "https://yinglit-ev.vercel.app",
-  "logo": "/logo.svg",
+  "siteUrl": "https://www.yinglitech.com",
+  "logo": "/logo-yingli.png",
   "mode": "b2b",
   "defaultLocale": "en",
   "locales": ["en", "zh"],

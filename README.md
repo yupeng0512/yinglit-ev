@@ -38,3 +38,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 ## Contact Form Email
 
 The contact form uses a Next.js API route and Resend to send inquiry emails. See [docs/contact-form-resend.md](docs/contact-form-resend.md) for Resend registration, API key creation, local `.env.local`, and Vercel environment variable setup.
+
+## SEO Deployment
+
+Set `SITE_URL` to the canonical production domain before building for production. The default is `https://www.yinglitech.com`, and `next-sitemap` uses this value to generate `robots.txt` and the full XML sitemap.

@@ -152,22 +152,6 @@ export function ProductDetailClient({
           </div>
         )}
 
-        {/* JSON-LD */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Product",
-              name: product.name.en || Object.values(product.name)[0],
-              description: product.description.en || product.features.join(". "),
-              sku: product.sku,
-              image: product.images.map((img) => img.src),
-              brand: { "@type": "Brand", name: "YINGLITECH" },
-            }),
-          }}
-        />
-
         {/* Related Products */}
         {relatedProducts.length > 0 && (
           <div className="mt-16">

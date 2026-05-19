@@ -66,7 +66,9 @@
 
 - [ ] 提交 Sitemap 到 Google Search Console
 - [ ] 配置 Google Analytics / Vercel Analytics
-- [ ] 添加 Organization 类型的 JSON-LD 到首页
+- [x] 代码层生成正式域名完整 Sitemap / Robots
+- [x] 添加页面级 canonical / hreflang / metadata
+- [x] 添加 Organization / Website / Product JSON-LD
 - [ ] 优化 Core Web Vitals（产品图片加载后重点关注 LCP）
 
 ### P6 — 功能增强

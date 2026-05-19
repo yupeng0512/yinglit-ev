@@ -9,7 +9,7 @@ Disallow: /_next/
 Disallow: /admin/
 
 # Host
-Host: https://yinglit-ev.vercel.app
+Host: https://www.yinglitech.com
 
 # Sitemaps
-Sitemap: https://yinglit-ev.vercel.app/sitemap.xml
+Sitemap: https://www.yinglitech.com/sitemap.xml
