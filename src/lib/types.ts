@@ -77,6 +77,8 @@ export type GeoPageContent = {
 export type SeoPage = {
   slug: string;
   intent: string;
+  publishedAt: string;
+  updatedAt: string;
   title: LocalizedText;
   description: LocalizedText;
   hero: LocalizedText;

@@ -46,8 +46,18 @@
         }
       }
     ],
-    "relatedProductSlugs": ["super-dc-120kw", "twin-wallbox-44kw", "home-wallbox-22kw"],
-    "relatedCategorySlugs": ["dc-charger", "commercial-ac-charger", "home-ac-charger"]
+    "relatedProductSlugs": [
+      "super-dc-120kw",
+      "twin-wallbox-44kw",
+      "home-wallbox-22kw"
+    ],
+    "relatedCategorySlugs": [
+      "dc-charger",
+      "commercial-ac-charger",
+      "home-ac-charger"
+    ],
+    "publishedAt": "2026-05-22",
+    "updatedAt": "2026-05-22"
   },
   {
     "slug": "ev-charger-oem-odm",
@@ -96,8 +106,18 @@
         }
       }
     ],
-    "relatedProductSlugs": ["home-wallbox-7kw", "pro-wallbox-22kw", "super-dc-240kw"],
-    "relatedCategorySlugs": ["home-ac-charger", "commercial-ac-charger", "dc-charger"]
+    "relatedProductSlugs": [
+      "home-wallbox-7kw",
+      "pro-wallbox-22kw",
+      "super-dc-240kw"
+    ],
+    "relatedCategorySlugs": [
+      "home-ac-charger",
+      "commercial-ac-charger",
+      "dc-charger"
+    ],
+    "publishedAt": "2026-05-22",
+    "updatedAt": "2026-05-22"
   },
   {
     "slug": "ocpp-ev-charger",
@@ -146,8 +166,17 @@
         }
       }
     ],
-    "relatedProductSlugs": ["public-wallbox-22kw", "twin-pedestal-44kw", "super-dc-180kw"],
-    "relatedCategorySlugs": ["commercial-ac-charger", "dc-charger"]
+    "relatedProductSlugs": [
+      "public-wallbox-22kw",
+      "twin-pedestal-44kw",
+      "super-dc-180kw"
+    ],
+    "relatedCategorySlugs": [
+      "commercial-ac-charger",
+      "dc-charger"
+    ],
+    "publishedAt": "2026-05-22",
+    "updatedAt": "2026-05-22"
   },
   {
     "slug": "dc-fast-charger",
@@ -196,8 +225,16 @@
         }
       }
     ],
-    "relatedProductSlugs": ["mini-dc-60kw", "super-dc-240kw", "split-dc-720kw"],
-    "relatedCategorySlugs": ["dc-charger"]
+    "relatedProductSlugs": [
+      "mini-dc-60kw",
+      "super-dc-240kw",
+      "split-dc-720kw"
+    ],
+    "relatedCategorySlugs": [
+      "dc-charger"
+    ],
+    "publishedAt": "2026-05-22",
+    "updatedAt": "2026-05-22"
   },
   {
     "slug": "commercial-ev-charging-station",
@@ -246,8 +283,17 @@
         }
       }
     ],
-    "relatedProductSlugs": ["twin-wallbox-44kw", "ac-advertising-pedestal-44kw", "dc-advertising-pedestal-120kw"],
-    "relatedCategorySlugs": ["commercial-ac-charger", "dc-charger"]
+    "relatedProductSlugs": [
+      "twin-wallbox-44kw",
+      "ac-advertising-pedestal-44kw",
+      "dc-advertising-pedestal-120kw"
+    ],
+    "relatedCategorySlugs": [
+      "commercial-ac-charger",
+      "dc-charger"
+    ],
+    "publishedAt": "2026-05-22",
+    "updatedAt": "2026-05-22"
   },
   {
     "slug": "home-wallbox-ev-charger",
@@ -296,8 +342,16 @@
         }
       }
     ],
-    "relatedProductSlugs": ["home-wallbox-7kw", "home-wallbox-11kw", "home-wallbox-22kw"],
-    "relatedCategorySlugs": ["home-ac-charger"]
+    "relatedProductSlugs": [
+      "home-wallbox-7kw",
+      "home-wallbox-11kw",
+      "home-wallbox-22kw"
+    ],
+    "relatedCategorySlugs": [
+      "home-ac-charger"
+    ],
+    "publishedAt": "2026-05-22",
+    "updatedAt": "2026-05-22"
   },
   {
     "slug": "energy-storage-ev-charging",
@@ -346,8 +400,15 @@
         }
       }
     ],
-    "relatedProductSlugs": ["energy-storage-480kw", "home-storage-10kwh"],
-    "relatedCategorySlugs": ["energy-storage"]
+    "relatedProductSlugs": [
+      "energy-storage-480kw",
+      "home-storage-10kwh"
+    ],
+    "relatedCategorySlugs": [
+      "energy-storage"
+    ],
+    "publishedAt": "2026-05-22",
+    "updatedAt": "2026-05-22"
   },
   {
     "slug": "mode-2-mode-3-mode-4-ev-charging",
@@ -396,8 +457,18 @@
         }
       }
     ],
-    "relatedProductSlugs": ["portable-ev-box-7kw", "home-wallbox-22kw", "super-dc-120kw"],
-    "relatedCategorySlugs": ["portable-charger", "home-ac-charger", "dc-charger"]
+    "relatedProductSlugs": [
+      "portable-ev-box-7kw",
+      "home-wallbox-22kw",
+      "super-dc-120kw"
+    ],
+    "relatedCategorySlugs": [
+      "portable-charger",
+      "home-ac-charger",
+      "dc-charger"
+    ],
+    "publishedAt": "2026-05-22",
+    "updatedAt": "2026-05-22"
   },
   {
     "slug": "ev-charger-manufacturer-selection",
@@ -416,29 +487,48 @@
     },
     "sections": [
       {
-        "heading": { "en": "Start from the deployment market", "zh": "先明确部署市场" },
+        "heading": {
+          "en": "Start from the deployment market",
+          "zh": "先明确部署市场"
+        },
         "body": {
           "en": "Voltage, connector, certification, language, app, metering, and installation expectations vary by region. Confirm these requirements before comparing suppliers.",
           "zh": "不同区域在电压、接口、认证、语言、APP、计量和安装方面要求不同。比较供应商前应先确认这些条件。"
         }
       },
       {
-        "heading": { "en": "Check evidence behind capability claims", "zh": "核查能力证据" },
+        "heading": {
+          "en": "Check evidence behind capability claims",
+          "zh": "核查能力证据"
+        },
         "body": {
           "en": "Ask for tested models, product photos, specification sheets, certification samples, OCPP experience, and reference project scenarios instead of relying on general marketing copy.",
           "zh": "应要求供应商提供已测试型号、产品图片、规格书、认证样例、OCPP经验和参考项目场景，而不是只看通用营销文案。"
         }
       },
       {
-        "heading": { "en": "Plan for repeat orders", "zh": "面向复购规划" },
+        "heading": {
+          "en": "Plan for repeat orders",
+          "zh": "面向复购规划"
+        },
         "body": {
           "en": "A supplier is more valuable when it can support samples, pilot installation feedback, firmware refinement, packaging updates, and stable repeat production.",
           "zh": "能支持样品、试点安装反馈、固件优化、包装更新和稳定复购生产的供应商更有长期价值。"
         }
       }
     ],
-    "relatedProductSlugs": ["home-wallbox-22kw", "twin-wallbox-44kw", "super-dc-240kw"],
-    "relatedCategorySlugs": ["home-ac-charger", "commercial-ac-charger", "dc-charger"]
+    "relatedProductSlugs": [
+      "home-wallbox-22kw",
+      "twin-wallbox-44kw",
+      "super-dc-240kw"
+    ],
+    "relatedCategorySlugs": [
+      "home-ac-charger",
+      "commercial-ac-charger",
+      "dc-charger"
+    ],
+    "publishedAt": "2026-05-22",
+    "updatedAt": "2026-05-22"
   },
   {
     "slug": "ac-vs-dc-ev-charger",
@@ -457,29 +547,47 @@
     },
     "sections": [
       {
-        "heading": { "en": "AC charging fits dwell-time scenarios", "zh": "交流适合长停场景" },
+        "heading": {
+          "en": "AC charging fits dwell-time scenarios",
+          "zh": "交流适合长停场景"
+        },
         "body": {
           "en": "Homes, offices, hotels, and workplace parking often benefit from AC charging because vehicles remain parked for hours and hardware cost is lower.",
           "zh": "家庭、办公园区、酒店和工作场所通常适合交流充电，因为车辆停留时间较长，硬件成本也更低。"
         }
       },
       {
-        "heading": { "en": "DC charging fits high-turnover sites", "zh": "直流适合高周转站点" },
+        "heading": {
+          "en": "DC charging fits high-turnover sites",
+          "zh": "直流适合高周转站点"
+        },
         "body": {
           "en": "Public charging, fleet depots, highway sites, and taxi or logistics operations often need DC charging because drivers value short charging sessions.",
           "zh": "公共充电、车队场站、高速服务区、出租车和物流运营通常需要直流快充，因为司机更重视短时间补能。"
         }
       },
       {
-        "heading": { "en": "Use both when behavior varies", "zh": "用户行为复杂时组合使用" },
+        "heading": {
+          "en": "Use both when behavior varies",
+          "zh": "用户行为复杂时组合使用"
+        },
         "body": {
           "en": "Mixed charging sites can use AC chargers for parked users and DC chargers for urgent charging, improving asset utilization across different user groups.",
           "zh": "混合站点可用交流桩服务长停用户，用直流桩服务急需补能用户，从而提升不同人群下的资产利用率。"
         }
       }
     ],
-    "relatedProductSlugs": ["public-wallbox-22kw", "twin-pedestal-44kw", "super-dc-120kw"],
-    "relatedCategorySlugs": ["commercial-ac-charger", "dc-charger"]
+    "relatedProductSlugs": [
+      "public-wallbox-22kw",
+      "twin-pedestal-44kw",
+      "super-dc-120kw"
+    ],
+    "relatedCategorySlugs": [
+      "commercial-ac-charger",
+      "dc-charger"
+    ],
+    "publishedAt": "2026-05-22",
+    "updatedAt": "2026-05-22"
   },
   {
     "slug": "ccs2-ccs1-nacs-gbt-chademo",
@@ -498,29 +606,46 @@
     },
     "sections": [
       {
-        "heading": { "en": "Match connectors to target markets", "zh": "按目标市场匹配接口" },
+        "heading": {
+          "en": "Match connectors to target markets",
+          "zh": "按目标市场匹配接口"
+        },
         "body": {
           "en": "CCS2 is common in Europe, CCS1 and NACS are important in North America, GB/T serves China, and CHAdeMO may remain relevant for certain legacy fleets.",
           "zh": "CCS2常见于欧洲，CCS1和NACS对北美重要，GB/T服务中国市场，CHAdeMO在部分存量车队中仍可能相关。"
         }
       },
       {
-        "heading": { "en": "Consider mixed-connector utilization", "zh": "考虑混合接口利用率" },
+        "heading": {
+          "en": "Consider mixed-connector utilization",
+          "zh": "考虑混合接口利用率"
+        },
         "body": {
           "en": "A multi-standard station can serve more drivers, but it also increases planning complexity for cable management, power allocation, spare parts, and maintenance.",
           "zh": "多标准站点能服务更多司机，但也会增加线缆管理、功率分配、备件和维护复杂度。"
         }
       },
       {
-        "heading": { "en": "Plan future migration", "zh": "规划未来迁移" },
+        "heading": {
+          "en": "Plan future migration",
+          "zh": "规划未来迁移"
+        },
         "body": {
           "en": "Some markets are transitioning connector preferences. Buyers should discuss modular cable design and replacement paths before large station rollout.",
           "zh": "部分市场正在发生接口偏好迁移。大规模铺设前，采购方应讨论模块化线缆设计和后续替换路径。"
         }
       }
     ],
-    "relatedProductSlugs": ["mini-dc-60kw", "super-dc-240kw", "split-dc-720kw"],
-    "relatedCategorySlugs": ["dc-charger"]
+    "relatedProductSlugs": [
+      "mini-dc-60kw",
+      "super-dc-240kw",
+      "split-dc-720kw"
+    ],
+    "relatedCategorySlugs": [
+      "dc-charger"
+    ],
+    "publishedAt": "2026-05-22",
+    "updatedAt": "2026-05-22"
   },
   {
     "slug": "ocpp-1-6j-vs-ocpp-2-0-1",
@@ -539,29 +664,47 @@
     },
     "sections": [
       {
-        "heading": { "en": "OCPP 1.6J is mature", "zh": "OCPP 1.6J成熟度高" },
+        "heading": {
+          "en": "OCPP 1.6J is mature",
+          "zh": "OCPP 1.6J成熟度高"
+        },
         "body": {
           "en": "Many operators still choose OCPP 1.6J because it is broadly supported by CMS platforms and is easier to validate during pilots.",
           "zh": "许多运营商仍选择OCPP 1.6J，因为主流CMS广泛支持，试点验证也更容易。"
         }
       },
       {
-        "heading": { "en": "OCPP 2.0.1 adds stronger controls", "zh": "OCPP 2.0.1控制能力更强" },
+        "heading": {
+          "en": "OCPP 2.0.1 adds stronger controls",
+          "zh": "OCPP 2.0.1控制能力更强"
+        },
         "body": {
           "en": "OCPP 2.0.1 can support richer device management, security profiles, transaction handling, and future smart charging scenarios when the backend supports it.",
           "zh": "当后台支持时，OCPP 2.0.1可支持更丰富的设备管理、安全配置、交易处理和未来智能充电场景。"
         }
       },
       {
-        "heading": { "en": "Validate before procurement", "zh": "采购前先验证" },
+        "heading": {
+          "en": "Validate before procurement",
+          "zh": "采购前先验证"
+        },
         "body": {
           "en": "Buyers should request a protocol test with the target CMS before mass production, especially for authorization, meter values, remote start, and fault handling.",
           "zh": "采购方应在量产前用目标CMS做协议测试，尤其验证授权、计量值、远程启动和故障处理。"
         }
       }
     ],
-    "relatedProductSlugs": ["public-wallbox-22kw", "twin-wallbox-44kw", "super-dc-180kw"],
-    "relatedCategorySlugs": ["commercial-ac-charger", "dc-charger"]
+    "relatedProductSlugs": [
+      "public-wallbox-22kw",
+      "twin-wallbox-44kw",
+      "super-dc-180kw"
+    ],
+    "relatedCategorySlugs": [
+      "commercial-ac-charger",
+      "dc-charger"
+    ],
+    "publishedAt": "2026-05-22",
+    "updatedAt": "2026-05-22"
   },
   {
     "slug": "ev-charger-certifications-ce-ukca",
@@ -580,29 +723,47 @@
     },
     "sections": [
       {
-        "heading": { "en": "Certification affects product design", "zh": "认证会影响产品设计" },
+        "heading": {
+          "en": "Certification affects product design",
+          "zh": "认证会影响产品设计"
+        },
         "body": {
           "en": "Meter type, leakage protection, enclosure rating, cable specification, labeling, and documentation can all change based on the target compliance path.",
           "zh": "电表类型、漏电保护、防护等级、线缆规格、标签和文件都可能因目标合规路径而变化。"
         }
       },
       {
-        "heading": { "en": "MID matters for paid charging", "zh": "收费场景重视MID" },
+        "heading": {
+          "en": "MID matters for paid charging",
+          "zh": "收费场景重视MID"
+        },
         "body": {
           "en": "When charging fees are calculated by measured energy, operators often need certified metering and transparent records to support billing confidence.",
           "zh": "按电量收费的场景通常需要认证计量和透明记录，以支持计费可信度。"
         }
       },
       {
-        "heading": { "en": "OCPP is not a safety certificate", "zh": "OCPP不是安全认证" },
+        "heading": {
+          "en": "OCPP is not a safety certificate",
+          "zh": "OCPP不是安全认证"
+        },
         "body": {
           "en": "OCPP verifies communication behavior with management platforms. It should be planned together with safety, EMC, metering, and regional compliance.",
           "zh": "OCPP验证的是与管理平台的通信行为，应与安全、EMC、计量和区域合规一起规划。"
         }
       }
     ],
-    "relatedProductSlugs": ["home-wallbox-22kw", "public-wallbox-22kw", "twin-pedestal-44kw"],
-    "relatedCategorySlugs": ["home-ac-charger", "commercial-ac-charger"]
+    "relatedProductSlugs": [
+      "home-wallbox-22kw",
+      "public-wallbox-22kw",
+      "twin-pedestal-44kw"
+    ],
+    "relatedCategorySlugs": [
+      "home-ac-charger",
+      "commercial-ac-charger"
+    ],
+    "publishedAt": "2026-05-22",
+    "updatedAt": "2026-05-22"
   },
   {
     "slug": "dynamic-load-balancing-ev-charger",
@@ -621,29 +782,47 @@
     },
     "sections": [
       {
-        "heading": { "en": "Avoid overload at peak time", "zh": "避免高峰过载" },
+        "heading": {
+          "en": "Avoid overload at peak time",
+          "zh": "避免高峰过载"
+        },
         "body": {
           "en": "The system can reduce charger output when building load rises and restore charging power when capacity becomes available again.",
           "zh": "当建筑负荷上升时，系统可降低充电输出；容量恢复后，再提高充电功率。"
         }
       },
       {
-        "heading": { "en": "Useful for homes and commercial sites", "zh": "适合家庭和商用场景" },
+        "heading": {
+          "en": "Useful for homes and commercial sites",
+          "zh": "适合家庭和商用场景"
+        },
         "body": {
           "en": "Home wallboxes, apartment parking, offices, and hotels can all benefit when charger quantity grows faster than electrical capacity.",
           "zh": "当充电设备数量增长快于电力容量时，家用壁挂桩、公寓停车场、办公室和酒店都可受益。"
         }
       },
       {
-        "heading": { "en": "Plan metering and communication", "zh": "规划计量和通信" },
+        "heading": {
+          "en": "Plan metering and communication",
+          "zh": "规划计量和通信"
+        },
         "body": {
           "en": "Reliable load balancing needs accurate measurement, stable communication, and commissioning rules that installers can understand.",
           "zh": "可靠负载均衡需要准确计量、稳定通信，以及安装人员能理解的调试规则。"
         }
       }
     ],
-    "relatedProductSlugs": ["home-wallbox-7kw", "home-wallbox-22kw", "public-wallbox-22kw"],
-    "relatedCategorySlugs": ["home-ac-charger", "commercial-ac-charger"]
+    "relatedProductSlugs": [
+      "home-wallbox-7kw",
+      "home-wallbox-22kw",
+      "public-wallbox-22kw"
+    ],
+    "relatedCategorySlugs": [
+      "home-ac-charger",
+      "commercial-ac-charger"
+    ],
+    "publishedAt": "2026-05-22",
+    "updatedAt": "2026-05-22"
   },
   {
     "slug": "ev-charger-for-parking-lots",
@@ -662,29 +841,47 @@
     },
     "sections": [
       {
-        "heading": { "en": "Segment parking users", "zh": "区分停车用户" },
+        "heading": {
+          "en": "Segment parking users",
+          "zh": "区分停车用户"
+        },
         "body": {
           "en": "Employees, residents, shoppers, visitors, and fleets all have different charging expectations, so one charger type rarely fits every parking lot.",
           "zh": "员工、住户、购物者、访客和车队的充电预期不同，因此一种设备很难适配所有停车场。"
         }
       },
       {
-        "heading": { "en": "Design for access and billing", "zh": "设计权限与计费" },
+        "heading": {
+          "en": "Design for access and billing",
+          "zh": "设计权限与计费"
+        },
         "body": {
           "en": "RFID, QR code payment, operator platforms, metering, and parking system integration should be discussed before selecting hardware.",
           "zh": "RFID、扫码支付、运营平台、计量和停车系统集成都应在选型前确认。"
         }
       },
       {
-        "heading": { "en": "Leave room for expansion", "zh": "预留扩展空间" },
+        "heading": {
+          "en": "Leave room for expansion",
+          "zh": "预留扩展空间"
+        },
         "body": {
           "en": "Conduit, cabinet space, load balancing, and backend capacity should be planned so the site can add chargers later without redesign.",
           "zh": "线管、配电柜空间、负载均衡和后台容量应预留，方便后续增加设备而不重新设计。"
         }
       }
     ],
-    "relatedProductSlugs": ["public-wallbox-22kw", "twin-pedestal-44kw", "super-dc-120kw"],
-    "relatedCategorySlugs": ["commercial-ac-charger", "dc-charger"]
+    "relatedProductSlugs": [
+      "public-wallbox-22kw",
+      "twin-pedestal-44kw",
+      "super-dc-120kw"
+    ],
+    "relatedCategorySlugs": [
+      "commercial-ac-charger",
+      "dc-charger"
+    ],
+    "publishedAt": "2026-05-22",
+    "updatedAt": "2026-05-22"
   },
   {
     "slug": "ev-charger-for-fleet-charging",
@@ -703,29 +900,47 @@
     },
     "sections": [
       {
-        "heading": { "en": "Start from the duty cycle", "zh": "从运营班次开始" },
+        "heading": {
+          "en": "Start from the duty cycle",
+          "zh": "从运营班次开始"
+        },
         "body": {
           "en": "Daily mileage, return time, parking duration, battery size, and route urgency determine whether AC, compact DC, or high-power DC is needed.",
           "zh": "日行驶里程、返场时间、停放时长、电池容量和路线紧急程度决定需要交流、紧凑直流还是大功率直流。"
         }
       },
       {
-        "heading": { "en": "Control charging peaks", "zh": "控制充电峰值" },
+        "heading": {
+          "en": "Control charging peaks",
+          "zh": "控制充电峰值"
+        },
         "body": {
           "en": "Fleet depots often create concentrated charging peaks. Load control and staged charging can reduce grid stress and improve cost predictability.",
           "zh": "车队场站常产生集中充电高峰。负载控制和分阶段充电可降低电网压力并提高成本可预测性。"
         }
       },
       {
-        "heading": { "en": "Uptime is a core metric", "zh": "可用率是核心指标" },
+        "heading": {
+          "en": "Uptime is a core metric",
+          "zh": "可用率是核心指标"
+        },
         "body": {
           "en": "Remote diagnostics, modular components, service access, and spare-part planning matter because charger downtime can disrupt vehicle dispatch.",
           "zh": "远程诊断、模块化部件、维护通道和备件计划很重要，因为设备停机会影响车辆调度。"
         }
       }
     ],
-    "relatedProductSlugs": ["mini-dc-80kw", "super-dc-180kw", "split-dc-480kw"],
-    "relatedCategorySlugs": ["dc-charger", "energy-storage"]
+    "relatedProductSlugs": [
+      "mini-dc-80kw",
+      "super-dc-180kw",
+      "split-dc-480kw"
+    ],
+    "relatedCategorySlugs": [
+      "dc-charger",
+      "energy-storage"
+    ],
+    "publishedAt": "2026-05-22",
+    "updatedAt": "2026-05-22"
   },
   {
     "slug": "ev-charger-for-hotels",
@@ -744,29 +959,47 @@
     },
     "sections": [
       {
-        "heading": { "en": "Guest experience comes first", "zh": "住客体验优先" },
+        "heading": {
+          "en": "Guest experience comes first",
+          "zh": "住客体验优先"
+        },
         "body": {
           "en": "Charging should be simple to start, clearly priced if paid, well signposted, and reliable enough to avoid front-desk complaints.",
           "zh": "充电流程应简单，收费时价格清晰，现场标识明确，并具备足够可靠性，避免增加前台投诉。"
         }
       },
       {
-        "heading": { "en": "AC is often the base layer", "zh": "交流通常是基础配置" },
+        "heading": {
+          "en": "AC is often the base layer",
+          "zh": "交流通常是基础配置"
+        },
         "body": {
           "en": "Because hotel guests often park overnight, 7KW to 22KW AC wallboxes or pedestals can meet many destination charging needs.",
           "zh": "由于酒店住客常过夜停车，7KW至22KW交流壁挂或立柱设备可满足许多目的地充电需求。"
         }
       },
       {
-        "heading": { "en": "Branding can matter", "zh": "品牌形象也重要" },
+        "heading": {
+          "en": "Branding can matter",
+          "zh": "品牌形象也重要"
+        },
         "body": {
           "en": "Color, logo, signage, cable storage, and screen options can help the charging area match the property's brand experience.",
           "zh": "颜色、Logo、标识、线缆收纳和屏幕选项可帮助充电区匹配酒店品牌体验。"
         }
       }
     ],
-    "relatedProductSlugs": ["home-wallbox-22kw", "public-wallbox-22kw", "twin-pedestal-44kw"],
-    "relatedCategorySlugs": ["home-ac-charger", "commercial-ac-charger"]
+    "relatedProductSlugs": [
+      "home-wallbox-22kw",
+      "public-wallbox-22kw",
+      "twin-pedestal-44kw"
+    ],
+    "relatedCategorySlugs": [
+      "home-ac-charger",
+      "commercial-ac-charger"
+    ],
+    "publishedAt": "2026-05-22",
+    "updatedAt": "2026-05-22"
   },
   {
     "slug": "dc-fast-charger-site-planning",
@@ -785,28 +1018,46 @@
     },
     "sections": [
       {
-        "heading": { "en": "Start with grid capacity", "zh": "先评估电网容量" },
+        "heading": {
+          "en": "Start with grid capacity",
+          "zh": "先评估电网容量"
+        },
         "body": {
           "en": "Available transformer capacity, peak demand charges, cable runs, cabinet location, and expansion limits shape the practical charger power range.",
           "zh": "可用变压器容量、峰值需量费、线缆距离、配电柜位置和扩容限制会决定实际可用功率范围。"
         }
       },
       {
-        "heading": { "en": "Design traffic and parking flow", "zh": "设计车流和停车动线" },
+        "heading": {
+          "en": "Design traffic and parking flow",
+          "zh": "设计车流和停车动线"
+        },
         "body": {
           "en": "Cable reach, parking bay angle, queue space, screen visibility, and service vehicle access affect user experience and maintenance efficiency.",
           "zh": "线缆可达性、车位角度、排队空间、屏幕可视性和维护车辆通道会影响用户体验和维护效率。"
         }
       },
       {
-        "heading": { "en": "Plan operations before launch", "zh": "上线前规划运营" },
+        "heading": {
+          "en": "Plan operations before launch",
+          "zh": "上线前规划运营"
+        },
         "body": {
           "en": "Payment, monitoring, remote diagnostics, pricing, fault escalation, spare modules, and support roles should be defined before the site opens.",
           "zh": "支付、监控、远程诊断、定价、故障升级、备件模块和支持角色应在站点开放前明确。"
         }
       }
     ],
-    "relatedProductSlugs": ["super-dc-120kw", "super-dc-240kw", "split-dc-720kw"],
-    "relatedCategorySlugs": ["dc-charger", "energy-storage"]
+    "relatedProductSlugs": [
+      "super-dc-120kw",
+      "super-dc-240kw",
+      "split-dc-720kw"
+    ],
+    "relatedCategorySlugs": [
+      "dc-charger",
+      "energy-storage"
+    ],
+    "publishedAt": "2026-05-22",
+    "updatedAt": "2026-05-22"
   }
 ]

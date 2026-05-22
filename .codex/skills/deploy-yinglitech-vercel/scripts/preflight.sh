@@ -33,7 +33,6 @@ const requiredRobots = [
   "User-agent: PerplexityBot",
   "User-agent: Claude-SearchBot",
   "Disallow: /api/",
-  "Disallow: /_next/",
   "Disallow: /admin/",
 ];
 
@@ -43,6 +42,7 @@ const report = {
   uniqueUrls: new Set(urls).size,
   hasVercelUrl: urls.some((url) => url.includes("vercel.app")) || robots.includes("vercel.app"),
   hasQueryCategoryUrl: urls.some((url) => url.includes("/products?category=")),
+  blocksNextAssets: robots.includes("Disallow: /_next/"),
   missingRobots: requiredRobots.filter((item) => !robots.includes(item)),
 };
 
@@ -53,6 +53,7 @@ if (
   report.uniqueUrls !== expected ||
   report.hasVercelUrl ||
   report.hasQueryCategoryUrl ||
+  report.blocksNextAssets ||
   report.missingRobots.length
 ) {
   process.exit(1);

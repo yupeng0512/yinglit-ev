@@ -8,6 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "postbuild": "next-sitemap",
+    "seo:audit:public": "bash .codex/skills/monitor-yinglitech-geo/scripts/collect-public-signals.sh",
+    "seo:indexnow": "node scripts/submit_indexnow.mjs",
     "skills:validate": "bash scripts/validate_project_skills.sh",
     "visual:assets": "python3 scripts/visual_harness.py --mode assets",
     "visual:test": "python3 scripts/visual_harness.py --mode browser",

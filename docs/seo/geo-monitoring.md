@@ -17,9 +17,19 @@ curl -L https://www.yinglitech.com/robots.txt
 Expected:
 
 - Resource pages and category pages return `200`.
-- `sitemap.xml` contains only `https://www.yinglitech.com/...` URLs.
+- `sitemap.xml` contains `132` unique URLs and only `https://www.yinglitech.com/...` URLs.
 - `robots.txt` points to `https://www.yinglitech.com/sitemap.xml`.
-- Public crawlers and AI search crawlers are allowed; `/api/`, `/_next/`, and `/admin/` remain blocked.
+- Public crawlers and AI search crawlers are allowed.
+- `/api/` and `/admin/` remain blocked.
+- `/_next/`, `/_next/static/`, and `/_next/image` are not blocked, so crawlers can render CSS, JavaScript, and optimized images.
+
+Run the project audit wrapper when the code is available locally:
+
+```bash
+npm run seo:audit:public -- https://www.yinglitech.com --json
+```
+
+Treat the SEO/GEO release as not yet effective if the official domain sitemap has only `1` URL, contains `vercel.app`, or any resource/category URL returns `404`.
 
 ## Search Console and Bing Setup
 
@@ -32,6 +42,7 @@ Expected:
   - `https://www.yinglitech.com/zh/resources/ocpp-ev-charger`
 - Submit the same sitemap in Bing Webmaster Tools.
 - Track Bing AI Performance when available: total citations, cited pages, grounding queries, and page-level citation activity.
+- If production has `INDEXNOW_KEY`, run `npm run seo:indexnow -- --submit` once after deployment. Without a key, skip this; it is not a deployment blocker.
 
 ## Weekly GEO Query Set
 

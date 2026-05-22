@@ -17,7 +17,8 @@
   - categories from `src/data/categories.json`
   - resource pages from `src/data/seo-pages.json`
 - Verify sitemap has no `vercel.app` and no `/products?category=...`.
-- Verify robots has the production sitemap and disallows `/api/`, `/_next/`, `/admin/`.
+- Verify robots has the production sitemap and disallows `/api/` and `/admin/`.
+- Verify robots does not disallow `/_next/`, `/_next/static`, or `/_next/image`; crawlers need those assets to render and understand the site.
 
 ## Vercel Environment
 
@@ -25,8 +26,12 @@ Required env names:
 
 - `SITE_URL`
 - `RESEND_API_KEY`
-- `CONTACT_EMAIL_FROM`
-- `CONTACT_EMAIL_TO`
+- `CONTACT_FROM_EMAIL`
+- `CONTACT_TO_EMAIL`
+
+Optional env name:
+
+- `INDEXNOW_KEY`
 
 Expected production value for `SITE_URL`: `https://www.yinglitech.com`.
 
@@ -55,8 +60,21 @@ After production deploy, verify:
 - `https://www.yinglitech.com/en/resources/ocpp-ev-charger` returns `200`.
 - `https://www.yinglitech.com/en/products/category/dc-charger` returns `200`.
 - `https://www.yinglitech.com/en/resources/ev-charger-manufacturer` returns `200`.
+- `https://www.yinglitech.com/en/products/super-dc-120kw` returns `200`.
+- `https://www.yinglitech.com/en/contact` returns `200`.
 - `https://www.yinglitech.com/sitemap.xml` contains only `https://www.yinglitech.com/...`.
 - `https://www.yinglitech.com/robots.txt` points to `https://www.yinglitech.com/sitemap.xml`.
+- Resource pages expose Direct Answer, Manufacturer Evidence, quotation requirements, visible FAQ, Article JSON-LD with dates, Breadcrumb, and ItemList JSON-LD.
+- Category pages expose Category Specification Matrix, Breadcrumb, and ItemList JSON-LD.
+- Product pages expose Product JSON-LD plus Breadcrumb JSON-LD and no fake `Offer` markup.
+
+If `INDEXNOW_KEY` is configured, run after production deploy:
+
+```bash
+npm run seo:indexnow -- --submit
+```
+
+Without `INDEXNOW_KEY`, IndexNow is optional and must not block deployment.
 
 If the official domain still returns old content, treat it as deployment drift and report:
 

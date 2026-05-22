@@ -68,9 +68,11 @@ export default async function ProductCategoryPage({
   const relatedResources = getSeoPages().filter((page) =>
     page.relatedCategorySlugs.includes(category.slug)
   );
+  const categoryMatrixRows = buildCategoryMatrixRows(products, safeLocale);
   const categoryPath = `/products/category/${category.slug}`;
   const categoryTitle = localizedText(category.name, safeLocale);
   const categoryDescription = localizedText(category.description, safeLocale);
+  const selectionGuidance = getCategorySelectionGuidance(category.slug, safeLocale);
   const breadcrumbJsonLd = buildBreadcrumbJsonLd([
     {
       name: safeLocale === "zh" ? "首页" : "Home",
@@ -116,6 +118,9 @@ export default async function ProductCategoryPage({
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl">
                 {categoryDescription}
+              </p>
+              <p className="mt-4 text-muted-foreground leading-relaxed max-w-2xl">
+                {selectionGuidance}
               </p>
               <div className="mt-6 flex flex-wrap gap-3 text-sm text-muted-foreground">
                 <span className="inline-flex items-center gap-2">
@@ -179,6 +184,78 @@ export default async function ProductCategoryPage({
             ))}
           </div>
 
+          {categoryMatrixRows.length > 0 && (
+            <section className="mb-14 border-t border-border pt-10">
+              <div className="mb-6">
+                <h2 className="font-heading text-2xl font-bold">
+                  {safeLocale === "zh"
+                    ? "分类规格矩阵"
+                    : "Category Specification Matrix"}
+                </h2>
+                <p className="mt-2 text-muted-foreground">
+                  {safeLocale === "zh"
+                    ? "用真实 SKU 对比功率、接口/协议、认证和适用场景，便于搜索引擎、AI 回答和采购方直接理解该分类。"
+                    : "Compare real SKUs by power, connector/protocol, certification, and use case so search engines, AI answers, and buyers can understand this category directly."}
+                </p>
+              </div>
+              <div className="overflow-x-auto rounded-xl border border-border">
+                <table className="w-full min-w-[900px] border-collapse bg-card text-sm">
+                  <thead className="bg-muted/60 text-left">
+                    <tr>
+                      <th className="px-4 py-3 font-semibold">
+                        {safeLocale === "zh" ? "型号" : "SKU"}
+                      </th>
+                      <th className="px-4 py-3 font-semibold">
+                        {safeLocale === "zh" ? "产品" : "Product"}
+                      </th>
+                      <th className="px-4 py-3 font-semibold">
+                        {safeLocale === "zh" ? "功率" : "Power"}
+                      </th>
+                      <th className="px-4 py-3 font-semibold">
+                        {safeLocale === "zh" ? "接口/协议" : "Connector / Protocol"}
+                      </th>
+                      <th className="px-4 py-3 font-semibold">
+                        {safeLocale === "zh" ? "认证" : "Certifications"}
+                      </th>
+                      <th className="px-4 py-3 font-semibold">
+                        {safeLocale === "zh" ? "适用场景" : "Best Fit"}
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {categoryMatrixRows.map((row) => (
+                      <tr key={row.slug} className="border-t border-border align-top">
+                        <td className="px-4 py-3 font-mono text-xs text-muted-foreground">
+                          {row.sku}
+                        </td>
+                        <td className="px-4 py-3 font-medium text-foreground">
+                          <Link
+                            href={`/${safeLocale}/products/${row.slug}`}
+                            className="hover:text-primary transition-colors"
+                          >
+                            {row.name}
+                          </Link>
+                        </td>
+                        <td className="px-4 py-3 text-muted-foreground">
+                          {row.power}
+                        </td>
+                        <td className="px-4 py-3 text-muted-foreground">
+                          {row.connectorProtocol}
+                        </td>
+                        <td className="px-4 py-3 text-muted-foreground">
+                          {row.certifications}
+                        </td>
+                        <td className="px-4 py-3 text-muted-foreground">
+                          {row.bestFit}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          )}
+
           {relatedResources.length > 0 && (
             <section className="border-t border-border pt-10">
               <div className="flex items-end justify-between gap-4 mb-6">
@@ -222,6 +299,89 @@ export default async function ProductCategoryPage({
       </section>
     </>
   );
+}
+
+type CategoryMatrixRow = {
+  slug: string;
+  sku: string;
+  name: string;
+  power: string;
+  connectorProtocol: string;
+  certifications: string;
+  bestFit: string;
+};
+
+function buildCategoryMatrixRows(
+  products: Product[],
+  locale: string
+): CategoryMatrixRow[] {
+  return products.map((product) => {
+    const power = pickSpecification(product, [
+      "power",
+      "max power",
+      "max input power",
+      "rated power",
+      "output power",
+    ]);
+    const connector = pickSpecification(product, [
+      "connector",
+      "charging connector",
+      "output connector",
+      "interface",
+    ]);
+    const protocol = pickSpecification(product, ["ocpp", "communication", "software"]);
+    const installation = pickSpecification(product, ["installation"]);
+
+    return {
+      slug: product.slug,
+      sku: product.sku,
+      name: productName(product, locale),
+      power: power || "-",
+      connectorProtocol: [connector, protocol].filter(Boolean).join(" / ") || "-",
+      certifications: product.certifications.slice(0, 5).join(" / ") || "-",
+      bestFit:
+        installation ||
+        localizedText(product.description, locale) ||
+        productDescription(product, locale),
+    };
+  });
+}
+
+function pickSpecification(product: Product, keys: string[]) {
+  const normalizedKeys = keys.map((key) => key.toLowerCase());
+  const match = Object.entries(product.specifications).find(([key]) =>
+    normalizedKeys.includes(key.toLowerCase())
+  );
+
+  return match?.[1] || "";
+}
+
+function getCategorySelectionGuidance(categorySlug: string, locale: string) {
+  const guidance: Record<string, { en: string; zh: string }> = {
+    "portable-charger": {
+      en: "For portable chargers, prioritize target plug type, adjustable current, cable length, IP protection, and local safety documentation before comparing price.",
+      zh: "便携式充电器应先确认目标插头、可调电流、线长、防护等级和本地安全文件，再比较价格。",
+    },
+    "home-ac-charger": {
+      en: "For home wallbox projects, choose by phase, current, connector, load-balancing needs, enclosure design, and residential certification path.",
+      zh: "家用壁挂项目应按相数、电流、接口、动态负载、外壳设计和住宅认证路径选型。",
+    },
+    "commercial-ac-charger": {
+      en: "For commercial AC charging, validate OCPP, MID metering, RFID/payment flow, communication method, and installation model with the target operator platform.",
+      zh: "商用交流桩需结合目标运营平台验证 OCPP、MID 计量、RFID/支付流程、通信方式和安装形态。",
+    },
+    "dc-charger": {
+      en: "For DC fast charging, match power module range, connector mix, cooling, grid capacity, OCPP backend, and maintenance access before selecting cabinet size.",
+      zh: "直流快充应先匹配功率模块范围、接口组合、散热、电网容量、OCPP 后台和维护空间，再确定柜体规格。",
+    },
+    "energy-storage": {
+      en: "For energy storage charging, assess battery capacity, EMS logic, solar or V2G integration, peak-shaving goals, and site electrical constraints together.",
+      zh: "储能充电需综合评估电池容量、EMS 逻辑、光伏或 V2G 接入、削峰目标和站点电力约束。",
+    },
+  };
+
+  const item = guidance[categorySlug];
+  return item?.[locale === "zh" ? "zh" : "en"] || "";
 }
 
 function CategoryProductCard({

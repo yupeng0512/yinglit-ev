@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import settings from "@/data/settings.json";
 import { routing } from "@/i18n/routing";
-import type { Category, GeoFaq, Product, SeoPage } from "@/lib/types";
+import type { Category, Product, SeoPage } from "@/lib/types";
 
 export type Locale = (typeof routing.locales)[number];
 
@@ -208,11 +208,17 @@ export function buildArticleJsonLd({
   path,
   title,
   description,
+  image = "/images/hero-products.jpg",
+  datePublished,
+  dateModified,
 }: {
   locale: string;
   path: string;
   title: string;
   description: string;
+  image?: string;
+  datePublished?: string;
+  dateModified?: string;
 }) {
   const safeLocale = toLocale(locale);
 
@@ -223,6 +229,9 @@ export function buildArticleJsonLd({
     description,
     inLanguage: safeLocale,
     mainEntityOfPage: localizedUrl(path, safeLocale),
+    image: [absoluteUrl(image)],
+    ...(datePublished ? { datePublished } : {}),
+    ...(dateModified ? { dateModified } : {}),
     author: {
       "@type": "Organization",
       name: "YINGLITECH",
@@ -236,24 +245,6 @@ export function buildArticleJsonLd({
         url: absoluteUrl("/logo-yingli.png"),
       },
     },
-  };
-}
-
-export function buildFaqJsonLd(faqs: GeoFaq[], locale: string) {
-  const safeLocale = toLocale(locale);
-
-  return {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    inLanguage: safeLocale,
-    mainEntity: faqs.map((faq) => ({
-      "@type": "Question",
-      name: localizedText(faq.question, safeLocale),
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: localizedText(faq.answer, safeLocale),
-      },
-    })),
   };
 }
 

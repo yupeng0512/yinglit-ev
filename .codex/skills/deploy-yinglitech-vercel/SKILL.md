@@ -37,7 +37,8 @@ If `vercel whoami` fails, stop and ask the user to authenticate locally with `ve
 vercel env ls
 ```
 
-Required production names: `SITE_URL`, `RESEND_API_KEY`, `CONTACT_EMAIL_FROM`, `CONTACT_EMAIL_TO`.
+Required production names: `SITE_URL`, `RESEND_API_KEY`, `CONTACT_FROM_EMAIL`, `CONTACT_TO_EMAIL`.
+Optional production name: `INDEXNOW_KEY`.
 
 5. Deploy:
 
@@ -55,6 +56,12 @@ vercel deploy --prod -y
 bash .codex/skills/deploy-yinglitech-vercel/scripts/verify-production.sh https://www.yinglitech.com
 ```
 
+If `INDEXNOW_KEY` exists and the deploy was production, submit the updated sitemap URLs:
+
+```bash
+npm run seo:indexnow -- --submit
+```
+
 ## Output
 
 Report:
@@ -63,4 +70,5 @@ Report:
 - preview or production URL
 - preflight result
 - production verification result
+- IndexNow result when configured
 - any user-owned actions still needed, such as adding Vercel env vars or submitting sitemap in Search Console

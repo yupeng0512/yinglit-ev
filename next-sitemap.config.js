@@ -19,7 +19,7 @@ const geoFriendlyCrawlers = [
   "ClaudeBot",
   "Google-Extended",
 ];
-const disallowedPaths = ["/api/", "/_next/", "/admin/"];
+const disallowedPaths = ["/api/", "/admin/"];
 const staticPaths = [
   "",
   "/about",

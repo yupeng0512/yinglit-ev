@@ -10,7 +10,6 @@ import type { Product } from "@/lib/types";
 import {
   buildArticleJsonLd,
   buildBreadcrumbJsonLd,
-  buildFaqJsonLd,
   buildItemListJsonLd,
   buildResourceMetadata,
   localizedPath,
@@ -92,6 +91,9 @@ export default async function ResourceDetailPage({
     path: resourcePath,
     title,
     description,
+    image: "/images/hero-products.jpg",
+    datePublished: page.publishedAt,
+    dateModified: page.updatedAt,
   });
   const itemListJsonLd = buildItemListJsonLd(
     relatedProducts.map((product) => ({
@@ -100,7 +102,8 @@ export default async function ResourceDetailPage({
       url: localizedPath(`/products/${product.slug}`, safeLocale),
     }))
   );
-  const faqJsonLd = buildFaqJsonLd(geoContent.faqs, safeLocale);
+  const evidenceRows = buildManufacturerEvidenceRows(relatedProducts, safeLocale);
+  const quoteRequirements = buildQuoteRequirements(safeLocale);
 
   return (
     <>
@@ -111,10 +114,6 @@ export default async function ResourceDetailPage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       {relatedProducts.length > 0 && (
         <script
@@ -136,6 +135,12 @@ export default async function ResourceDetailPage({
               <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl">
                 {localizedText(page.hero, safeLocale)}
               </p>
+              <div className="mt-4 text-sm text-muted-foreground">
+                {safeLocale === "zh" ? "更新时间：" : "Updated: "}
+                <time dateTime={page.updatedAt}>
+                  {formatDisplayDate(page.updatedAt, safeLocale)}
+                </time>
+              </div>
 
               <section className="mt-10 rounded-2xl border border-primary/20 bg-primary/5 p-6">
                 <h2 className="font-heading text-xl font-semibold mb-3">
@@ -223,6 +228,104 @@ export default async function ResourceDetailPage({
                       ))}
                     </tbody>
                   </table>
+                </div>
+              </section>
+
+              {evidenceRows.length > 0 && (
+                <section className="mt-14 border-t border-border pt-10">
+                  <h2 className="font-heading text-2xl font-bold mb-3">
+                    {safeLocale === "zh"
+                      ? "厂家一手产品证据"
+                      : "Manufacturer Evidence"}
+                  </h2>
+                  <p className="text-muted-foreground leading-relaxed mb-6">
+                    {safeLocale === "zh"
+                      ? "以下信息来自 YINGLITECH 当前产品数据，用于把采购指南和真实型号、功率、接口、认证及使用场景对应起来。"
+                      : "The table below is drawn from current YINGLITECH product data, connecting the guide to real SKUs, power levels, connector options, certifications, and use cases."}
+                  </p>
+                  <div className="overflow-x-auto rounded-xl border border-border">
+                    <table className="w-full min-w-[860px] border-collapse bg-card text-sm">
+                      <thead className="bg-muted/60 text-left">
+                        <tr>
+                          <th className="px-4 py-3 font-semibold">
+                            {safeLocale === "zh" ? "型号" : "SKU"}
+                          </th>
+                          <th className="px-4 py-3 font-semibold">
+                            {safeLocale === "zh" ? "产品" : "Product"}
+                          </th>
+                          <th className="px-4 py-3 font-semibold">
+                            {safeLocale === "zh" ? "功率" : "Power"}
+                          </th>
+                          <th className="px-4 py-3 font-semibold">
+                            {safeLocale === "zh" ? "接口/协议" : "Connector / Protocol"}
+                          </th>
+                          <th className="px-4 py-3 font-semibold">
+                            {safeLocale === "zh" ? "认证" : "Certifications"}
+                          </th>
+                          <th className="px-4 py-3 font-semibold">
+                            {safeLocale === "zh" ? "典型场景" : "Typical Use"}
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {evidenceRows.map((row) => (
+                          <tr key={row.slug} className="border-t border-border align-top">
+                            <td className="px-4 py-3 font-mono text-xs text-muted-foreground">
+                              {row.sku}
+                            </td>
+                            <td className="px-4 py-3 font-medium text-foreground">
+                              <Link
+                                href={`/${safeLocale}/products/${row.slug}`}
+                                className="hover:text-primary transition-colors"
+                              >
+                                {row.name}
+                              </Link>
+                            </td>
+                            <td className="px-4 py-3 text-muted-foreground">
+                              {row.power}
+                            </td>
+                            <td className="px-4 py-3 text-muted-foreground">
+                              {row.connectorProtocol}
+                            </td>
+                            <td className="px-4 py-3 text-muted-foreground">
+                              {row.certifications}
+                            </td>
+                            <td className="px-4 py-3 text-muted-foreground">
+                              {row.useCase}
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </section>
+              )}
+
+              <section className="mt-14 border-t border-border pt-10">
+                <h2 className="font-heading text-2xl font-bold mb-3">
+                  {safeLocale === "zh"
+                    ? "报价需要提供的信息"
+                    : "What to send for quotation"}
+                </h2>
+                <p className="text-muted-foreground leading-relaxed mb-6">
+                  {safeLocale === "zh"
+                    ? "为了减少反复确认，请在询盘里尽量提供以下项目条件。信息越完整，YINGLITECH 越容易给出匹配型号、认证路径和项目报价。"
+                    : "To reduce back-and-forth, include the following project conditions in the inquiry. Clear inputs help YINGLITECH match models, certification paths, and quotation scope."}
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {quoteRequirements.map((item) => (
+                    <div
+                      key={item.label}
+                      className="rounded-xl border border-border bg-card p-5"
+                    >
+                      <h3 className="font-heading text-base font-semibold mb-2">
+                        {item.label}
+                      </h3>
+                      <p className="text-sm text-muted-foreground leading-relaxed">
+                        {item.guidance}
+                      </p>
+                    </div>
+                  ))}
                 </div>
               </section>
 
@@ -335,6 +438,134 @@ export default async function ResourceDetailPage({
       </article>
     </>
   );
+}
+
+type EvidenceRow = {
+  slug: string;
+  sku: string;
+  name: string;
+  power: string;
+  connectorProtocol: string;
+  certifications: string;
+  useCase: string;
+};
+
+function buildManufacturerEvidenceRows(
+  products: Product[],
+  locale: string
+): EvidenceRow[] {
+  return products.map((product) => {
+    const power = pickSpecification(product, [
+      "power",
+      "max power",
+      "max input power",
+      "rated power",
+      "output power",
+    ]);
+    const connector = pickSpecification(product, [
+      "connector",
+      "charging connector",
+      "output connector",
+      "interface",
+    ]);
+    const protocol = pickSpecification(product, ["ocpp", "communication", "software"]);
+    const connectorProtocol = [connector, protocol].filter(Boolean).join(" / ");
+    const installation = pickSpecification(product, ["installation"]);
+
+    return {
+      slug: product.slug,
+      sku: product.sku,
+      name: productName(product, locale),
+      power: power || "-",
+      connectorProtocol: connectorProtocol || "-",
+      certifications: product.certifications.slice(0, 5).join(" / ") || "-",
+      useCase:
+        installation ||
+        localizedText(product.description, locale) ||
+        productDescription(product, locale),
+    };
+  });
+}
+
+function pickSpecification(product: Product, keys: string[]) {
+  const normalizedKeys = keys.map((key) => key.toLowerCase());
+  const match = Object.entries(product.specifications).find(([key]) =>
+    normalizedKeys.includes(key.toLowerCase())
+  );
+
+  return match?.[1] || "";
+}
+
+function buildQuoteRequirements(locale: string) {
+  if (locale === "zh") {
+    return [
+      {
+        label: "国家/地区与车辆接口",
+        guidance: "说明目的市场、车辆类型、接口标准，例如 Type 2、CCS2、CCS1、NACS、GB/T 或 CHAdeMO。",
+      },
+      {
+        label: "功率、数量与安装场景",
+        guidance: "提供目标功率、预计数量、墙装/立柱/公共站点/车队场站等安装方式，以及是否需要后续扩容。",
+      },
+      {
+        label: "认证与并网要求",
+        guidance: "列明 CE、UKCA、IEC、MID、OCPP、当地电网或客户项目要求，便于提前确认文件路径。",
+      },
+      {
+        label: "CMS/OCPP 与运营方式",
+        guidance: "说明是否需要接入第三方平台、RFID、支付、远程启动、负载管理或运营商自有 App。",
+      },
+      {
+        label: "ODM/OEM 范围",
+        guidance: "如需品牌、外壳、线缆、包装、说明书、语言或固件定制，请在询盘中明确范围。",
+      },
+      {
+        label: "时间线与交付条件",
+        guidance: "提供样品时间、试点时间、批量交付目标、目标港口或贸易条款，便于估算供货节奏。",
+      },
+    ];
+  }
+
+  return [
+    {
+      label: "Country and connector",
+      guidance:
+        "Share the destination market, vehicle base, and connector standard such as Type 2, CCS2, CCS1, NACS, GB/T, or CHAdeMO.",
+    },
+    {
+      label: "Power, quantity, and installation",
+      guidance:
+        "State the target power, expected quantity, wall-mounted or pedestal installation, public site or fleet depot use, and future expansion needs.",
+    },
+    {
+      label: "Certification and grid requirements",
+      guidance:
+        "List CE, UKCA, IEC, MID, OCPP, local grid, or project-specific documentation requirements before samples are selected.",
+    },
+    {
+      label: "CMS/OCPP operation model",
+      guidance:
+        "Confirm whether the charger must connect to a third-party CMS, RFID, payment flow, remote start, load management, or an operator app.",
+    },
+    {
+      label: "ODM/OEM scope",
+      guidance:
+        "For private label projects, specify branding, enclosure, cable, packaging, manual language, firmware, or app customization needs.",
+    },
+    {
+      label: "Timeline and delivery terms",
+      guidance:
+        "Share sample timing, pilot timing, mass-delivery target, destination port, and preferred trade terms for a realistic quotation.",
+    },
+  ];
+}
+
+function formatDisplayDate(value: string, locale: string) {
+  return new Intl.DateTimeFormat(locale === "zh" ? "zh-CN" : "en-US", {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+  }).format(new Date(`${value}T00:00:00Z`));
 }
 
 function RelatedProductCard({

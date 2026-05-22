@@ -43,6 +43,16 @@ The contact form uses a Next.js API route and Resend to send inquiry emails. See
 
 Set `SITE_URL` to the canonical production domain before building for production. The default is `https://www.yinglitech.com`, and `next-sitemap` uses this value to generate `robots.txt` and the full XML sitemap.
 
+Useful SEO/GEO commands:
+
+```bash
+npm run seo:audit:public -- https://www.yinglitech.com --json
+npm run seo:indexnow
+npm run seo:indexnow -- --submit
+```
+
+`seo:indexnow` is dry-run by default. Real submission requires `INDEXNOW_KEY` and the explicit `--submit` flag. Without `INDEXNOW_KEY`, it exits as skipped and does not block deployment.
+
 ## Project Skills
 
 Reusable agent SOPs live in `.codex/skills/`:

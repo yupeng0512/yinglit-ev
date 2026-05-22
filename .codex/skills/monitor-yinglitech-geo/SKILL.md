@@ -21,6 +21,12 @@ description: Monitor and optimize YINGLITECH SEO/GEO performance with a data-dri
 bash .codex/skills/monitor-yinglitech-geo/scripts/collect-public-signals.sh https://www.yinglitech.com
 ```
 
+For automation or report ingestion, request JSON explicitly:
+
+```bash
+npm run seo:audit:public -- https://www.yinglitech.com --json
+```
+
 2. If private metrics are needed, read `references/data-request.md` and ask the user for the smallest useful export or screenshot.
 3. Use `references/query-set.md` for the weekly AI search query set.
 4. Analyze metrics by page group:
@@ -37,6 +43,13 @@ bash .codex/skills/monitor-yinglitech-geo/scripts/collect-public-signals.sh http
 - P1: pages with impressions/citations but poor CTR, weak snippets, or answer mismatch
 - P2: missing long-tail query pages or FAQ/table gaps
 - P3: entity consistency, third-party profiles, and conversion improvements
+
+Public output categories:
+
+- `productionDrift`: official domain deployment drift and stale sitemap blockers
+- `crawlability`: page status, canonical, hreflang, sitemap, robots, and crawler access
+- `contentExtraction`: Direct Answer, Manufacturer Evidence, quotation requirements, product matrix, and structured data checks
+- `businessSignal`: private data still needed from GSC, Bing AI Performance, AI answer tests, and inquiry quality
 
 ## Output
 
