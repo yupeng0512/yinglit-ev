@@ -4,11 +4,13 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowRight, BookOpen, CheckCircle2, Zap } from "lucide-react";
 import { getProvider } from "@/lib/provider";
+import { getGeoPageContent } from "@/lib/geo-content";
 import { getSeoPageBySlug, getSeoPages } from "@/lib/seo-pages";
 import type { Product } from "@/lib/types";
 import {
   buildArticleJsonLd,
   buildBreadcrumbJsonLd,
+  buildFaqJsonLd,
   buildItemListJsonLd,
   buildResourceMetadata,
   localizedPath,
@@ -54,6 +56,7 @@ export default async function ResourceDetailPage({
     notFound();
   }
 
+  const geoContent = getGeoPageContent(page);
   const provider = await getProvider();
   const [categories, relatedProductResults] = await Promise.all([
     provider.getCategories(safeLocale),
@@ -97,6 +100,7 @@ export default async function ResourceDetailPage({
       url: localizedPath(`/products/${product.slug}`, safeLocale),
     }))
   );
+  const faqJsonLd = buildFaqJsonLd(geoContent.faqs, safeLocale);
 
   return (
     <>
@@ -107,6 +111,10 @@ export default async function ResourceDetailPage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       {relatedProducts.length > 0 && (
         <script
@@ -129,6 +137,15 @@ export default async function ResourceDetailPage({
                 {localizedText(page.hero, safeLocale)}
               </p>
 
+              <section className="mt-10 rounded-2xl border border-primary/20 bg-primary/5 p-6">
+                <h2 className="font-heading text-xl font-semibold mb-3">
+                  {safeLocale === "zh" ? "直接答案" : "Direct Answer"}
+                </h2>
+                <p className="text-muted-foreground leading-relaxed">
+                  {localizedText(geoContent.directAnswer, safeLocale)}
+                </p>
+              </section>
+
               <div className="mt-10 space-y-8">
                 {page.sections.map((section) => (
                   <section key={localizedText(section.heading, "en")}>
@@ -141,6 +158,110 @@ export default async function ResourceDetailPage({
                   </section>
                 ))}
               </div>
+
+              <section className="mt-14 border-t border-border pt-10">
+                <h2 className="font-heading text-2xl font-bold mb-3">
+                  {safeLocale === "zh" ? "采购判断标准" : "Buyer Criteria"}
+                </h2>
+                <p className="text-muted-foreground leading-relaxed mb-6">
+                  {safeLocale === "zh"
+                    ? "AI搜索和人工采购都会优先提取清晰的判断标准。以下维度用于把询价需求从泛泛描述变成可验证的项目条件。"
+                    : "AI search systems and human buyers both extract clear decision criteria. Use the following points to turn a broad inquiry into verifiable project requirements."}
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {geoContent.buyerCriteria.map((criterion) => (
+                    <div
+                      key={localizedText(criterion.label, "en")}
+                      className="rounded-xl border border-border bg-card p-5"
+                    >
+                      <h3 className="font-heading text-lg font-semibold mb-2">
+                        {localizedText(criterion.label, safeLocale)}
+                      </h3>
+                      <p className="text-sm text-muted-foreground leading-relaxed">
+                        {localizedText(criterion.guidance, safeLocale)}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </section>
+
+              <section className="mt-14 border-t border-border pt-10">
+                <h2 className="font-heading text-2xl font-bold mb-3">
+                  {safeLocale === "zh" ? "规格快照" : "Spec Snapshot"}
+                </h2>
+                <div className="overflow-x-auto rounded-xl border border-border">
+                  <table className="w-full min-w-[720px] border-collapse bg-card text-sm">
+                    <thead className="bg-muted/60 text-left">
+                      <tr>
+                        <th className="px-4 py-3 font-semibold">
+                          {safeLocale === "zh" ? "维度" : "Dimension"}
+                        </th>
+                        <th className="px-4 py-3 font-semibold">
+                          {safeLocale === "zh" ? "建议范围" : "Recommended Scope"}
+                        </th>
+                        <th className="px-4 py-3 font-semibold">
+                          {safeLocale === "zh" ? "采购备注" : "Buyer Note"}
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {geoContent.specSnapshot.map((row) => (
+                        <tr
+                          key={localizedText(row.label, "en")}
+                          className="border-t border-border"
+                        >
+                          <td className="px-4 py-3 font-medium text-foreground">
+                            {localizedText(row.label, safeLocale)}
+                          </td>
+                          <td className="px-4 py-3 text-muted-foreground">
+                            {localizedText(row.value, safeLocale)}
+                          </td>
+                          <td className="px-4 py-3 text-muted-foreground">
+                            {localizedText(row.note, safeLocale)}
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+
+              <section className="mt-14 border-t border-border pt-10">
+                <h2 className="font-heading text-2xl font-bold mb-6">
+                  {safeLocale === "zh" ? "常见问题" : "Common Questions"}
+                </h2>
+                <div className="space-y-4">
+                  {geoContent.faqs.map((faq) => (
+                    <div
+                      key={localizedText(faq.question, "en")}
+                      className="rounded-xl border border-border bg-card p-5"
+                    >
+                      <h3 className="font-heading text-lg font-semibold mb-2">
+                        {localizedText(faq.question, safeLocale)}
+                      </h3>
+                      <p className="text-sm text-muted-foreground leading-relaxed">
+                        {localizedText(faq.answer, safeLocale)}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </section>
+
+              <section className="mt-14 rounded-2xl border border-primary/20 bg-primary/5 p-6">
+                <h2 className="font-heading text-2xl font-bold mb-3">
+                  {safeLocale === "zh" ? "YINGLITECH 适配说明" : "YINGLITECH Fit"}
+                </h2>
+                <p className="text-muted-foreground leading-relaxed">
+                  {localizedText(geoContent.yinglitechFit, safeLocale)}
+                </p>
+                <Link
+                  href={`/${safeLocale}/contact`}
+                  className="mt-5 inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground hover:bg-primary/90 transition-colors"
+                >
+                  {safeLocale === "zh" ? "提交项目询盘" : "Send Project Inquiry"}
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
+              </section>
 
               {relatedProducts.length > 0 && (
                 <section className="mt-14 border-t border-border pt-10">

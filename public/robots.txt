@@ -1,9 +1,76 @@
-# *
-User-agent: *
+# Googlebot
+User-agent: Googlebot
 Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# bingbot
+User-agent: bingbot
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# OAI-SearchBot
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# ChatGPT-User
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# PerplexityBot
+User-agent: PerplexityBot
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# Claude-SearchBot
+User-agent: Claude-SearchBot
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# Claude-User
+User-agent: Claude-User
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# GPTBot
+User-agent: GPTBot
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# ClaudeBot
+User-agent: ClaudeBot
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# Google-Extended
+User-agent: Google-Extended
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
 
 # *
 User-agent: *
+Allow: /
 Disallow: /api/
 Disallow: /_next/
 Disallow: /admin/

@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { Shield, Award, FileCheck, Globe, CheckCircle2 } from "lucide-react";
 import { CERTIFICATION_EVIDENCE } from "@/data/visual-evidence";
+import { EntityFacts } from "@/components/seo/entity-facts";
 
 const CERT_GROUPS = [
   {
@@ -87,6 +88,8 @@ export default function CertificationsPage() {
             <p className="text-xs text-muted-foreground mt-1">{t("subsidiesDesc")}</p>
           </div>
         </div>
+
+        <EntityFacts className="mb-16" />
 
         {/* Certificate Evidence */}
         <div className="grid grid-cols-1 lg:grid-cols-[0.8fr_1.4fr] gap-6 mb-16 items-start">

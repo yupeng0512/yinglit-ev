@@ -42,3 +42,18 @@ The contact form uses a Next.js API route and Resend to send inquiry emails. See
 ## SEO Deployment
 
 Set `SITE_URL` to the canonical production domain before building for production. The default is `https://www.yinglitech.com`, and `next-sitemap` uses this value to generate `robots.txt` and the full XML sitemap.
+
+## Project Skills
+
+Reusable agent SOPs live in `.codex/skills/`:
+
+- `deploy-yinglitech-vercel`: Vercel deploy preflight, safe CLI deployment, and production SEO/GEO verification without exposing secrets.
+- `monitor-yinglitech-geo`: data-driven SEO/GEO monitoring, public signal checks, and exact user data requests for private GSC/Bing/AI metrics.
+
+Validate project skills with the official skill validator through an isolated `uv` environment:
+
+```bash
+npm run skills:validate
+```
+
+This uses `uv run --with PyYAML` and does not install Python packages into the system Python or commit a virtual environment.

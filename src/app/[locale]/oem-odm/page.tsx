@@ -17,6 +17,7 @@ import {
   Boxes,
 } from "lucide-react";
 import siteSettings from "@/data/settings.json";
+import { EntityFacts } from "@/components/seo/entity-facts";
 
 const STEPS = [
   { icon: HeadphonesIcon, key: "step1" },
@@ -146,6 +147,8 @@ export default function OemOdmPage() {
             {t("subtitle")}
           </p>
         </div>
+
+        <EntityFacts className="mb-20" />
 
         {/* Capabilities Grid */}
         <div className="mb-20">

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { Mail, Phone, MapPin, MessageSquare, CheckCircle2 } from "lucide-react";
+import { EntityFacts } from "@/components/seo/entity-facts";
 
 export default function ContactPage() {
   const locale = useLocale();
@@ -175,6 +176,8 @@ export default function ContactPage() {
             </div>
           </div>
         </div>
+
+        <EntityFacts className="mt-16" />
       </div>
     </section>
   );

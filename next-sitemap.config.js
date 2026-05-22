@@ -7,6 +7,19 @@ const seoPages = require("./src/data/seo-pages.json");
 
 const siteUrl = (process.env.SITE_URL || "https://www.yinglitech.com").replace(/\/+$/, "");
 const locales = ["en", "zh"];
+const geoFriendlyCrawlers = [
+  "Googlebot",
+  "bingbot",
+  "OAI-SearchBot",
+  "ChatGPT-User",
+  "PerplexityBot",
+  "Claude-SearchBot",
+  "Claude-User",
+  "GPTBot",
+  "ClaudeBot",
+  "Google-Extended",
+];
+const disallowedPaths = ["/api/", "/_next/", "/admin/"];
 const staticPaths = [
   "",
   "/about",
@@ -57,8 +70,12 @@ module.exports = {
     })),
   robotsTxtOptions: {
     policies: [
-      { userAgent: "*", allow: "/" },
-      { userAgent: "*", disallow: ["/api/", "/_next/", "/admin/"] },
+      ...geoFriendlyCrawlers.map((userAgent) => ({
+        userAgent,
+        allow: "/",
+        disallow: disallowedPaths,
+      })),
+      { userAgent: "*", allow: "/", disallow: disallowedPaths },
     ],
   },
   exclude: ["/", "/admin/*", "/api/*"],

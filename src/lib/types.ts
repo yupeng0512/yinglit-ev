@@ -50,6 +50,30 @@ export type SeoPageSection = {
   body: LocalizedText;
 };
 
+export type GeoBuyerCriterion = {
+  label: LocalizedText;
+  guidance: LocalizedText;
+};
+
+export type GeoSpecRow = {
+  label: LocalizedText;
+  value: LocalizedText;
+  note: LocalizedText;
+};
+
+export type GeoFaq = {
+  question: LocalizedText;
+  answer: LocalizedText;
+};
+
+export type GeoPageContent = {
+  directAnswer: LocalizedText;
+  buyerCriteria: GeoBuyerCriterion[];
+  specSnapshot: GeoSpecRow[];
+  faqs: GeoFaq[];
+  yinglitechFit: LocalizedText;
+};
+
 export type SeoPage = {
   slug: string;
   intent: string;

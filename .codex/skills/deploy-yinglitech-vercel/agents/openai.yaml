@@ -1,0 +1,6 @@
+interface:
+  display_name: "Deploy YINGLITECH Vercel"
+  short_description: "Deploy YINGLITECH on Vercel safely"
+  default_prompt: "Use $deploy-yinglitech-vercel to deploy the YINGLITECH site and verify the production SEO/GEO surface."
+policy:
+  allow_implicit_invocation: true

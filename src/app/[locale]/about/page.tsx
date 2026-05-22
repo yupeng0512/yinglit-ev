@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { Cpu, Factory, Globe, Calendar } from "lucide-react";
 import { ABOUT_EVIDENCE } from "@/data/visual-evidence";
+import { EntityFacts } from "@/components/seo/entity-facts";
 
 const MILESTONES = [
   { year: "2017", en: "Company founded in Shenzhen", zh: "在深圳成立" },
@@ -112,6 +113,8 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
+
+        <EntityFacts className="mb-20" />
 
         {/* Strengths */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
